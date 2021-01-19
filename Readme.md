@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алена Тахтаганова](https://up.htmlacademy.ru/htmlcss/30/user/1705973).
-* Наставник: `[Михаил Маклай](https://htmlacademy.ru/profile/mikhailmaclay)`.
+* Наставник: [Михаил Маклай](https://htmlacademy.ru/profile/mikhailmaclay).
 
 ---
 
