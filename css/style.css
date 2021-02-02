@@ -1,0 +1,26 @@
+/* Variables */
+
+:root {
+--basic-red: #EE3643;
+--basic-background: #F1F5F7;
+--basic-green: #63A63E;
+--exception-red: #FF5357;
+--basic-grey: #3D546F;
+--basic-greylight: #C5C5C5;
+--punch-subtitle: #F2F6F8;
+--white: #FFFFFF;
+--special-ylellow: #FFBF47;
+--special-blue: #3BBCE3;
+--special-lilac: #DC91D8;
+--special-greenlight: #8ED78F;
+--special-yellowlight: #FFD180;
+--success: #5FBB2D;
+--warning: #FFBF47;
+--error: #BA2732;
+--social-icon: #212A3A;
+--accent-color-border: #32425C;
+--accent-color-button: #518534;
+--accent-color-delivery: #293449;
+}
+
+
