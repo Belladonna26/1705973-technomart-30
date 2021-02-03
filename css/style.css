@@ -58,6 +58,13 @@ body {
   background-color: var(--error);
 }
 
+.come-in:hover .login-in {
+  fill: var(--basic-grey);
+  }
+
+.come-in:hover .login-border {
+  fill: var(--basic-grey);
+  }
 
 .search
 .search-in {
