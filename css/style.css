@@ -424,4 +424,9 @@ line-height: 30px;
   list-style: none;
 }
 
+.network:hover .icon-click {
+  fill: var(--basic-red);
+  }
+
+
 
