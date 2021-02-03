@@ -138,7 +138,7 @@
         </ul>
         <b class="subtitle perforators">Перфораторы</b>
         <div>
-            <h2 class="mini-subtitle">Фильтр:</h2>
+            <h2 class="filter-header">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru">
                 <div class="filters">
                     <b class="filter-subtitle">Цена:</b>
@@ -154,32 +154,32 @@
                     <ul class="checkbox">
                         <li class="checkbox-item">
                             <div>
-                                <input class="check-input1" type="checkbox" id="filter-bosch" name="producer" value="Bosch" checked>
-                                <label for="filter-interskol">Bosch</label>
+                                <input type="checkbox" id="filter-bosch" name="producer" value="Bosch" checked>
+                                <label class="check input" for="filter-bosch">Bosch</label>
                             </div>
                         </li>
                         <li class="checkbox-item">
                             <div>
-                                <input class="check-input1" type="checkbox" id="filter-interskol" name="producer" value="Интерскол">
-                                <label for="filter-interskol">Интерскол</label>
+                                <input type="checkbox" id="filter-interskol" name="producer" value="Интерскол">
+                                <label class="check input" for="filter-interskol">Интерскол</label>
                             </div>
                         </li>
                         <li class="checkbox-item">
                             <div>
-                                <input class="check-input1" type="checkbox" id="filter-makita" name="producer" value="Makita" checked>
-                                <label for="filter-makita">Makita</label>
+                                <input type="checkbox" id="filter-makita" name="producer" value="Makita" checked>
+                                <label class="check input" for="filter-makita">Makita</label>
                             </div>
                         </li>
                         <li class="checkbox-item">
                             <div>
-                                <input class="check-input1" type="checkbox" id="filter-dewalt" name="producer" value="dewalt">
-                                <label for="filter-dewalt">Dewalt</label>
+                                <input type="checkbox" id="filter-dewalt" name="producer" value="dewalt">
+                                <label class="check input" for="filter-dewalt">Dewalt</label>
                             </div>
                         </li>
                         <li class="checkbox-item">
                             <div>
-                                <input class="check-input1" type="checkbox" id="filter-hitachi" name="producer" value="hitachi">
-                                <label for="filter-hitachi">Hitachi</label>
+                                <input type="checkbox" id="filter-hitachi" name="producer" value="hitachi">
+                                <label class="check input" for="filter-hitachi">Hitachi</label>
                             </div>
                         </li>
                     </ul>
@@ -188,12 +188,12 @@
                     <b class="filter-subtitle">Питание:</b>
                     <ul class="checkbox">
                         <li class="checkbox-item">
-                            <input class="radio-input" type="radio" name="supply" value="battery" id="filter-bat" checked>
-                            <label for="filter-bat">Аккумуляторные</label>
+                            <input type="radio" name="supply" value="battery" id="filter-bat" checked>
+                            <label class="check radio-input" for="filter-bat">Аккумуляторные</label>
                         </li>
                         <li class="checkbox-item">
-                            <input class="radio-input" type="radio" name="supply" value="network" id="filter-net">
-                            <label for="filter-net">Сетевые</label>
+                            <input type="radio" name="supply" value="network" id="filter-net">
+                            <label class="check radio-input" for="filter-net">Сетевые</label>
                         </li>
                     </ul>
                 </div>
@@ -201,18 +201,18 @@
             </form>
         </div>
         <div class="sort">
-            <h2 class="mini-subtitle">Сортировка:</h2>
+            <h2 class="mini-subtitle sort-subtitle">Сортировка:</h2>
             <ul class="sort-list">
-                <li class="sort-item control">
+                <li class="sort-item">
                     <a class="sort-price mini-subtitle" href="?sort=price">По цене</a>
                 </li>
-                <li class="sort-item control">
+                <li class="sort-item">
                     <a class="sort-type mini-subtitle" href="?sort=type">По типу</a>
                 </li>
-                <li class="sort-item control">
+                <li class="sort-item">
                     <a class="sort-function mini-subtitle" href="?sort=function">По функционалу</a>
                 </li>
-                <li class="sort-item control">
+                <li class="sort-item">
                     <a href="?order=asc" aria-label="Сортировка по возрастанию">
                         <!-- <img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"> -->
                         <svg class="hand" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,7 +220,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="sort-item control">
+                <li class="sort-item">
                     <a href="?sort=desc" aria-label="Сортировка по убыванию">
                         <!-- <img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"> -->
                         <svg class="hand" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,22 +315,22 @@
         <nav class="pagination">
             <h2>Навигация по страницам</h2>
             <ul class="pagination-list">
-                <li class="pagination-item control">
-                    <a>1</a>
+                <li>
+                    <a class="pagination-item control">1</a>
                 </li>
-                <li class="pagination-item control">
-                    <a href="?page=2">2</a>
+                <li>
+                    <a class="pagination-item control" href="?page=2">2</a>
                 </li>
-                <li class="pagination-item control">
-                    <a href="?page=3">3</a>
+                <li>
+                    <a class="pagination-item control" href="?page=3">3</a>
                 </li>
-                <li class="pagination-item control">
-                    <a class="next-page" href="?page=2">Следующая</a>
+                <li>
+                    <a class="pagination-item control" class="next-page" href="?page=2">Следующая</a>
                 </li>
             </ul>
         </nav>
         <section class="about-punches">
-            <h2 class="subtitle">Пара слов о перфораторах</h2>
+            <h2 class="subtitle perforator">Пара слов о перфораторах</h2>
             <p class="text">
                 Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
                 кирпиче, бетоне и камне.<br>

@@ -29,6 +29,7 @@
 --accent-bookmark: #161D29;
 --accent-catalog: #CA2C37;
 --main-header-background: #F3F7F9;
+--catalog-background: #F7F3EC;
 }
 
 /* Global */
@@ -399,7 +400,8 @@ line-height: 30px;
 }
 
 .service-logo,
-.company {
+.company,
+.perforator {
   color: var(--basic-black);
 }
 
@@ -461,6 +463,89 @@ line-height: 30px;
 
 .hand:active .icon-hand {
   fill: var(--basic-red);
+}
+
+.filter-header {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--catalog-background);
+  text-transform: uppercase;
+}
+
+.sort-subtitle {
+  color: var(--basic-black);
+}
+
+.sort {
+  background-color: var(--catalog-background);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.checkbox{
+  list-style: none;
+}
+
+.check {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.filter-subtitle {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.control {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.pagination-item {
+  text-decoration: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+/* Buy */
+
+.buy-button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-green);
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+}
+
+.bookmark-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--accent-color-border);
+  text-transform: uppercase;
+  background-color: var(--white);
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+}
 
 /* Contacts */
 
