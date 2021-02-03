@@ -349,6 +349,11 @@ line-height: 30px;
   background-color: var(--accent-color-border);
 }
 
+.footer-point:hover,
+.offer-link:hover {
+  text-decoration: underline;
+}
+
 .footer {
   background-color: var(--accent-color-border);
 }
@@ -383,6 +388,14 @@ line-height: 30px;
 
 .about-us {
   color: var(--white);
+}
+
+.creator:focus {
+  color: var(--basic-red);
+}
+
+.creator:hover {
+  text-decoration: underline;
 }
 
 /* Socials */
