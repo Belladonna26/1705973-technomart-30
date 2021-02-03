@@ -28,6 +28,7 @@
 --accent-color-delivery: #293449;
 --accent-bookmark: #161D29;
 --accent-catalog: #CA2C37;
+--main-header-background: #F3F7F9;
 }
 
 /* Global */
@@ -44,6 +45,10 @@ body {
 }
 
 /* Header navigation */
+
+.main-header {
+  background-color: var(--main-header-background);
+}
 
 .main-header-logo  {
   background-color: var(--basic-red);
@@ -139,6 +144,7 @@ list-style: none;
   line-height: 21px;
   color: var(--basic-black);
   text-decoration: none;
+  background-color: var(--white);
 }
 
 /* Main navigation */
@@ -173,6 +179,14 @@ line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--white);
+}
+
+.taste,
+.case,
+.build,
+.sale,
+.for-free {
+  background-color: rgba(255, 255, 255,0.3);
 }
 
 .materials {
