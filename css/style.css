@@ -33,7 +33,7 @@
 
 /* Global */
 
-body {
+.page-body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -58,6 +58,10 @@ body {
   background-color: var(--error);
 }
 
+.top {
+  background-color: var(--accent-color-delivery);
+}
+
 .come-in:hover .login-in {
   fill: var(--basic-grey);
   }
@@ -78,6 +82,15 @@ body {
 .search-in:focus {
   background-color: var(--white);
 }
+
+.icon-search:hover .search-click {
+  fill: var(--white);
+}
+
+.icon-search:active .search-click {
+  fill: var(--basic-red);
+}
+
 
 .list-header {
 background-color: var(--accent-color-delivery);
