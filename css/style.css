@@ -30,6 +30,8 @@
 --accent-catalog: #CA2C37;
 --main-header-background: #F3F7F9;
 --catalog-background: #F7F3EC;
+--producers-background: #EAEAEA;
+--border-button: #E5E5E5;
 }
 
 /* Global */
@@ -135,14 +137,14 @@
   color: var(--basic-greylight);
 }
 
-.me {
+.user-link {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   text-decoration: none;
 }
 
-.me:active {
+.user-link:active {
   color: var(--basic-greylight);
 }
 
@@ -273,7 +275,15 @@ list-style: none;
   text-decoration: none;
 }
 
-.perforators {
+.breadcrumb-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.perforators-title {
   background-color: var(--punch-subtitle);
 }
 
@@ -344,7 +354,7 @@ line-height: 30px;
   color: var(--white);
 }
 
-.button-nav-slider {
+.button-navigation-slider {
   list-style: none;
 }
 
@@ -357,6 +367,14 @@ line-height: 30px;
   text-transform: uppercase;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* Popular-goods and producers*/
 .plate{
   background-color: var(--basic-subtitle);
@@ -367,6 +385,11 @@ line-height: 30px;
 }
 
 .producers-list {
+  list-style: none;
+}
+
+/* Catalog */
+.punches-list {
   list-style: none;
 }
 
@@ -404,7 +427,7 @@ line-height: 30px;
 
 .services-title,
 .about-us-title,
-.perforator {
+.punch-title {
   color: var(--basic-black);
 }
 
@@ -438,6 +461,10 @@ line-height: 30px;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+}
+
+.about-punches {
+  background-color: var(--basic-background);
 }
 
 /* Filters */
@@ -511,17 +538,20 @@ line-height: 30px;
   color: var(--basic-black);
 }
 
-.control {
+.button-navigation {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  background-color: var(--white);
 }
 
 .pagination-item {
   text-decoration: none;
+  border: 1px solid var(--border-button);
+  border-radius: 2px;
 }
 
 .pagination-list {
@@ -540,14 +570,30 @@ line-height: 30px;
   border-radius: 2px;
 }
 
+.buy-button:hover {
+  background-color: var(--success);
+}
+
+.buy-button:active {
+  background-color: var(--accent-color-button);
+}
+
 .bookmark-button {
-  font-size: 14px;
-  line-height: 18px;
   color: var(--accent-color-border);
-  text-transform: uppercase;
   background-color: var(--white);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
+}
+
+.bookmark-button:hover {
+  border: none;
+  border: 3px solid var(--accent-color-border);
+}
+
+.bookmark-button:active {
+  border: none;
+  border: 3px solid var(--basic-greylight);
+  color: var(--basic-greylight);
 }
 
 /* Contacts */

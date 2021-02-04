@@ -14,7 +14,7 @@
 </head>
 
 <body class="page-body">
-  <h1>HTML Academy: Техномарт</h1>
+  <h1 class="visually-hidden">HTML Academy: Техномарт</h1>
   <header class="header">
     <div class="top-bar">
     <a class="header-logo">
@@ -23,7 +23,8 @@
 
     <form class="search" action="https://echo.htmlacademy.ru">
       <svg class="icon-search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="search-click" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#fff"/></svg>
+        <path class="search-click" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#fff"/>
+      </svg>
       <input class="search-in" type="search" name="search" placeholder="Поиск: ">
     </form>
 
@@ -61,7 +62,7 @@
     <span class="address">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</span>
 
     <nav class="user-navigation">
-      <h2>Пользовательская навигация</h2>
+      <h2 class="visually-hidden">Пользовательская навигация</h2>
       <ul class="user-navigation-list">
         <li>
           <a class="login-link" href="blank.html">
@@ -80,7 +81,7 @@
     </nav>
 
     <nav class="site-navigation">
-      <h2>Навигация по сайту</h2>
+      <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="site-navigation-list">
         <li>
           <a>Главная</a>
@@ -114,7 +115,7 @@
   </header>
   <main class="container">
     <section class="offers">
-      <h2>Каталог</h2>
+      <h2 class="visually-hidden">Каталог</h2>
       <ul class="offers-list">
         <li>
           <div class="offer-item offer-item-materials">
@@ -171,14 +172,14 @@
         <button class="button-wrapper slider-next-button" type="button" aria-label="Следующий слайд">
           <img src="https://via.placeholder.com/22x40" alt="Иконка стрелка вправо" width="22" height="40">
         </button>
-        <ul class="button-nav-slider">
-          <li class="circle-button">
-            <button class="circle circle-back" type="button" arial-label="Слайд №1">
+        <ul class="button-navigation-slider">
+          <li>
+            <button class="button-radio radio-previous-button" type="button" arial-label="Слайд №1">
               <img src="https://via.placeholder.com/10x10" alt="Иконка маркер слайда" width="10" height="10">
             </button>
           </li>
-          <li class="circle-button">
-            <button class="circle circle-next" type="button" arial-label="Слайд №2">
+          <li>
+            <button class="button-radio radio-next-button" type="button" arial-label="Слайд №2">
               <img src="https://via.placeholder.com/10x10" alt="Иконка маркер слайда" width="10" height="10">
             </button>
           </li>
