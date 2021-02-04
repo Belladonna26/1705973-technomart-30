@@ -152,7 +152,7 @@
   list-style: none;
 }
 
-.header-list {
+.header-links {
 background-color: var(--accent-color-delivery);
 list-style: none;
 }
@@ -172,6 +172,18 @@ list-style: none;
 .cart-item:focus,
 .checkout:focus {
   color: rgb(255,255,255,0.5);
+}
+
+.img-ghost {
+  opacity: 0.5;
+}
+
+.img-ghost:hover {
+  opacity: 1;
+}
+
+.img-ghost-always {
+  opacity: 0.5;
 }
 
 .site-navigation-link:hover {
@@ -199,7 +211,7 @@ list-style: none;
   color: var(--basic-red);
 }
 
-.number {
+.mobile-contact {
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -230,7 +242,7 @@ list-style: none;
   background-color: var(--exception-red);
 }
 
-.button-write {
+.contacts-button {
   border: none;
 }
 
