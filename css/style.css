@@ -53,11 +53,11 @@
   background-color: var(--main-header-background);
 }
 
-.header-logo  {
+.top-bar-logo {
   background-color: var(--basic-red);
 }
 
-.header-logo:active {
+.top-bar-logo:active {
   background-color: var(--error);
 }
 
@@ -74,15 +74,20 @@
   }
 
 .search
-.search-in {
+.search-control {
   background-color: var(--accent-color-delivery);
+}
+
+.search-control {
+  background-image: url("../img/decor/icon-search17x17.svg");
+  background-repeat: no-repeat;
 }
 
 ::-webkit-input-placeholder {
   color: var(--white);
 }
 
-.search-in:focus {
+.search-control:focus {
   background-color: var(--white);
 }
 
@@ -137,40 +142,29 @@
   color: var(--basic-greylight);
 }
 
-.user-link {
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  text-decoration: none;
-}
-
-.user-link:active {
-  color: var(--basic-greylight);
-}
-
 .user-nav-me {
   list-style: none;
 }
 
-.header-links {
+.top-bar-links {
 background-color: var(--accent-color-delivery);
 list-style: none;
 }
 
-.bookmark-item,
-.cart-item,
-.checkout {
+.bookmark-link,
+.cart-link,
+.checkout-link {
   color: var(--white);
   text-decoration: none;
 }
 
-.bookmark-item:active {
+.bookmark-link:active {
   background-color: var(--accent-bookmark);
 }
 
-.bookmark-item:focus,
-.cart-item:focus,
-.checkout:focus {
+.bookmark-link:focus,
+.cart-link:focus,
+.checkout-link:focus {
   color: rgb(255,255,255,0.5);
 }
 
@@ -186,32 +180,30 @@ list-style: none;
   opacity: 0.5;
 }
 
-.site-navigation-link:hover {
-  background-color: var(--accent-color-delivery);
-}
-
-.site-navigation-link:focus {
-  color: rgb(255,255,255,0.5);
-}
-
-.login-link:hover,
-.registration:hover {
+.button-plate:hover {
   color: var(--basic-red);
 }
 
-.login-link:focus,
-.registration:focus {
+.button-plate:focus {
   color: var(--basic-greylight);
 }
 
-.desc-shop {
+.user-link:active {
+  color: var(--basic-greylight);
+}
+
+.user-link:hover {
+  color: var(--basic-black);
+}
+
+.header-desc {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
 }
 
-.mobile-contact {
+.header-phone {
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -219,12 +211,12 @@ list-style: none;
   text-decoration: none;
 }
 
-.address {
+.header-address {
   font-size: 14px;
   color: var(--accent-color-border);
 }
 
-.checkout {
+.checkout-link {
   background-color: var(--basic-green);
 }
 
@@ -256,8 +248,7 @@ list-style: none;
 
 /* User navigation */
 
-.login-link,
-.registration {
+.button-plate {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -272,11 +263,19 @@ list-style: none;
   background-color: var(--accent-color-border);
 }
 
-.site-navigation-item,
-.footer-navigation a {
+.site-navigation-link
+.footer-navigation-link {
   text-decoration: none;
   color: var(--white);
   background-color: var(--accent-color-border);
+}
+
+.site-navigation-link:hover {
+  background-color: var(--accent-color-delivery);
+}
+
+.site-navigation-link:focus {
+  color: rgb(255,255,255,0.5);
 }
 
 .breadcrumbs {
