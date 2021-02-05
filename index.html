@@ -84,10 +84,9 @@
     <nav class="site-navigation">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="site-navigation-list">
-        <li>
+        <li class="site-navigation-item">
           <a>Главная</a>
         </li>
-
         <li class="site-navigation-item">
           <a class="site-navigation-link" href="blank.html">Компания</a>
         </li>
@@ -118,41 +117,41 @@
     <section class="offers">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="offers-list">
-        <li>
-          <div class="offer-item offer-item-materials">
-            <h3 class="offer-title">Материалы</h3>
-            <a class="button offer-button-ghost" href="blank.html" aria-label="Товары из категории Материалы">На любой
+        <li class="offer-item">
+          <div class="offer-card offer-card-materials">
+            <h3 class="offer-card-title">Материалы</h3>
+            <a class="button button-ghost" href="blank.html" aria-label="Товары из категории Материалы">На любой
               вкус</a>
           </div>
         </li>
-        <li>
-          <div class="offer-item offer-item-tool">
-            <h3 class="offer-title">Инструмент</h3>
-            <a class="button offer-button-ghost" href="blank.html" aria-label="Товары из категории Инструмент">На все
+        <li class="offer-item">
+          <div class="offer-card offer-card-tool">
+            <h3 class="offer-card-title">Инструмент</h3>
+            <a class="button button-ghost" href="blank.html" aria-label="Товары из категории Инструмент">На все
               случаи</a>
         </li>
-        <li>
-          <div class="offer-item offer-item-technic">
-            <h3 class="offer-title">Техника</h3>
-            <a class="button offer-button-ghost" href="blank.html" aria-label="Товары из категории Техника">Для
+        <li class="offer-item">
+          <div class="offer-card offer-card-technic">
+            <h3 class="offer-card-title">Техника</h3>
+            <a class="button button-ghost" href="blank.html" aria-label="Товары из категории Техника">Для
               стройки</a>
         </li>
-        <li>
-          <div class="offer-item offer-item-sale">
-            <h3 class="offer-title">Скидки 50%</h3>
-            <a class="button offer-button-ghost" href="blank.html" aria-label="Товары со скидкой">на 350 товаров</a>
+        <li class="offer-item">
+          <div class="offer-card offer-card-sale">
+            <h3 class="offer-card-title">Скидки 50%</h3>
+            <a class="button button-ghost" href="blank.html" aria-label="Товары со скидкой">на 350 товаров</a>
         </li>
-        <li class="free">
-          <div class="offer-item offer-item-delivery">
-            <h3 class="offer-title">Доставка</h3>
-            <a class="button offer-button-ghost" href="blank.html"
-              aria-label="Товары с бесплатной доставкой">Бесплатно</a>
+        <li class="offer-item free">
+          <div class="offer-card offer-card-delivery">
+            <h3 class="offer-card-title">Доставка</h3>
+            <a class="button button-ghost" href="blank.html" aria-label="Товары с бесплатной доставкой">Бесплатно</a>
         </li>
       </ul>
       <div class="slider">
         <div class="slide">
-          <img src="img/man-puncher.jpg" alt="Фотография мужчина с перфоратором" width="620" height="266">
-          <div>
+          <img class="slide-image" src="img/man-puncher.jpg" alt="Фотография мужчина с перфоратором" width="620"
+            height="266">
+          <div class="slide-header">
             <b class="slide-title">Перфораторы</b>
             <p class="slide-description">
               Настоящие мужские игрушки
@@ -161,7 +160,8 @@
           <a class="button button-slide slide-button" href="catalog.html">Открыть каталог</a>
         </div>
         <div class="slide">
-          <img src="img/man-puncher-2.jpg" alt="Фотография мужчина с дрелью" width="620" height="266">
+          <img class="slide-image" src="img/man-puncher-2.jpg" alt="Фотография мужчина с дрелью" width="620"
+            height="266">
           <div>
             <b class="slide-title">Дрели</b>
             <p class="slide-description">
@@ -176,61 +176,61 @@
         <button class="button-wrapper slider-next-button" type="button" aria-label="Следующий слайд">
           <img src="https://via.placeholder.com/22x40" alt="Иконка стрелка вправо" width="22" height="40">
         </button>
-        <ul class="button-navigation-slider">
-          <li>
-            <button class="button-radio radio-previous-button" type="button" arial-label="Слайд №1">
-              <img src="https://via.placeholder.com/10x10" alt="Иконка маркер слайда" width="10" height="10">
+        <ul class="slider-controls-list">
+          <li class="slider-controls-item">
+            <button class="button-radio" type="button" arial-label="Слайд №1">
+              <!-- <img src="https://via.placeholder.com/10x10" alt="Иконка маркер слайда" width="10" height="10"> -->
             </button>
           </li>
-          <li>
-            <button class="button-radio radio-next-button" type="button" arial-label="Слайд №2">
-              <img src="https://via.placeholder.com/10x10" alt="Иконка маркер слайда" width="10" height="10">
+          <li class="slider-controls-item">
+            <button class="button-radio" type="button" arial-label="Слайд №2">
+              <!-- <img src="https://via.placeholder.com/10x10" alt="Иконка маркер слайда" width="10" height="10"> -->
             </button>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="popular-products">
-      <div class="plate">
+    <div class="plate">
+      <section class="popular-products">
         <h2 class="subtitle products">Популярные товары:</h2>
         <a class="button button-popular" href="blank.html">Все популярные товары</a>
-      </div>
-      <ul class="products-list">
-        <li>
-          <div class="product-card">
-            <h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
-            <img src="img/punchers/bosch-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            <del class="product-price product-old-price">32500 Р.</del>
-            <span class="product-price product-current-price">25500 Р.</span>
-          </div>
-        </li>
+    </div>
+    <ul class="products-list">
+      <li>
+        <div class="product-card">
+          <h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
+          <img class="product-image" src="img/punchers/bosch-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+          <del class="product-price product-old-price">32500 Р.</del>
+          <span class="product-price product-current-price">25500 Р.</span>
+        </div>
+      </li>
 
-        <li>
-          <div class="product-card">
-            <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
-            <img src="img/punchers/bosch-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            <del class="product-price product-old-price">22500 Р.</del>
-            <span class="product-price product-current-price">15500 Р.</span>
-          </div>
-        </li>
-        <li>
-          <div class="product-card">
-            <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
-            <img src="img/punchers/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            <del class="product-price product-old-price">30500 Р.</del>
-            <span class="product-price product-current-price">25500 Р.</span>
-          </div>
-        </li>
-        <li>
-          <div class="product-card">
-            <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-            <img src="img/punchers/bosch-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            <del class="product-price product-old-price">22500 Р.</del>
-            <span class="product-price product-current-price">12500 Р.</span>
-          </div>
-        </li>
-      </ul>
+      <li>
+        <div class="product-card">
+          <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
+          <img class="product-image" src="img/punchers/bosch-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+          <del class="product-price product-old-price">22500 Р.</del>
+          <span class="product-price product-current-price">15500 Р.</span>
+        </div>
+      </li>
+      <li>
+        <div class="product-card">
+          <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
+          <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          <del class="product-price product-old-price">30500 Р.</del>
+          <span class="product-price product-current-price">25500 Р.</span>
+        </div>
+      </li>
+      <li>
+        <div class="product-card">
+          <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
+          <img class="product-image" src="img/punchers/bosch-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+          <del class="product-price product-old-price">22500 Р.</del>
+          <span class="product-price product-current-price">12500 Р.</span>
+        </div>
+      </li>
+    </ul>
     </section>
 
     <section class="popular-producers">
@@ -422,7 +422,7 @@
       </p>
 
       <ul class="social-list">
-        <li>
+        <li class="social-list-item">
           <a class="button-round" href="blank.html" aria-label="Вконтакте">
             <!-- <img src="img/vk.svg" width="44" height="44" alt="Иконка Вконтакте" width="26" height="15"> -->
             <svg class="network" width="44" height="44" viewBox="0 0 44 44" fill="none"
@@ -436,7 +436,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="social-list-item">
           <a class="button-round" href="blank.html" aria-label="Фейсбук">
             <!-- <img src="img/facebook.svg" width="44" height="44" alt="Иконка Фейсбук" width="12" height="22"> -->
             <svg class="network" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -448,7 +448,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="social-list-item">
           <a class="button-round" href="blank.html" aria-label="Инстаграм">
             <!-- <img src="img/instagram.svg" width="44" height="44" alt="Иконка Инстаграм" width="21" height="21"> -->
             <svg class="network" width="44" height="44" viewBox="0 0 44 44" fill="none"

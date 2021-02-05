@@ -263,11 +263,9 @@ list-style: none;
   background-color: var(--accent-color-border);
 }
 
-.site-navigation-link
-.footer-navigation-link {
+.site-navigation-link {
   text-decoration: none;
   color: var(--white);
-  background-color: var(--accent-color-border);
 }
 
 .site-navigation-link:hover {
@@ -304,50 +302,50 @@ list-style: none;
   list-style: none;
 }
 
-.offer-title {
+.offer-card-title {
 font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 }
 
-.offer-button-ghost {
+.button-ghost {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.offer-button-ghost:hover {
+.button-ghost:hover {
   background-color: rgba(197, 197, 197, 0.3);
 }
 
-.offer-button-ghost:active {
+.button-ghost:active {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
-.offer-item {
+.offer-card {
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.offer-item-materials {
+.offer-card-materials {
   background-color: var(--warning);
   background-image: url("../img/decor/icon-bucket44x65.svg");
 }
 
-.offer-item-tool {
+.offer-card-tool {
   background-color: var(--special-blue);
   background-image: url("../img/decor/icon-drill75x61.svg");
 }
 
-.offer-item-technic {
+.offer-card-technic {
   background-color: var(--special-lilac);
   background-image: url("../img/decor/icon-car78x63.svg");
 }
 
-.offer-item-sale {
+.offer-card-sale {
   background-color: var(--special-greenlight);
   background-image: url("../img/decor/icon-busket59x72.svg");
 }
 
-.offer-item-delivery {
+.offer-card-delivery {
   background-color: var(--block-yellow);
   background-image: url("../img/decor/icon-tracktor78x62.svg");
 }
@@ -365,7 +363,7 @@ line-height: 30px;
   color: var(--white);
 }
 
-.button-navigation-slider {
+.slider-controls-list {
   list-style: none;
 }
 
@@ -626,6 +624,11 @@ line-height: 30px;
 .offer-link {
   color: var(--footer-yellow);
   text-decoration: none;
+}
+
+.footer-navigation-link {
+  text-decoration: none;
+  color: var(--white);
 }
 
 .footer-navigation-link:hover,
