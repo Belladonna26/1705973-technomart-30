@@ -504,7 +504,7 @@ line-height: 30px;
   fill: var(--basic-red);
 }
 
-.filter-header {
+.header-filter {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
