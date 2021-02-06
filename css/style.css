@@ -151,11 +151,24 @@ background-color: var(--accent-color-delivery);
 list-style: none;
 }
 
+.img-ghost {
+  color: rgb(255,255,255,0.5);
+}
+
 .bookmark-link,
 .cart-link,
 .checkout-link {
   color: var(--white);
   text-decoration: none;
+}
+
+.bookmark-link:hover .img-ghost {
+  color: var(--white);
+  opacity: 1;
+}
+
+.img-ghost:focus {
+  opacity: 0.5;
 }
 
 .bookmark-link:active {
@@ -168,17 +181,7 @@ list-style: none;
   color: rgb(255,255,255,0.5);
 }
 
-.img-ghost {
-  opacity: 0.5;
-}
 
-.img-ghost:hover {
-  opacity: 1;
-}
-
-.img-ghost-always {
-  opacity: 0.5;
-}
 
 .button-plate:hover {
   color: var(--basic-red);
