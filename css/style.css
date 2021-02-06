@@ -11,6 +11,7 @@
 --basic-black: #000000;
 --block-yellow: #FFC047;
 --white: #FFFFFF;
+--white-50: rgba(255, 255, 255, 0.5);
 --special-grey: #A9A9A9;
 --special-yellow: #FFBF47;
 --special-blue: #3BBCE3;
@@ -151,43 +152,52 @@ background-color: var(--accent-color-delivery);
 list-style: none;
 }
 
-.img-ghost {
-  color: rgb(255,255,255,0.5);
-}
-
-.bookmark-link,
-.cart-link,
-.checkout-link {
+.top-bar-link {
   color: var(--white);
   text-decoration: none;
 }
 
-.bookmark-link:hover .img-ghost {
-  color: var(--white);
+.top-bar-link .icon {
+  opacity: 0.3;
+}
+
+.top-bar-link:hover .icon {
   opacity: 1;
 }
 
-.img-ghost:focus {
+.top-bar-link:active {
+  color: var(--white-50);
+}
+
+.top-bar-link:active .icon {
   opacity: 0.5;
+}
+
+.checkout-link:hover {
+  background-color: var(--success);
 }
 
 .bookmark-link:active {
   background-color: var(--accent-bookmark);
 }
 
-.bookmark-link:focus,
-.cart-link:focus,
-.checkout-link:focus {
-  color: rgb(255,255,255,0.5);
+.button-plate .icon {
+  color: var(--basic-greylight);
 }
-
-
 
 .button-plate:hover {
   color: var(--basic-red);
 }
 
-.button-plate:focus {
+.button-plate:hover .icon {
+  color: var(--basic-grey);
+}
+
+.button-plate:active {
+  color: var(--basic-greylight);
+}
+
+.button-plate:active .icon {
   color: var(--basic-greylight);
 }
 
@@ -241,7 +251,7 @@ list-style: none;
   background-color: var(--accent-catalog);
 }
 
-.button-slide:focus {
+.button-slide:active {
   background-color: var(--error);
 }
 
@@ -267,7 +277,7 @@ list-style: none;
   color: var(--white);
 }
 
-.site-navigation-link:hover {
+.site-navigation-link[href]:hover {
   background-color: var(--accent-color-delivery);
 }
 
@@ -676,7 +686,7 @@ line-height: 30px;
   color: var(--white);
 }
 
-.creator:focus {
+.creator:active {
   color: var(--basic-red);
 }
 
