@@ -127,7 +127,7 @@
   fill: var(--basic-greylight);
 }
 
-.personal-info {
+.user-info {
   font-size: 16px;
   line-height: 18px;
   color: var(--accent-color-border);
@@ -230,10 +230,6 @@ list-style: none;
   background-color: var(--basic-red);
 }
 
-.request {
-  background-color: var(--exception-red);
-}
-
 .contacts-button {
   border: none;
 }
@@ -298,7 +294,7 @@ list-style: none;
 
 /* Slides */
 
-.offers-list {
+.offer-list {
   list-style: none;
 }
 
@@ -367,9 +363,9 @@ line-height: 30px;
   list-style: none;
 }
 
-/* Subtitle */
+/* Heading */
 
-.subtitle {
+.heading {
   font-size: 30px;
   line-height: 30px;
   color: var(--accent-color-border);
@@ -393,7 +389,7 @@ line-height: 30px;
   list-style: none;
 }
 
-.producers-list {
+.producer-list {
   list-style: none;
 }
 
@@ -436,7 +432,7 @@ line-height: 30px;
 
 .services-title,
 .about-us-title,
-.punch-title {
+.about-punches-title {
   color: var(--basic-black);
 }
 
@@ -478,7 +474,7 @@ line-height: 30px;
 
 /* Filters */
 
-.mini-subtitle {
+.sort-type {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
@@ -488,11 +484,11 @@ line-height: 30px;
   color: rgba(0, 0, 0,0.3);
 }
 
-.mini-subtitle:hover {
+.sort-type:hover {
   color: var(--basic-black);
 }
 
-.mini-subtitle:active {
+.sort-type:active {
   color: var(--basic-red);
 }
 
@@ -514,15 +510,11 @@ line-height: 30px;
   text-transform: uppercase;
 }
 
-.sort-subtitle {
-  color: var(--basic-black);
-}
-
 .sort {
   background-color: var(--catalog-background);
 }
 
-.sort-list {
+.sort-type-list {
   list-style: none;
 }
 
@@ -539,7 +531,7 @@ line-height: 30px;
   color: var(--basic-black);
 }
 
-.filter-subtitle {
+.filter-title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -547,7 +539,7 @@ line-height: 30px;
   color: var(--basic-black);
 }
 
-.button-navigation {
+.button-pagination {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -555,12 +547,17 @@ line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--white);
-}
-
-.pagination-item {
   text-decoration: none;
   border: 1px solid var(--border-button);
   border-radius: 2px;
+}
+
+.button-pagination:hover {
+  border-color: var(--basic-greylight);
+}
+
+.button-pagination:active {
+  border-color: var(--basic-red);
 }
 
 .pagination-list {
@@ -617,7 +614,7 @@ line-height: 30px;
   background-color: var(--accent-color-border);
 }
 
-.footer-header-logo {
+.page-footer-logo {
   background-color: var(--basic-red);
 }
 
@@ -648,7 +645,7 @@ line-height: 30px;
   background-color: var(--accent-color-border);
 }
 
-.footer-offers,
+.footer-category,
 .footer-navigation {
   list-style: none;
 }

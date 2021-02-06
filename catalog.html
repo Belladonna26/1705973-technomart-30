@@ -84,10 +84,10 @@
           </a>
         </li>
         <li>
-          <a class="personal-info" href="blank.html">Мои заказы</a>
+          <a class="user-info" href="blank.html">Мои заказы</a>
         </li>
         <li>
-          <a class="personal-info" href="blank.html">Личный кабинет</a>
+          <a class="user-info" href="blank.html">Личный кабинет</a>
         </li>
       </ul>
     </nav>
@@ -96,7 +96,7 @@
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="site-navigation-list">
         <li class="site-navigation-item">
-          <a>Главная</a>
+          <a class="site-navigation-link">Главная</a>
         </li>
 
         <li class="site-navigation-item">
@@ -130,7 +130,7 @@
     <ul class="breadcrumbs">
       <li>
         <a class="main-link" href="index.html" aria-label="Главная страница">
-          <img src="img/icon-home.svg" width="14" height="12" alt="Иконка дом" width="14" height="12">
+          <img src="img/icon-home.svg" width="14" height="12" alt="Иконка дом">
         </a>
       </li>
       <li>
@@ -144,13 +144,13 @@
       </li>
     </ul>
     <div class="perforators-title">
-      <b class="subtitle">Перфораторы</b>
+      <b class="heading">Перфораторы</b>
     </div>
     <div>
       <h2 class="header-filter">Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru">
         <div class="filters">
-          <b class="filter-subtitle">Цена:</b>
+          <b class="filter-title">Цена:</b>
           <div class="filter-buttons">
             <button class="button-price" type="button" aria-label="Минимальная цена"></button>
             <button class="button-price" type="button" aria-label="Максимальная цена цена"></button>
@@ -159,50 +159,53 @@
           <input class="max-price" type="number" min="0" max="40000">
         </div>
         <div>
-          <b class="filter-subtitle">Производители:</b>
+          <b class="filter-title">Производители:</b>
           <ul class="checkbox">
             <li>
               <div class="checkbox-producer">
-                <input type="checkbox" id="filter-bosch" name="producer" value="Bosch" checked>
-                <label class="check checkbox-input" for="filter-bosch">Bosch</label>
+                <input type="checkbox" class="custom-checkbox" id="filter-bosch" name="producer" value="Bosch" checked>
+                <label class="check" for="filter-bosch">Bosch</label>
               </div>
             </li>
             <li>
               <div class="checkbox-producer">
-                <input type="checkbox" id="filter-interskol" name="producer" value="Интерскол">
-                <label class="check checkbox-input" for="filter-interskol">Интерскол</label>
+                <input type="checkbox" class="custom-checkbox" id="filter-interskol" name="producer" value="Интерскол">
+                <label class="check" for="filter-interskol">Интерскол</label>
               </div>
             </li>
             <li>
               <div class="checkbox-producer">
-                <input type="checkbox" id="filter-makita" name="producer" value="Makita" checked>
-                <label class="check checkbox-input" for="filter-makita">Makita</label>
+                <input type="checkbox" class="custom-checkbox" id="filter-makita" name="producer" value="Makita"
+                  checked>
+                <label class="check" for="filter-makita">Makita</label>
               </div>
             </li>
             <li>
               <div class="checkbox-producer">
-                <input type="checkbox" id="filter-dewalt" name="producer" value="dewalt">
-                <label class="check checkbox-input" for="filter-dewalt">Dewalt</label>
+                <input type="checkbox" class="custom-checkbox" id="filter-dewalt" name="producer" value="dewalt">
+                <label class="check" for="filter-dewalt">Dewalt</label>
               </div>
             </li>
             <li>
               <div class="checkbox-producer">
-                <input type="checkbox" id="filter-hitachi" name="producer" value="hitachi">
-                <label class="check checkbox-input" for="filter-hitachi">Hitachi</label>
+                <input type="checkbox" class="custom-checkbox" id="filter-hitachi" name="producer" value="hitachi">
+                <label class="check" for="filter-hitachi">Hitachi</label>
               </div>
             </li>
           </ul>
         </div>
         <div>
-          <b class="filter-subtitle">Питание:</b>
+          <b class="filter-title">Питание:</b>
           <ul class="checkbox">
             <li>
-              <input type="radio" name="supply" value="battery" id="filter-bat" checked>
-              <label class="check radio-input" for="filter-bat">Аккумуляторные</label>
+              <input type="radio" class="custom-checkbox custom-checkbox-radio" name="supply" value="battery"
+                id="filter-bat" checked>
+              <label class="check" for="filter-bat">Аккумуляторные</label>
             </li>
             <li>
-              <input type="radio" name="supply" value="network" id="filter-net">
-              <label class="check radio-input" for="filter-net">Сетевые</label>
+              <input type="radio" class="custom-checkbox custom-checkbox-radio" name="supply" value="network"
+                id="filter-net">
+              <label class="check" for="filter-net">Сетевые</label>
             </li>
           </ul>
         </div>
@@ -210,16 +213,16 @@
       </form>
     </div>
     <div class="sort">
-      <h2 class="sort-subtitle mini-subtitle">Сортировка:</h2>
-      <ul class="sort-list">
+      <h2 class="sort-type">Сортировка:</h2>
+      <ul class="sort-type-list">
         <li>
-          <a class="sort-price mini-subtitle" href="?sort=price">По цене</a>
+          <a class="sort-type" href="?sort=price">По цене</a>
         </li>
         <li>
-          <a class="sort-type mini-subtitle" href="?sort=type">По типу</a>
+          <a class="sort-type" href="?sort=type">По типу</a>
         </li>
         <li>
-          <a class="sort-function mini-subtitle" href="?sort=function">По функционалу</a>
+          <a class="sort-type" href="?sort=function">По функционалу</a>
         </li>
         <li>
           <a href="?order=asc" aria-label="Сортировка по возрастанию">
@@ -248,7 +251,7 @@
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
               alt="Перфоратор BOSCH BFG 6000">
-            <del class="price old-price">30500 Р.</del>
+            <del class="product-price product-old-price">30500 Р.</del>
             <span class="product-price product-current-price">25500 Р.</span>
           </div>
         </li>
@@ -333,21 +336,21 @@
       <h2>Навигация по страницам</h2>
       <ul class="pagination-list">
         <li>
-          <a class="button pagination-item button-navigation">1</a>
+          <a class="button-pagination">1</a>
         </li>
         <li>
-          <a class="button pagination-item button-navigation" href="?page=2">2</a>
+          <a class="button-pagination" href="?page=2">2</a>
         </li>
         <li>
-          <a class="button pagination-item button-navigation" href="?page=3">3</a>
+          <a class="button-pagination" href="?page=3">3</a>
         </li>
         <li>
-          <a class="button pagination-item button-navigation" class="next-page" href="?page=2">Следующая</a>
+          <a class="button-pagination" href="?page=2">Следующая</a>
         </li>
       </ul>
     </nav>
     <section class="about-punches">
-      <h2 class="subtitle punch-title">Пара слов о перфораторах</h2>
+      <h2 class="heading about-punches-title">Пара слов о перфораторах</h2>
       <p class="text">
         Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
         кирпиче, бетоне и камне.<br>
@@ -358,7 +361,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="footer-header-logo">
+    <a class="page-footer-logo">
       <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
     </a>
     <p class="footer-contacts">
@@ -366,34 +369,34 @@
       <a class="link-wrapper" href="tel:+78125550555">+7 (812)555-05-55</a>
     </p>
     <ul class="footer-navigation">
-      <li>
+      <li class="footer-navigation-item">
         <a class="footer-navigation-link" href="blank.html">Компания</a>
       </li>
-      <li>
+      <li class="footer-navigation-item">
         <a class="footer-navigation-link" href="blank.html">Новости</a>
       </li>
-      <li>
+      <li class="footer-navigation-item">
         <a class="footer-navigation-link" href="catalog.html">Каталог</a>
       </li>
-      <li>
+      <li class="footer-navigation-item">
         <a class="footer-navigation-link" href="blank.html">Доставка</a>
       </li>
-      <li>
+      <li class="footer-navigation-item">
         <a class="footer-navigation-link" href="blank.html">Контакты</a>
       </li>
     </ul>
 
-    <ul class="footer-offers">
-      <li>
+    <ul class="footer-category">
+      <li class="footer-category-item">
         <a class="offer-link" href="blank.html">Материалы</a>
       </li>
-      <li>
+      <li class="footer-category-item">
         <a class="offer-link" href="blank.html">Техника</a>
       </li>
-      <li>
+      <li class="footer-category-item">
         <a class="offer-link" href="blank.html">Инструмент</a>
       </li>
-      <li>
+      <li class="footer-category-item">
         <a class="offer-link" href="blank.html">Спецпредложения</a>
       </li>
     </ul>
@@ -456,7 +459,6 @@
         <a class="creator" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </div>
-  </footer>
   </footer>
 </body>
 
