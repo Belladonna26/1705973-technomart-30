@@ -618,7 +618,7 @@ line-height: 30px;
   background-color: var(--basic-red);
 }
 
-.offer-link {
+.footer-category-link {
   color: var(--footer-yellow);
   text-decoration: none;
 }
@@ -629,7 +629,7 @@ line-height: 30px;
 }
 
 .footer-navigation-link:hover,
-.offer-link:hover {
+.footer-category-link:hover {
   text-decoration: underline;
 }
 
@@ -637,7 +637,7 @@ line-height: 30px;
   color: rgba(241, 245, 247, 0.5);
 }
 
-.offer-link:active {
+.footer-category-link:active {
   color: rgba(255, 209, 128, 0.5);
 }
 
