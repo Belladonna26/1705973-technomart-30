@@ -143,110 +143,122 @@
         <a class="breadcrumb breadcrumb-title">Перфораторы</a>
       </li>
     </ul>
-    <div class="perforators-title">
+    <div class="plate plate-blue">
       <b class="heading">Перфораторы</b>
     </div>
-    <div>
-      <h2 class="header-filter">Фильтр:</h2>
+    <div class="filter">
+      <h2 class="filter-header">Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru">
-        <div class="filters">
-          <b class="filter-title">Цена:</b>
-          <div class="filter-buttons">
-            <button class="button-price" type="button" aria-label="Минимальная цена"></button>
-            <button class="button-price" type="button" aria-label="Максимальная цена цена"></button>
+        <div class="fieldset">
+          <b class="fieldset-legend">Цена:</b>
+          <div class="input-range">
+            <div class="input-range-track">
+              <button class="input-rage-button" type="button" aria-label="Минимальная цена"></button>
+              <button class="input-rage-button" type="button" aria-label="Максимальная цена цена"></button>
+            </div>
+            <input class="input-range-control" type="number" min="0" max="40000" name="price">
+            <input class="input-range-control" type="number" min="0" max="40000" name="price">
           </div>
-          <input class="min-price" type="number" min="0" max="40000">
-          <input class="max-price" type="number" min="0" max="40000">
         </div>
-        <div>
-          <b class="filter-title">Производители:</b>
-          <ul class="checkbox">
-            <li>
-              <div class="checkbox-producer">
-                <input type="checkbox" class="custom-checkbox" id="filter-bosch" name="producer" value="Bosch" checked>
-                <label class="check" for="filter-bosch">Bosch</label>
+        <div class="fieldset">
+          <b class="fieldset-legend">Производители:</b>
+          <ul class="checkbox-list">
+            <li class="checkbox-item">
+              <div class="checkbox">
+                <input class="checkbox-control" type="checkbox" id="filter-bosch" name="producer" value="Bosch" checked>
+                <label class="checkbox-button" for="filter-bosch">
+                  <span class="checkbox-label">Bosch</span>
+                </label>
               </div>
             </li>
-            <li>
-              <div class="checkbox-producer">
-                <input type="checkbox" class="custom-checkbox" id="filter-interskol" name="producer" value="Интерскол">
-                <label class="check" for="filter-interskol">Интерскол</label>
+            <li class="checkbox-item">
+              <div class="checkbox">
+                <input class="checkbox-control" type="checkbox" id="filter-interskol" name="producer" value="Интерскол">
+                <label class="checkbox-button" for="filter-interskol">
+                  <span class="checkbox-label">Интерскол</span>
+                </label>
               </div>
             </li>
-            <li>
-              <div class="checkbox-producer">
-                <input type="checkbox" class="custom-checkbox" id="filter-makita" name="producer" value="Makita"
+            <li class="checkbox-item">
+              <div class="checkbox">
+                <input class="checkbox-control" type="checkbox" id="filter-makita" name="producer" value="Makita"
                   checked>
-                <label class="check" for="filter-makita">Makita</label>
+                <label class="checkbox-button" for="filter-makita">
+                  <span class="checkbox-label">Makita</span>
+                </label>
               </div>
             </li>
-            <li>
-              <div class="checkbox-producer">
-                <input type="checkbox" class="custom-checkbox" id="filter-dewalt" name="producer" value="dewalt">
-                <label class="check" for="filter-dewalt">Dewalt</label>
+            <li class="checkbox-item">
+              <div class="checkbox">
+                <input class="checkbox-control" type="checkbox" id="filter-dewalt" name="producer" value="dewalt">
+                <label class="checkbox-button" for="filter-dewalt">
+                  <span class="checkbox-label">Dewalt</span>
+                </label>
               </div>
             </li>
-            <li>
-              <div class="checkbox-producer">
-                <input type="checkbox" class="custom-checkbox" id="filter-hitachi" name="producer" value="hitachi">
-                <label class="check" for="filter-hitachi">Hitachi</label>
+            <li class="checkbox-item">
+              <div class="checkbox">
+                <input class="checkbox-control" type="checkbox" id="filter-hitachi" name="producer" value="hitachi">
+                <label class="checkbox-button" for="filter-hitachi">
+                  <span class="checkbox-label">Hitachi</span>
+                </label>
               </div>
             </li>
           </ul>
         </div>
-        <div>
-          <b class="filter-title">Питание:</b>
-          <ul class="checkbox">
-            <li>
-              <input type="radio" class="custom-checkbox custom-checkbox-radio" name="supply" value="battery"
-                id="filter-bat" checked>
-              <label class="check" for="filter-bat">Аккумуляторные</label>
+        <div class="fieldset">
+          <b class="fieldset-legend">Питание:</b>
+          <ul class="checkbox-list">
+            <li class="checkbox-item">
+              <div class="radio">
+                <input class="radio-control" type="radio" name="supply" value="battery" id="filter-bat" checked>
+                <label class="radio-label" for="filter-bat">Аккумуляторные</label>
+              </div>
             </li>
-            <li>
-              <input type="radio" class="custom-checkbox custom-checkbox-radio" name="supply" value="network"
-                id="filter-net">
-              <label class="check" for="filter-net">Сетевые</label>
+            <li class="checkbox-item">
+              <div class="radio">
+                <input class="radio-control" type="radio" name="supply" value="network" id="filter-net">
+                <label class="radio-label" for="filter-net">Сетевые</label>
+              </div>
             </li>
           </ul>
         </div>
-        <button class="button button-navigation">Показать</button>
+        <button class="button button-white">Показать</button>
       </form>
     </div>
     <div class="sort">
-      <h2 class="sort-type">Сортировка:</h2>
+      <h2 class="sort-title">Сортировка:</h2>
       <ul class="sort-type-list">
-        <li>
+        <li class="sort-type-item">
           <a class="sort-type" href="?sort=price">По цене</a>
         </li>
-        <li>
+        <li class="sort-type-item">
           <a class="sort-type" href="?sort=type">По типу</a>
         </li>
-        <li>
+        <li class="sort-type-item">
           <a class="sort-type" href="?sort=function">По функционалу</a>
         </li>
-        <li>
-          <a href="?order=asc" aria-label="Сортировка по возрастанию">
-            <!-- <img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"> -->
-            <svg class="hand" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="icon-hand" d="M5.5 0L11 10H0" fill="#C5C5C5" />
+        <li class="sort-type-item">
+          <a class="sort-type" href="?order=asc" aria-label="Сортировка по возрастанию">
+            <svg width="11" height="10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L11 10H0" />
             </svg>
           </a>
         </li>
-        <li>
-          <a href="?sort=desc" aria-label="Сортировка по убыванию">
-            <!-- <img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"> -->
-            <svg class="hand" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="icon-hand" d="M5.5 10L0 0h11" fill="#C5C5C5" />
+        <li class="sort-type-item">
+          <a class="sort-type" href="?sort=desc" aria-label="Сортировка по убыванию">
+            <svg width="11" height="10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0h11" />
             </svg>
           </a>
         </li>
       </ul>
     </div>
 
-    <section class="punches">
+    <section class="products">
       <h2 class="visually-hidden">Перфораторы</h2>
-      <ul class="punches-list">
-        <li>
+      <ul class="products-list">
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
@@ -255,7 +267,7 @@
             <span class="product-price product-current-price">25500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
@@ -264,7 +276,7 @@
             <span class="product-price product-current-price">25500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <div class="buy">
@@ -278,7 +290,7 @@
             <span class="product-price product-current-price">25500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
             <img class="product-image" src="img/punchers/bosch-3000.jpg" width="127" height="112"
@@ -287,7 +299,7 @@
             <span class="product-price product-current-price">15500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
@@ -296,7 +308,7 @@
             <span class="product-price product-current-price">25500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
             <img class="product-image" src="img/punchers/bosch-2000.jpg" width="127" height="112"
@@ -304,7 +316,7 @@
             <span class="product-price product-current-price">12500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
             <img class="product-image" src="img/punchers/bosch-3000.jpg" width="127" height="112"
@@ -313,7 +325,7 @@
             <span class="product-price product-current-price">15500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
@@ -322,7 +334,7 @@
             <span class="product-price product-current-price">25500 Р.</span>
           </div>
         </li>
-        <li>
+        <li class="product-item">
           <div class="product-card">
             <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
             <img class="product-image" src="img/punchers/bosch-2000.jpg" width="127" height="112"
@@ -335,22 +347,22 @@
     <nav class="pagination">
       <h2>Навигация по страницам</h2>
       <ul class="pagination-list">
-        <li>
+        <li class="pagination-item">
           <a class="button-pagination">1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button-pagination" href="?page=2">2</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button-pagination" href="?page=3">3</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button-pagination" href="?page=2">Следующая</a>
         </li>
       </ul>
     </nav>
-    <section class="about-punches">
-      <h2 class="heading about-punches-title">Пара слов о перфораторах</h2>
+    <section class="about-category">
+      <h2 class="heading about-category-title">Пара слов о перфораторах</h2>
       <p class="text">
         Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
         кирпиче, бетоне и камне.<br>
