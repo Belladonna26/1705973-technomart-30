@@ -66,14 +66,6 @@
   background-color: var(--accent-color-delivery);
 }
 
-.come-in:hover .login-in {
-  fill: var(--basic-grey);
-  }
-
-.come-in:hover .login-border {
-  fill: var(--basic-grey);
-  }
-
 .search
 .search-control {
   background-color: var(--accent-color-delivery);
@@ -90,14 +82,6 @@
 
 .search-control:focus {
   background-color: var(--white);
-}
-
-.icon-search:hover .search-click {
-  fill: var(--white);
-}
-
-.icon-search:active .search-click {
-  fill: var(--basic-red);
 }
 
 .user-navigation-list {
@@ -117,18 +101,6 @@
 
 .user-info:active {
   color: var(--basic-greylight);
-}
-
-.lk:hover {
-  color: var(--basic-red);
-}
-
-.lk:active {
-  color: var(--basic-greylight);
-}
-
-.user-nav-me {
-  list-style: none;
 }
 
 .top-bar-links {
@@ -165,6 +137,10 @@ list-style: none;
   background-color: var(--accent-bookmark);
 }
 
+.button-plate-box {
+  background-color: var(--white);
+}
+
 .button-plate .icon {
   color: var(--basic-greylight);
 }
@@ -185,10 +161,6 @@ list-style: none;
   color: var(--basic-greylight);
 }
 
-.button-plate-container {
-  background-color: var(--white);
-}
-
 .button-plate .icon-log {
   color: var(--basic-greylight);
 }
@@ -197,30 +169,18 @@ list-style: none;
   color: var(--basic-grey);
 }
 
-.button-plate:hover .info {
-  color: var(--basic-black);
+.button-plate:active .icon-log {
+  color: var(--basic-greylight);
 }
 
-.button-plate .info {
-  text-decoration: none;
+.button-plate:hover .info {
   color: var(--basic-black);
 }
 
 .button-plate:active .info {
   text-decoration: none;
-}
-
-.user-link {
-  text-decoration: none;
-  color: var(--basic-black);
-}
-
-
-.user-link:active {
   color: var(--basic-greylight);
 }
-
-
 
 .header-desc {
   font-style: italic;
@@ -254,9 +214,8 @@ list-style: none;
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--basic-red);
+  height: 38px;
 }
-
-
 
 .button-white {
   background-color: var(--white);
@@ -432,7 +391,7 @@ line-height: 30px;
   list-style: none;
 }
 
-/* Punch card */
+/* Product card */
 
 .product-title {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -556,11 +515,11 @@ line-height: 30px;
   list-style: none;
 }
 
-.checkbox-list{
+.checkbox-list {
   list-style: none;
 }
 
-.checkbox-label{
+.checkbox-label {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -576,6 +535,8 @@ line-height: 30px;
   line-height: 30px;
   color: var(--basic-black);
 }
+
+/* Pagination */
 
 .button-pagination {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -608,6 +569,8 @@ line-height: 30px;
   background-color: var(--basic-green);
   border: none;
   border-radius: 2px;
+  width: 135px;
+  box-shadow: inset 0px -3px 0px #367315;
 }
 
 .buy-button:hover {
@@ -616,6 +579,10 @@ line-height: 30px;
 
 .buy-button:active {
   background-color: var(--accent-color-button);
+}
+
+.buy-button .icon-cart {
+  opacity: 0.3;
 }
 
 .buy-button:hover .icon-cart {
@@ -631,6 +598,7 @@ line-height: 30px;
   background-color: var(--white);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
+  width: 135px;
 }
 
 .bookmark-button:hover {
@@ -728,9 +696,30 @@ line-height: 30px;
   list-style: none;
 }
 
-.network:hover .icon-click {
-  fill: var(--basic-red);
-  }
+.circle {
+background-color: var(--social-icon);
+width: 44px;
+height: 44px;
+border-radius: 50%;
+}
 
+.network-vk {
+  padding: 15px 9px;
+}
 
+.network-facebook {
+  padding: 11px 16px;
+}
+
+.network-instagram {
+  padding: 12px;
+}
+
+.circle:hover {
+  background-color: var(--basic-red);
+}
+
+.circle:active {
+  background-color: var(--basic-red);
+}
 
