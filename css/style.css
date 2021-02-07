@@ -50,7 +50,7 @@
 
 /* Header navigation */
 
-.header {
+.page-header {
   background-color: var(--main-header-background);
 }
 
@@ -158,18 +158,6 @@ list-style: none;
 }
 
 .button-plate:active .icon {
-  color: var(--basic-greylight);
-}
-
-.button-plate .icon-log {
-  color: var(--basic-greylight);
-}
-
-.button-plate:hover .icon-log {
-  color: var(--basic-grey);
-}
-
-.button-plate:active .icon-log {
   color: var(--basic-greylight);
 }
 
@@ -697,6 +685,7 @@ line-height: 30px;
 }
 
 .button-round {
+display: block;
 background-color: var(--social-icon);
 width: 44px;
 height: 44px;
@@ -722,4 +711,3 @@ border-radius: 50%;
 .button-round:active {
   background-color: var(--basic-red);
 }
-
