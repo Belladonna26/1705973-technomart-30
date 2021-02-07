@@ -37,7 +37,7 @@
 
 /* Global */
 
-.page-body {
+.body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -50,7 +50,7 @@
 
 /* Header navigation */
 
-.page-header {
+.header {
   background-color: var(--main-header-background);
 }
 
@@ -203,15 +203,12 @@ list-style: none;
   color: var(--white);
   background-color: var(--basic-red);
   height: 38px;
+  border: none;
 }
 
 .button-white {
   background-color: var(--white);
   color: var(--basic-black);
-}
-
-.contacts-button {
-  border: none;
 }
 
 .button-slide:hover {
@@ -477,11 +474,11 @@ line-height: 30px;
   color: var(--basic-red);
 }
 
-.hand:hover .icon-hand {
+.sorting:hover .icon-sorting {
   fill: var(--basic-black);
   }
 
-.hand:active .icon-hand {
+.sorting:active .icon-sorting {
   fill: var(--basic-red);
 }
 
@@ -612,7 +609,7 @@ line-height: 30px;
   background-color: var(--accent-color-border);
 }
 
-.page-footer-logo {
+.footer-logo {
   background-color: var(--basic-red);
 }
 
@@ -639,7 +636,7 @@ line-height: 30px;
   color: rgba(255, 209, 128, 0.5);
 }
 
-.page-footer {
+.footer {
   background-color: var(--accent-color-border);
 }
 

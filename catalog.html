@@ -14,9 +14,9 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page-body">
+<body class="body">
   <h1 class="visually-hidden">Каталог - HTML Academy: Техномарт</h1>
-  <header class="page-header">
+  <header class="header">
     <div class="top-bar">
       <a class="top-bar-logo" href="index.html" aria-label="Главная страница">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
@@ -149,13 +149,14 @@
           <b class="fieldset-legend">Цена:</b>
           <div class="input-range">
             <div class="input-range-track">
+              <button class="input-range-button" type="button" aria-label="Минимальная цена"></button>
+              <button class="input-range-button" type="button" aria-label="Максимальная цена"></button>
             </div>
-            <button class="input-rage-button" type="button" aria-label="Минимальная цена"></button>
-            <button class="input-rage-button" type="button" aria-label="Максимальная цена"></button>
+            <input class="input-range-control" type="number" min="0" max="40000">
+            <input class="input-range-control" type="number" min="0" max="40000">
           </div>
-          <input class="input-range-control" type="number" min="0" max="40000">
-          <input class="input-range-control" type="number" min="0" max="40000">
         </div>
+
         <div class="fieldset">
           <b class="fieldset-legend">Производители:</b>
           <ul class="checkbox-list">
@@ -240,15 +241,15 @@
         </li>
         <li class="sort-type-item">
           <a class="sort-type" href="?order=asc" aria-label="Сортировка по возрастанию">
-            <svg class="hand" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="icon-hand" d="M5.5 0L11 10H0" fill="#C5C5C5" />
+            <svg class="sorting" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="icon-sorting" d="M5.5 0L11 10H0" fill="#C5C5C5" />
             </svg>
           </a>
         </li>
         <li class="sort-type-item">
           <a class="sort-type" href="?sort=desc" aria-label="Сортировка по убыванию">
-            <svg class="hand" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="icon-hand" d="M5.5 10L0 0h11" fill="#C5C5C5" />
+            <svg class="sorting" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="icon-sorting" d="M5.5 10L0 0h11" fill="#C5C5C5" />
             </svg>
           </a>
         </li>
@@ -372,8 +373,8 @@
       </p>
     </section>
   </main>
-  <footer class="page-footer">
-    <a class="page-footer-logo">
+  <footer class="footer">
+    <a class="footer-logo">
       <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
     </a>
     <p class="footer-contacts">
