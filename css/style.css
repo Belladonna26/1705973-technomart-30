@@ -760,6 +760,21 @@
     color: var(--white);
   }
 
+  .footer-bottom .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 37px 0 35px;
+  }
+
+  .footer-feedback {
+    width: 137px;
+  }
+
+  .footer-developer {
+   max-width: 98px;
+   justify-self: end;
+  }
+
   /* Creator */
 
   .creator,
@@ -785,6 +800,9 @@
   /* Socials */
   .social-list {
     list-style: none;
+    width: 134px;
+    margin-left: 160px;
+    margin-right: 115px;
   }
 
   .button-round {
