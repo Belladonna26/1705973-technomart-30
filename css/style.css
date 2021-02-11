@@ -79,6 +79,10 @@
 
   .top-bar-logo {
     background-color: var(--basic-red);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    width: 220px;
+    height: 47px;
+    display: inline-block;
   }
 
   .top-bar-logo:active {
@@ -162,6 +166,8 @@
 
   .button-plate-box {
     background-color: var(--white);
+    width: 299px;
+    height: 45px;
   }
 
   .button-plate .icon {
@@ -215,6 +221,8 @@
   .header-address {
     font-size: 14px;
     color: var(--accent-color-border);
+    max-width: 250px;
+    min-height: 24px;
   }
 
   .checkout-link {
@@ -232,6 +240,9 @@
     background-color: var(--basic-red);
     height: 38px;
     border: none;
+    width: 192px;
+    height: 38px;
+    display: inline-block;
   }
 
   .button-white {
@@ -262,6 +273,7 @@
   .site-navigation-list {
     list-style: none;
     background-color: var(--accent-color-border);
+    box-shadow: inset 0px -5px 0px #293449;
   }
 
   .site-navigation-link {
@@ -296,6 +308,10 @@
     color: var(--basic-black);
   }
 
+  .plate {
+    height: 89px;
+  }
+
   .plate-blue {
     background-color: var(--punch-subtitle);
     grid-column: 1 / -1;
@@ -319,6 +335,8 @@
 
   .button-ghost {
     background-color: rgba(255, 255, 255, 0.3);
+    width: 135px;
+    display: inline-block;
   }
 
   .button-ghost:hover {
@@ -482,6 +500,7 @@
     width: 220px;
     height: 318px;
     border: 1px solid var(--producers-background);
+    box-sizing: border-box;
   }
 
   /* Service */
@@ -725,7 +744,11 @@
   }
 
   .footer-logo {
+    display: inline-block;
     background-color: var(--basic-red);
+    width: 220px;
+    height: 68px;;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   }
 
   .footer-category-link {
