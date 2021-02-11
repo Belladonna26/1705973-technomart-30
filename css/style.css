@@ -28,6 +28,7 @@
   --accent-color-button: #518534;
   --accent-color-delivery: #293449;
   --accent-bookmark: #161D29;
+  --accent-site-navigation-link: #1D2739;
   --accent-catalog: #CA2C37;
   --main-header-background: #F3F7F9;
   --catalog-background: #F7F3EC;
@@ -160,7 +161,7 @@
     background-color: var(--success);
   }
 
-  .bookmark-link:active {
+  .top-bar-icon:active {
     background-color: var(--accent-bookmark);
   }
 
@@ -285,7 +286,8 @@
     background-color: var(--accent-color-delivery);
   }
 
-  .site-navigation-link:focus {
+  .site-navigation-link[href]:active {
+    background-color: var(--accent-site-navigation-link);
     color: rgb(255,255,255,0.5);
   }
 
