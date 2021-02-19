@@ -671,7 +671,7 @@
       height: 170px;
 
       margin-bottom: 8px;
-      padding-top: 10px;
+      padding-top: 10px;     /* TODO  ПОДУМАТЬ КАК СДЕЛАТЬ ЛУЧШЕ */
 
       box-sizing: border-box;
     }
@@ -1378,17 +1378,22 @@
     display: grid;
     grid-template-rows: 0.5fr 1fr;
 
-    margin-bottom: 70px;
+    margin-bottom: 67px;
+    padding: 65px 0 6px 0;
+
+    box-sizing: border-box;
   }
 
   .services-title {
-    margin: 65px 0 25px 0;
+    margin: 0 0 25px 0;
+  }
+
+  .services-title-wrapper {
+   margin-bottom: 70px;
   }
 
   .services-title-wrapper .text {
     width: 396px;
-
-    margin: 0 0 70px 0;
   }
 
   .services-tab-list-wrapper {
@@ -1398,7 +1403,20 @@
   }
 
   .services-tab-list {
+    position: relative;
     width: 240px;
+  }
+
+  .services-tab-list::after {
+    content: "";
+    position: absolute;
+    top: -48px;
+    right: 0;
+
+    width: 10px;
+    height: 279px;
+
+    background-image: url("../img/decor/object.png");
   }
 
   .services-tab-visible {
@@ -1436,8 +1454,8 @@
       background-color: var(--accent-color-border);
       color: var(--white);
 
-      box-shadow: 0px 1px 0px #293449,
-                  inset 0px 1px 0px #405069;
+      box-shadow: inset 0px 1px 0px #405069,
+                  inset 0px 0px 0px 1px #293449;
     }
 
     .services-tab-button:hover,
@@ -1538,10 +1556,18 @@
       width: 460px;
     }
 
+    .about-us p:nth-of-type(1) {
+      margin-bottom: 28px;
+    }
+
+    .about-us p:nth-of-type(2) {
+      margin-bottom: 5px;
+    }
+
     .partners-list {
       list-style: none;
 
-      margin: 8px 0 10px 0;
+      margin: 0 0 8px 0;
       padding: 0;
 
       color: var(--basic-black);
@@ -1576,8 +1602,6 @@
   /* About-Us End*/
 
   /* About Category Start */
-
-
 
   .about-category {
     display: flex;
@@ -1730,6 +1754,7 @@
 .contacts {
   display: inline-flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .contacts-title {
