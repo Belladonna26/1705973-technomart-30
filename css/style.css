@@ -505,10 +505,12 @@ input[type="number"]::-webkit-inner-spin-button {
         list-style: none;
       }
 
-      .footer-navigation-list {
+      .footer-inner-navigation-list {
         grid-row: 1 / 2;
         grid-column: 2 / 3;
+      }
 
+      .footer-navigation-list {
         display: flex;
         justify-content: space-between;
 
@@ -919,7 +921,6 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 30px 15px 30px 28px;
     box-sizing: border-box;
     height: 89px;
-
   }
 
   /* Plate Color Modifiers */
@@ -1003,10 +1004,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
  /* Sort Start*/
 
-.sort {
+ .main-inner-sort {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+ }
 
+.sort {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1530,12 +1533,12 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .slider-next-button {
-    right: 24px;
-  }
+      right: 24px;
+    }
 
     .slider-previous-button{
-    left: 24px;
-  }
+      left: 24px;
+    }
 
     .slider-controls-list {
       list-style: none;
@@ -1659,9 +1662,10 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 396px;
   }
 
-  .services-tab-list-wrapper {
+  .services-tab-box {
     grid-row: 2 / 3;
-
+  }
+  .services-tab-list-wrapper {
     display: flex;
   }
 
@@ -1933,6 +1937,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .checkbox-button {
   padding-left: 35px;
+  
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
