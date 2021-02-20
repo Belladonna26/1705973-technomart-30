@@ -35,6 +35,10 @@
   --catalog-background: #F7F3EC;
   --producers-background: #EAEAEA;
   --border-button: #E5E5E5;
+  --scale-background: #D7DCDE;
+  --bar-background: #00ca74;
+  --input-range-button: #ABABAB;
+  --input-dash: #444444;
   }
 
 /* ------------------------------------------------------ Variables End ------------------------------------------------------ */
@@ -64,6 +68,12 @@
 .link-wrapper {
   text-decoration: inherit;
   color: inherit;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* ------------------------------------------------------ Util Classes End ------------------------------------------------------ */
@@ -100,13 +110,10 @@
   .inner-page {
     display: grid;
     grid-template-columns: 220px 1fr;
-    grid-template-rows: 60px 90px 38px 1fr 38px;
+    grid-template-rows: 38px 1fr 38px;
     gap: 20px;
-  }
 
-  .inner-page-plate {
-   grid-template-columns: 1 / 3; /* TODO: Поправить позиционирование */
-   grid-template-rows: 2 / 3;
+    margin-bottom: 150px;
   }
 
   /* Inner Page End */
@@ -277,7 +284,7 @@
       align-items: center;
 
       height: 42px;
-      padding: 0 22px;
+      padding: 0 20px;
 
       text-decoration: none;
 
@@ -336,13 +343,36 @@
   }
 
   .user-info-list {
+    list-style: none;
+
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    list-style: none;
+    position: relative;
+    left: 50px;
+    bottom: 3px;
+
+    width: 210px;
+    min-height: 18px;
+
     margin: 0;
     padding: 0;
+  }
+
+  .user-info-item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 88px;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background-color: var(--accent-color-border);
   }
 
     .user-info {
@@ -362,15 +392,25 @@
       color: var(--basic-greylight);
     }
 
-    .button-plate-box {
+    .button-plate-wrapper {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
 
       width: 299px;
       height: 45px;
 
+      margin-bottom: 7px;
+      padding: 0 14px 0 15px;
+      box-sizing: border-box;
+
       background-color: var(--white);
+    }
+
+    .info {
+      max-width: 186px;
+
+      margin: 2px 19px 0 18px;
     }
 
    /* User Navigation End*/
@@ -389,7 +429,7 @@
     box-shadow: inset 0px -5px 0px #293449;
   }
 
-    .site-navigation-item{
+    .site-navigation-item {
       flex-grow:1;
     }
 
@@ -587,16 +627,21 @@
     padding: 0px;
   }
 
+  .products {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
   .products-list-inner {
     list-style: none;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 18px;
-    row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 18px;
 
     margin: 0;
-    margin-left: 200px;
+    padding: 0;
   }
 
     .product-item {
@@ -709,6 +754,9 @@
       align-items: center;
       justify-content: center;
 
+      position: absolute;
+      bottom: 21px;
+
       width: 141px;
       height: 38px;
 
@@ -745,6 +793,10 @@
     background-color: var(--white);
   }
 
+  .button-plate-wrapper .button-plate {
+    padding: 0;
+  }
+
   .button-plate:hover {
     color: var(--basic-red);
   }
@@ -773,10 +825,6 @@
 
   .button-plate-login {
     padding: 0 27px 0 19px;
-  }
-
-  .button-plate .info {
-    margin-left: 15px;
   }
 
   .button-plate .icon {
@@ -821,7 +869,10 @@
 
   /* Button Color Modifiers */
 
-  .button-white {
+  .button-white,
+  .button-white:hover,
+  .button-white:active
+   {
     color: var(--basic-black);
     border: 1px solid var(--border-button);
     background-color: var(--white);
@@ -873,6 +924,8 @@
 
   .plate-blue {
     background-color: var(--punch-subtitle);
+
+    grid-column: 1 / -1;
   }
 
   .plate-beige {
@@ -903,43 +956,71 @@
 
     display: flex;
     justify-content: start;
-    gap: 17px;
+    gap: 40px;
+
+    position: relative;
 
     height: 18px;
 
     grid-column: 1 / -1;
 
-    margin: 21px 0 20px 0;
+    margin: 0 0 20px 0;
     padding: 0;
   }
 
   .breadcrumb-title {
+    position: relative;
+
     font-family: "PT Sans", "Arial", sans-serif;
+
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
-    color: var(--basic-black);
+
+    text-transform: uppercase;
     text-decoration: none;
+    color: var(--basic-black);
   }
 
+  .breadcrumb-title:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -24px;
+    width: 8px;
+    height: 12px;
+
+    background-image: url("../img/decor/icon-right-small8x12.svg");
+  }
+
+   .main-link {
+     position: relative;
+     top: 2px;
+   }
  /* Breadcrumbs end */
 
  /* Sort Start*/
 
 .sort {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   width: 700px;
   height: 38px;
 
-  margin-bottom: 28px;
+  padding: 10px 14px 10px 19px;
+  box-sizing: border-box;
 
   background-color: var(--catalog-background);
 }
 
   .sort-title {
+    margin: 0;
+
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 13px;
@@ -951,17 +1032,43 @@
     color: var(--basic-black);
   }
 
+  .sort-type-list li:not(:nth-last-child(-n+2)) {
+    border-bottom: 1px dashed var(--basic-red);
+  }
+
+  .sort-type-list li:hover:not(:nth-last-child(-n+2)) {
+    border-bottom: 1px solid var(--basic-red);
+  }
+
   .sort-type-list {
     list-style: none;
 
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    position: relative;
 
     width: 450px;
 
     padding: 0;
-    margin: 0;
-    margin-left: 120px;
+    margin: 0 0 0 140px;
+  }
+
+  .sort-type-list li:nth-child(1) {
+    margin-right: 70px;
+  }
+
+  .sort-type-list li:nth-child(2) {
+    margin-right: 65px;
+  }
+
+  .sort-type-list li:nth-child(3) {
+    margin-right: 46px;
+  }
+
+  .sort-type-list li:nth-child(4) {
+    margin-right: 21px;
   }
 
   .sort-type {
@@ -1008,25 +1115,162 @@
     flex-direction: column;
   }
 
+  .fieldset:nth-of-type(1) {
+    position: relative;
+  }
+
+  .fieldset:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    top: 195px;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: rgba(171, 171, 171, 0.3);
+  }
+
+  .fieldset:nth-of-type(2) {
+    position: relative;
+  }
+
+  .fieldset:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    top: 250px;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: rgba(171, 171, 171, 0.3);
+  }
+
   .fieldset-legend {
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
 
+    text-transform: uppercase;
+
     color: var(--basic-black);
+  }
+
+  .fieldset-legend-price {
+   margin-bottom: 10px;
+  }
+
+  .fieldset-legend-producers {
+    margin-bottom: 15px;
+  }
+
+  .fieldset-legend-feeding {
+    margin-bottom: 20px;
   }
 
   /* Fieldset End */
 
+  /* Input-range */
+  .input-range {
+    width: 220px;
+  }
+
+  .input-range-track {
+   position: relative;
+
+   height: 80px;
+
+   margin-bottom: 9px;
+   padding: 39px 20px 0 20px;
+
+   box-sizing:border-box;
+
+   background-color: var(--catalog-background);
+   border-radius: 5px;
+  }
+
+  .input-range-scale {
+    height: 2px;
+    background-color: var(--scale-background);
+  }
+
+  .input-range-bar {
+   width: 80%;
+   height: 2px;
+   background-color: var(--bar-background);
+  }
+
+  .input-range-button {
+    position: absolute;
+    top: 29px;
+
+    width: 20px;
+    height: 20px;
+
+    padding: 0;
+
+    border-radius: 50%;
+    outline: none;
+
+    border: 8px solid var(--white);
+    background-color: var(--input-range-button);
+    box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
+
+    cursor: pointer;
+  }
+
+  .input-range-button-min {
+    left: 18px;
+  }
+
+  .input-range-button-max {
+    right: 40px;
+  }
+
+  .input-range-control {
+    display: inline-flex;
+    align-items: center;
+
+    width: 95px;
+    height: 38px;
+
+    margin-bottom: 42px;
+    padding: 10px 24px;
+
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    background-color: var(--catalog-background);
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .input-range input:first-of-type {
+    margin-right: 25px;
+  }
+
+  .input-range-track::after {
+    content: "";
+    position: absolute;
+    top: 106px;
+    left: 107px;
+
+    width: 7px;
+    height: 2px;
+    background-color: var(--input-dash);
+  }
+
   /* Pagination Start */
 
 .pagination {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
   width: 284px;
   height: 38px;
-
-  grid-row: 5 / 6;
-  grid-column: 2 / 3;
 
   margin: 0;
   margin-bottom: 59px;
@@ -1078,6 +1322,10 @@
 
    .main-index {
     padding-top: 59px;
+  }
+
+  .main-inner {
+    padding-top: 14px;
   }
 
   /* Offers start */
@@ -1626,14 +1874,16 @@
 
 /* About Category End */
 
-/* Filter And Checkbox Start */
+/* Filter Start*/
+
+.filter {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
 
 .filter-header {
   margin: 0;
   margin-bottom: 14px;
-
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
 
   display: flex;
   align-items: center;
@@ -1651,20 +1901,23 @@
   color: var(--basic-black);
 
   background-color: var(--catalog-background);
-  }
-
-.checkbox-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
-.checkbox-label {
+/* Filter End */
+
+/* Checkbox Start  */
+
+.checkbox-list {
+  margin: 0 0 45px 0;
+  padding: 0;
+}
+
+.checkbox-list-radio {
+  margin: 0 0 34px 0;
+}
+
+.checkbox-button {
+  padding-left: 35px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1672,10 +1925,125 @@
 
   text-transform: uppercase;
 
-  сolor: var(--basic-black);
+  color: var(--basic-black);
+
+  cursor: pointer;
+  user-select: none;
 }
 
-  /* Filter And Checkbox End */
+.option {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.checkbox-input {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.check-box {
+  position: absolute;
+  margin-left: -35px;
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox/checkbox-off.svg");
+  background-color: var(--white);
+}
+
+.checkbox-input:checked + .check-box {
+  background-image: url("../img/checkbox/checkbox-on.svg");
+}
+
+.checkbox-input:hover + .check-box {
+  background-image: url("../img/checkbox/checkbox-off-hover.svg");
+}
+
+.checkbox-input:checked:hover + .check-box {
+  background-image: url("../img/checkbox/checkbox-on-hover.svg");
+}
+
+.checkbox-input:focus + .check-box {
+  background-image: url("../img/checkbox/checkbox-off-hover.svg");
+}
+
+.checkbox-input:checked:focus + .check-box {
+  background-image: url("../img/checkbox/checkbox-on-hover.svg");
+}
+
+.checkbox-input:disabled + .check-box {
+  background-image: url("../img/checkbox/checkbox-on-disabled.svg");
+}
+
+.checkbox-input:checked:disabled + .check-box {
+  background-image: url("../img/checkbox/checkbox-off-disabled.svg");
+}
+
+/* Checkbox End  */
+
+
+/* Radio Checkbox Start*/
+
+.radio-input {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.radio-box {
+  position: absolute;
+
+  margin-left: -35px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-box/radio-off.svg");
+  background-color: var(--white);
+}
+
+.radio-label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.radio-input:checked + .radio-box {
+  background-image: url("../img/radio-box/radio-on.svg");
+}
+
+.radio-input:hover + .radio-box {
+  background-image: url("../img/radio-box/radio-off-hover.svg");
+}
+
+.radio-input:checked:hover + .radio-box {
+  background-image: url("../img/radio-box/radio-on-hover.svg");
+}
+
+.radio-input:focus + .radio-box {
+  background-image: url("../img/radio-box/radio-off-hover.svg");
+}
+
+.radio-input:checked:focus + .radio-box {
+  background-image: url("../img/radio-box/radio-on-hover.svg");
+}
+
+.radio-input:disabled + .radio-box {
+  background-image: url("../img/radio-box/radio-off-disabled.svg");
+}
+
+.radio-input:checked:disabled + .radio-box {
+  background-image: url("../img/radio-box/radio-on-disabled.svg");
+}
+
+/* Radio Checkbox End*/
+
 
 /* Buy Buttons Start*/
 
