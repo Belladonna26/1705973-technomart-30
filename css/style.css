@@ -121,6 +121,15 @@ input[type="number"]::-webkit-inner-spin-button {
   /* Header Start*/
 
   .header {
+    display: flex;
+    flex-direction: column;
+
+    height: 320px;
+
+    padding-bottom: 60px;
+
+    box-sizing: border-box;
+
     background-color: var(--main-header-background);
   }
 
@@ -133,7 +142,6 @@ input[type="number"]::-webkit-inner-spin-button {
         justify-content: space-between;
         align-items: flex-start;
 
-        margin-bottom: 40px;
       }
 
       .header-desc {
@@ -191,7 +199,7 @@ input[type="number"]::-webkit-inner-spin-button {
       }
 
       .header-site-navigation{
-        margin-bottom: 60px;
+        margin-top: auto;
       }
 
   /* Header End */
@@ -686,7 +694,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
       box-sizing: border-box;
       width: 220px;
-      min-height: 318px;
+      height: 318px;
+
+      padding: 6px 18px 21px 18px;
 
       border: 1px solid var(--producers-background);
 
@@ -715,25 +725,30 @@ input[type="number"]::-webkit-inner-spin-button {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
 
-      width: 220px;
-      height: 170px;
+      width: 100%;
+      min-height: 164px;
 
       margin-bottom: 8px;
-      padding-top: 10px;     /* TODO  ПОДУМАТЬ КАК СДЕЛАТЬ ЛУЧШЕ */
 
       box-sizing: border-box;
+    }
+
+    .product-image {
+      max-width: 100%;
+      max-height: 100%;
     }
 
     .product-image-wrapper:hover .product-image {
      display: none;
     }
 
-    .product-image-wrapper .buy {
+    .product-image-wrapper .product-overlay-buy {
       display: none;
      }
 
-    .product-image-wrapper:hover .buy {
+    .product-image-wrapper:hover .product-overlay-buy {
       display: inline-flex;
      }
 
@@ -746,8 +761,6 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .product-old-price {
-      margin-bottom: 13px;
-
       color: var(--special-grey);
 
       order: 2;
@@ -758,8 +771,9 @@ input[type="number"]::-webkit-inner-spin-button {
       align-items: center;
       justify-content: center;
 
-      position: absolute;
-      bottom: 21px;
+      margin-top: auto;
+      /* position: absolute;
+      bottom: 21px; */
 
       width: 141px;
       height: 38px;
@@ -861,6 +875,11 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 18px;
   }
 
+  a[href].button,
+  button.button:not(:disabled) {
+    cursor: pointer;
+  }
+
   .button:hover {
     outline: none;
     background-color: var(--accent-catalog);
@@ -871,12 +890,19 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--error);
   }
 
+  .button .button-icon {
+    margin-right: 8px;
+  }
+
   /* Button Color Modifiers */
 
-  .button-white,
-  .button-white:hover,
-  .button-white:active
-   {
+  .button-white {
+    background-color: var(--white);
+  }
+
+  .button-white-action,
+  .button-white-action:hover,
+  .button-white-action:active {
     color: var(--basic-black);
     border: 1px solid var(--border-button);
     background-color: var(--white);
@@ -894,6 +920,58 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: rgba(169, 169, 169, 0.3);
   }
 
+  .button-basic-green {
+    background-color: var(--basic-green);
+  }
+
+  .button-basic-green:hover {
+    background-color: var(--success);
+  }
+
+  .button-basic-green:active {
+    background-color: var(--accent-color-button);
+  }
+
+  /* Button View Modifiers */
+
+  .button-convex {
+    border-radius: 2px;
+
+    box-shadow: inset 0px -3px 0px var(--basic-black-25);
+  }
+
+  .button-convex .button-icon {
+    opacity: 0.3;
+  }
+
+  .button-convex.button-basic-green{
+    box-shadow: inset 0px -3px 0px #367315;
+  }
+
+  .button-outlined {
+    border-radius: 2px;
+    border: 3px solid var(--basic-green);
+    color: var(--accent-color-border);
+
+    transition: border-color 100ms, color 100ms;
+  }
+
+  .button-outlined,
+  .button-outlined:hover,
+  .button-outlined:active {
+    background-color: transparent;
+  }
+
+  .button-outlined:hover {
+    border-color: var(--accent-color-border);
+  }
+
+  .button-outlined:active {
+    border-color: var(--basic-greylight);
+    color: var(--basic-greylight);
+  }
+
+
   /* Button Context Classes */
 
   .button-filter {
@@ -904,8 +982,13 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 135px;
   }
 
+  /* TODO: позиционирование задается через класс от родителя */
   .button-popular {
     margin-left: auto;
+  }
+
+  .button-product-overlay-buy {
+    width: 135px;
   }
 
   /* Button End */
@@ -1037,11 +1120,11 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--basic-black);
   }
 
-  .sort-type-list li:not(:nth-last-child(-n+2)) {
+  .sort-type-underlined {
     border-bottom: 1px dashed var(--basic-red);
   }
 
-  .sort-type-list li:hover:not(:nth-last-child(-n+2)) {
+  .sort-type-underlined:hover {
     border-bottom: 1px solid var(--basic-red);
   }
 
@@ -1120,34 +1203,13 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
   }
 
-  .fieldset:nth-of-type(1) {
-    position: relative;
+  .fieldset-underlined {
+    padding-bottom: 26px;
+    border-bottom:1px solid rgba(171, 171, 171, 0.3);
   }
 
-  .fieldset:nth-of-type(1)::after {
-    content: "";
-    position: absolute;
-    top: 195px;
-
-    width: 220px;
-    height: 1px;
-
-    background-color: rgba(171, 171, 171, 0.3);
-  }
-
-  .fieldset:nth-of-type(2) {
-    position: relative;
-  }
-
-  .fieldset:nth-of-type(2)::after {
-    content: "";
-    position: absolute;
-    top: 250px;
-
-    width: 220px;
-    height: 1px;
-
-    background-color: rgba(171, 171, 171, 0.3);
+  .fieldset-underlined + .fieldset {
+    padding-top: 16px;
   }
 
   .fieldset-legend {
@@ -1239,7 +1301,6 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 95px;
     height: 38px;
 
-    margin-bottom: 42px;
     padding: 10px 24px;
 
     box-sizing: border-box;
@@ -1927,8 +1988,14 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Checkbox Start  */
 
 .checkbox-list {
-  margin: 0 0 45px 0;
+  margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+.checkbox-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .checkbox-list-radio {
@@ -1937,7 +2004,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .checkbox-button {
   padding-left: 35px;
-  
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1953,7 +2020,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .option {
   display: block;
-  margin-bottom: 16px;
 }
 
 .checkbox-input {
@@ -2016,6 +2082,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   margin-left: -35px;
 
+  top: -2px;
   width: 25px;
   height: 25px;
 
@@ -2024,6 +2091,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .radio-label {
+  position: relative;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -2067,7 +2136,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Buy Buttons Start*/
 
-  .buy {
+  .product-overlay-buy {
+    position: absolute;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2077,36 +2148,8 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 170px;
   }
 
-  .buy-button {
-    width: 135px;
-
+  .product-buy-button {
     margin-bottom: 10px;
-
-    border: none;
-    border-radius: 2px;
-
-    background-color: var(--basic-green);
-    box-shadow: inset 0px -3px 0px #367315;
-  }
-
-  .buy-button:hover {
-    background-color: var(--success);
-  }
-
-  .buy-button:active {
-    background-color: var(--accent-color-button);
-  }
-
-  .buy-button .icon-cart {
-    opacity: 0.3;
-  }
-
-  .buy-button:hover .icon-cart {
-    opacity: 0.3;
-  }
-
-  .buy-button:active .icon-cart {
-    opacity: 0.3;
   }
 
   .bookmark-button {

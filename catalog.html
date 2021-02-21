@@ -56,12 +56,13 @@
 
       <div class="header-contacts">
         <a class="header-phone" href="tel:+78125550555">
-          <img src="img/icon-phone.svg" width="19" height="19" alt="Иконка трубки">
+          <img class="header-phone-icon" src="img/icon-phone.svg" width="19" height="19" alt="Иконка трубки">
           +7 (812) 555-05-55
         </a>
         <span class="header-address">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</span>
       </div>
 
+      <!-- TODO: разгрузить блок user-navigation -->
       <nav class="user-navigation">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
         <div class="button-plate-wrapper">
@@ -152,7 +153,7 @@
         <div class="filter">
           <h2 class="filter-header">Фильтр:</h2>
           <form action="https://echo.htmlacademy.ru">
-            <div class="fieldset">
+            <div class="fieldset fieldset-underlined">
               <b class="fieldset-legend fieldset-legend-price">Цена:</b>
               <div class="input-range">
                 <div class="input-range-track">
@@ -169,7 +170,7 @@
               </div>
             </div>
 
-            <div class="fieldset">
+            <div class="fieldset fieldset-underlined">
               <b class="fieldset-legend fieldset-legend-producers">Производители:</b>
               <ul class="checkbox-list">
                 <li class="checkbox-item">
@@ -245,20 +246,20 @@
                 </li>
               </ul>
             </div>
-            <button class="button button-filter button-white ">Показать</button>
+            <button class="button button-filter button-white button-white-action">Показать</button>
           </form>
         </div>
         <div class="sort main-inner-sort">
           <h2 class="sort-title">Сортировка:</h2>
           <ul class="sort-type-list">
             <li class="sort-type-item">
-              <a class="sort-title sort-type" href="?sort=price">По цене</a>
+              <a class="sort-title sort-type sort-type-underlined" href="?sort=price">По цене</a>
             </li>
             <li class="sort-type-item">
-              <a class="sort-title sort-type" href="?sort=type">По типу</a>
+              <a class="sort-title sort-type sort-type-underlined" href="?sort=type">По типу</a>
             </li>
             <li class="sort-type-item">
-              <a class="sort-title sort-type" href="?sort=function">По функционалу</a>
+              <a class="sort-title sort-type sort-type-underlined" href="?sort=function">По функционалу</a>
             </li>
             <li class="sort-type-item">
               <a class="sort-type" href="?order=asc" aria-label="Сортировка по возрастанию">
@@ -286,12 +287,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
                     alt="Перфоратор BOSCH BFG 6000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">30500 Р.</del>
@@ -304,12 +305,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
                     alt="Перфоратор BOSCH BFG 6000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">30500 Р.</del>
@@ -322,12 +323,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
                     alt="Перфоратор BOSCH BFG 6000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">30500 Р.</del>
@@ -340,12 +341,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-3000.jpg" width="127" height="112"
                     alt="Перфоратор BOSCH BFG 3000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">22500 Р.</del>
@@ -358,12 +359,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
                     alt="Перфоратор BOSCH BFG 6000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">30500 Р.</del>
@@ -376,12 +377,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-2000.jpg" width="127" height="112"
                     alt="Перфоратор BOSCH BFG 2000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <span class="product-price product-current-price">12500 Р.</span>
@@ -393,12 +394,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-3000.jpg" width="127" height="112"
                     alt="Перфоратор BOSCH BFG 3000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">22500 Р.</del>
@@ -411,12 +412,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-6000.jpg" width="144" height="128"
                     alt="Перфоратор BOSCH BFG 6000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <del class="product-price product-old-price">30500 Р.</del>
@@ -429,12 +430,12 @@
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/punchers/bosch-2000.jpg" width="127" height="112"
                     alt="Перфоратор BOSCH BFG 2000">
-                  <div class="buy">
-                    <button class="button buy-button" type="button">
-                      <img class="icon-cart" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+                  <div class="product-overlay-buy">
+                    <button class="button button-convex button-basic-green button-product-overlay-buy product-buy-button" type="button">
+                      <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                       Купить
                     </button>
-                    <button class="button bookmark-button" type="button">В закладки</button>
+                    <button class="button button-outlined button-product-overlay-buy button-white" type="button">В закладки</button>
                   </div>
                 </div>
                 <span class="product-price product-current-price">12500 Р.</span>
