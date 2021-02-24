@@ -48,6 +48,7 @@
   --input-range-button: #ABABAB;
   --input-range-button-30: rgba(171, 171, 171, 0.3);
   --input-dash: #444444;
+  --modal-write-us-wrapper: #F4F4F4;
   }
 
 /* ------------------------------------------------------ Variables End ------------------------------------------------------ */
@@ -118,7 +119,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .inner-page {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
   }
   /* Inner Page End */
 
@@ -667,7 +668,7 @@ input[type="number"]::-webkit-inner-spin-button {
     column-gap: 20px;
     row-gap: 18px;
 
-    margin: 28px 0 48px 0;
+    margin: 0 0 48px 0;
     padding: 0;
   }
 
@@ -1015,6 +1016,10 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 135px;
   }
 
+  .write-us-submit {
+    width: 460px;
+  }
+
   /* Button End */
 
   /* Plate Start */
@@ -1112,7 +1117,7 @@ input[type="number"]::-webkit-inner-spin-button {
  /* Sort Start*/
 
 .sort-products {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -1124,6 +1129,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 700px;
     height: 38px;
 
+    margin-bottom: 28px;
     padding: 10px 14px 10px 19px;
     box-sizing: border-box;
 
@@ -2332,6 +2338,119 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Socials End*/
 
+/* Modal Common Start*/
 
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+  background-color: var(--white);
+  color: var(--basic-black);
+}
+
+.write-us-modal-label {
+  margin-bottom: 11px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 21px;
+  right: 11px;
+
+  width: 21px;
+  height: 21px;
+
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../img/modal-icon-close.svg");
+}
+
+/* Modal Common End*/
+
+/* Modal-Write-Us Start */
+
+.modal-write-us {
+  display: none;
+  
+  width: 620px;
+  height: 430px;
+
+  padding: 46px 80px 37px 80px;
+  box-sizing: border-box;
+
+  box-shadow: 0px 30px 50px var(--basic-black-4);
+}
+
+.modal-write-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 620px;
+  height: 7px;
+
+  background-image: url("../img/red-line-modal.png")
+}
+
+.write-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.write-us-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0;
+}
+
+.write-us-placeholder-properties::-webkit-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+
+  padding: 6px 11px;
+
+  color: var(--special-grey);
+}
+
+.write-us-data-user {
+  width: 220px;
+  height: 38px;
+
+  box-sizing: border-box;
+}
+
+.write-us-question-area {
+  width: 460px;
+  height: 114px;
+
+  margin-bottom: 37px;
+  box-sizing: border-box;
+}
+
+.write-us-border {
+  border: 2px solid var(--basic-greylight);
+}
+
+.write-us-submit-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 620px;
+  height: 112px;
+
+  background-color: var(--modal-write-us-wrapper);
+}
+
+/* Modal-Write-Us End */
 
 
