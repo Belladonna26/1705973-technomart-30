@@ -2356,7 +2356,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-close {
   position: absolute;
-  top: 21px;
+  top: 14px;
   right: 11px;
 
   width: 21px;
@@ -2366,6 +2366,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
   background-color: transparent;
   background-image: url("../img/modal-icon-close.svg");
+
+  cursor: pointer;
 }
 
 /* Modal Common End*/
@@ -2374,26 +2376,15 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-write-us {
   display: none;
-  
+
   width: 620px;
   height: 430px;
 
-  padding: 46px 80px 37px 80px;
+  border-top: 7px solid var(--basic-red);
+  padding: 39px 80px 37px 80px;
   box-sizing: border-box;
 
-  box-shadow: 0px 30px 50px var(--basic-black-4);
-}
-
-.modal-write-us::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 620px;
-  height: 7px;
-
-  background-image: url("../img/red-line-modal.png")
+  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.75));
 }
 
 .write-us-wrapper {
@@ -2453,4 +2444,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Modal-Write-Us End */
 
+/* Modal Map Start */
 
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+
+  border-top: 7px solid var(--basic-red);
+  box-sizing: border-box;
+
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+/* Modal Map End */
