@@ -887,7 +887,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
     color: var(--white);
     border: none;
-    outline: none;
+
     background-color: var(--basic-red);
     transition: background-color 100ms;
 
@@ -1745,7 +1745,7 @@ input[type="number"]::-webkit-inner-spin-button {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 130px;
+      height: 100%;
     }
 
     .producer-item-logo {
@@ -2468,7 +2468,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Modal Cart Start */
 
 .modal-cart {
-  /* display: none; */
+  display: none;
 
   width: 620px;
   min-height: 282px;
@@ -2519,7 +2519,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
 }
 
-.button-cart-popup {
+.modal-cart-button {
   margin-left: 10px;
 
   background-color: var(--white);
