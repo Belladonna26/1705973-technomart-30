@@ -117,14 +117,9 @@ input[type="number"]::-webkit-inner-spin-button {
   /*Inner Page Start*/
 
   .inner-page {
-    display: grid;
-    grid-template-columns: 220px ;
-    grid-template-rows: 38px 1fr;
-    column-gap: 20px;
-
-    margin-bottom: 25px;
+    display: flex;
+    gap: 20px;
   }
-
   /* Inner Page End */
 
   /* Header Start*/
@@ -259,7 +254,6 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--accent-color-delivery);
   }
 
-
   .search-control {
     background-image: url("../img/decor/icon-search17x17.svg");
     background-repeat: no-repeat;
@@ -350,7 +344,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
       opacity: 0.3;
     }
-
 
   /* User Navigation Start */
 
@@ -666,13 +659,6 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 0px;
   }
 
-  .products {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-
-    margin: 8px 0 28px 0;
-  }
-
   .products-list-inner {
     list-style: none;
 
@@ -681,7 +667,7 @@ input[type="number"]::-webkit-inner-spin-button {
     column-gap: 20px;
     row-gap: 18px;
 
-    margin: 0 0 48px 240px;
+    margin: 28px 0 48px 0;
     padding: 0;
   }
 
@@ -1125,24 +1111,24 @@ input[type="number"]::-webkit-inner-spin-button {
 
  /* Sort Start*/
 
- .main-inner-sort {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
- }
-
-.sort {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  width: 700px;
-  min-height: 38px;
-
-  padding: 10px 14px 10px 19px;
-  box-sizing: border-box;
-
-  background-color: var(--catalog-background);
+.sort-products {
+  display: inline-flex;
+  flex-direction: column;
 }
+
+  .sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 700px;
+    height: 38px;
+
+    padding: 10px 14px 10px 19px;
+    box-sizing: border-box;
+
+    background-color: var(--catalog-background);
+  }
 
   .sort-title {
     margin: 0;
@@ -1372,13 +1358,10 @@ input[type="number"]::-webkit-inner-spin-button {
   /* Pagination Start */
 
 .pagination {
-  /* grid-column: 2 / 3;
-  grid-row: 3 / 4; */
-
   min-width: 300px;
   height: 38px;
 
-  margin: 0 0 60px 240px;
+  margin: 0 0 60px 0px;
 }
 
   .pagination-list {
@@ -2044,6 +2027,10 @@ input[type="number"]::-webkit-inner-spin-button {
 /* About Category End */
 
 /* Filter Start*/
+.filter {
+  display: flex;
+  flex-direction: column;
+}
 
 .filter-header {
   margin: 0;
