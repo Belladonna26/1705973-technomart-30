@@ -211,10 +211,6 @@ input[type='number'] {
         color: var(--accent-color-border);
       }
 
-      .site-navigation{
-        margin-top: auto;
-      }
-
   /* Header End */
 
   /*---------------------- Header Navigation Start----------------- */
@@ -454,6 +450,10 @@ input[type='number'] {
    /* User Navigation End*/
 
   /* Site Navigation Start*/
+
+  .site-navigation{
+    margin-top: auto;
+  }
 
   .site-navigation-list {
     list-style: none;
@@ -714,7 +714,6 @@ input[type='number'] {
       box-shadow: 0px 4px 4px var(--basic-black-25);
     }
 
-    /* TODO настроить метку,чтобы работало на любой товар */
     .products-list-index li:nth-child(2)::after,
     .products-list-index li:nth-child(4)::after {
       content: "new";
@@ -1486,7 +1485,7 @@ input[type='number'] {
     padding-top: 59px;
   }
 
-  .main-inner {
+   .main-inner {
     padding-top: 16px;
   }
 
@@ -2057,6 +2056,7 @@ input[type='number'] {
 /* About Category End */
 
 /* Filter Start*/
+
 .filter {
   display: flex;
   flex-direction: column;
