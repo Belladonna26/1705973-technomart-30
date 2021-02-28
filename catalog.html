@@ -30,13 +30,15 @@
         <ul class="top-bar-links">
           <li>
             <a class="top-bar-link" href="blank.html">
-              <img class="top-bar-link-icon" src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладки">
+              <img class="top-bar-link-icon" src="img/icon-bookmark.svg" width="14" height="16" aria-hidden="true"
+                alt="Иконка закладки">
               Закладки: 0
             </a>
           </li>
           <li>
-            <a class="top-bar-link" href="blank.html">
-              <img class="top-bar-link-icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
+            <a class="top-bar-link top-bar-link-cart" href="blank.html">
+              <img class="top-bar-link-icon" src="img/icon-cart.svg" width="15" height="15" aria-hidden="true"
+                alt="Иконка корзины">
               Корзина: 10
             </a>
           </li>
@@ -55,7 +57,8 @@
 
       <div class="header-contacts">
         <a class="header-phone" href="tel:+78125550555">
-          <img class="header-phone-icon" src="img/icon-phone.svg" width="19" height="19" alt="Иконка трубки">
+          <img class="header-phone-icon" src="img/icon-phone.svg" width="19" height="19" aria-hidden="true"
+            alt="Иконка трубки">
           +7 (812) 555-05-55
         </a>
         <span class="header-address">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</span>
@@ -66,7 +69,8 @@
         <h2 class="visually-hidden">Пользовательская навигация</h2>
         <div class="button-plate-wrapper">
           <a class="button-plate" href="blank.html" aria-label="Мой профиль">
-            <svg class="icon" width="20" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon" width="20" height="18" fill="currentColor" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.881 14.953c-2.144-.776-4.256-1.759-5.207-2.523-.657-.529-.77-1.708-.517-2.549 1.118-.953 1.864-2.615 1.864-4.516C14.021 2.402 12.221 0 10 0S5.979 2.402 5.979 5.365c0 1.901.746 3.562 1.863 4.515.253.842.141 2.021-.517 2.55-.95.764-3.063 1.746-5.207 2.523C-.026 15.73 0 19 0 19h20s.025-3.271-2.119-4.047z" />
             </svg>
@@ -74,7 +78,8 @@
           </a>
 
           <a class="button-plate" href="blank.html" aria-label="Выход из личного кабинета">
-            <svg class="icon" width="20" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon" width="20" height="17" fill="currentColor" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" />
               <path
                 d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" />
@@ -145,14 +150,14 @@
           <a class="breadcrumb-title">Перфораторы</a>
         </li>
       </ul>
-      <div class="plate plate-blue inner-page-plate">
+      <div class="plate plate-blue">
         <b class="heading">Перфораторы</b>
       </div>
 
       <div class="inner-page">
         <div class="filter">
           <h2 class="filter-header">Фильтр:</h2>
-          <form action="https://echo.htmlacademy.ru">
+          <form action="https://echo.htmlacademy.ru" target="_blank">
             <div class="fieldset fieldset-underlined">
               <b class="fieldset-legend fieldset-legend-price">Цена:</b>
               <div class="input-range">

@@ -86,6 +86,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 /* ------------------------------------------------------ Util Classes End ------------------------------------------------------ */
 
 /* -------------------------------------------------- Structure Classes Start ------------------------------------------------ */
@@ -266,14 +270,25 @@ input[type="number"]::-webkit-inner-spin-button {
     border: none;
   }
 
+  .search-control:hover {
+    background-image: url("../img/icon-search-hover.svg");
+    background-repeat: no-repeat;
+    background-position: left 17px top 12px;
+  }
+
     input[type='search']::-webkit-search-cancel-button,
     input[type='search']::-webkit-search-results-button,
     input[type='search']::-webkit-search-results-decoration {
     display: none;
   }
 
-  ::-webkit-input-placeholder {
-    color: white;
+  .search-control::-webkit-input-placeholder {
+    color: var(--white);
+  }
+
+  .search-control::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
   }
 
   .search-control:focus {
@@ -300,11 +315,15 @@ input[type="number"]::-webkit-inner-spin-button {
       align-items: center;
 
       height: 42px;
-      padding: 0 20px;
+      padding: 0 19px;
 
       text-decoration: none;
 
       color: var(--white);
+    }
+
+    .top-bar-link-cart {
+      background-color: var(--basic-red);
     }
 
     .top-bar-links li:nth-child(1) {
@@ -376,7 +395,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 210px;
     min-height: 18px;
 
-    margin: 0;
+    margin: 0 0 36px 0;
     padding: 0;
   }
 
@@ -696,8 +715,35 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     /* TODO настроить метку,чтобы работало на любой товар */
-    .product-item:nth-child(2):after,
-    .product-item:nth-child(4):after {
+    .products-list-index li:nth-child(2)::after,
+    .products-list-index li:nth-child(4)::after {
+      content: "new";
+
+      position: absolute;
+      top: 5px;
+      right: -27px;
+      transform: rotate(45deg);
+
+      width: 100px;
+      height: 30px;
+
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+
+      padding: 5px 0;
+
+      box-sizing: border-box;
+
+      background-color: var(--basic-red);
+    }
+
+    .products-list-inner li:nth-child(3)::after,
+    .products-list-inner li:nth-child(4)::after,
+    .products-list-inner li:nth-child(6)::after,
+    .products-list-inner li:nth-child(7)::after,
+    .products-list-inner li:nth-child(9)::after {
       content: "new";
 
       position: absolute;
@@ -1016,7 +1062,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 135px;
   }
 
-  .write-us-submit {
+  .write-us-submit-button {
     width: 460px;
   }
 
@@ -1268,6 +1314,7 @@ input[type="number"]::-webkit-inner-spin-button {
   /* Fieldset End */
 
   /* Input-range */
+
   .input-range {
     width: 220px;
   }
@@ -1469,30 +1516,6 @@ input[type="number"]::-webkit-inner-spin-button {
   .offer-item {
     position: relative;
     overflow: hidden;
-  }
-
-  /* TODO сделать чтобы метка ставилась на любую категорию */
-  .offer-item:nth-child(1)::after {
-    content: "new";
-
-    position: absolute;
-    top: 5px;
-    right: -27px;
-    transform: rotate(45deg);
-
-    width: 100px;
-    height: 30px;
-
-    text-align: center;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-
-    padding: 5px 0;
-
-    box-sizing: border-box;
-
-    background-color: var(--basic-red);
   }
 
   .offer-item:nth-child(4) {
@@ -1755,6 +1778,7 @@ input[type="number"]::-webkit-inner-spin-button {
       object-fit: contain;
       background-color: var(--white);
     }
+
   /* Service Start*/
 
   .services {
@@ -2414,6 +2438,14 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--special-grey);
 }
 
+.write-us-placeholder-properties::-moz-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+
+  color: var(--special-grey);
+  opacity: 1;
+}
+
 .write-us-data-user {
   width: 220px;
   height: 38px;
@@ -2529,11 +2561,8 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-.button-cart-popup:hover {
-  background-color: var(--white);
-}
-
-.button-cart-popup:active {
+.modal-cart-button:hover,
+.modal-cart-button:active {
   background-color: var(--white);
 }
 
