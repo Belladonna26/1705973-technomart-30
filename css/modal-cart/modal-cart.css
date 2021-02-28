@@ -1,0 +1,66 @@
+.modal-cart {
+  display: none;
+
+  width: 620px;
+  min-height: 282px;
+
+  padding-bottom: 37px;
+  border-top: 7px solid var(--basic-red);
+  box-sizing: border-box;
+
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.modal-cart-notice-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 620px;
+  min-height: 123px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-cart-notice {
+  max-width: 300px;
+
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.modal-cart-notice::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 81px;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/icon-mark66x66.svg");
+}
+
+.modal-cart-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-cart-button {
+  margin-left: 10px;
+
+  background-color: var(--white);
+
+  color: var(--basic-black);
+
+  cursor: pointer;
+}
+
+.modal-cart-button:hover,
+.modal-cart-button:active {
+  background-color: var(--white);
+}

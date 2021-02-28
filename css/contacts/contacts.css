@@ -1,0 +1,30 @@
+.contacts {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contacts-title {
+  margin-bottom: 24px;
+
+  font-weight: inherit;
+
+  color: var(--basic-black);
+}
+
+  .contacts .text {
+    width: 180px;
+
+    margin-bottom: 32px;
+  }
+
+  .contacts-map-button {
+    margin-bottom: 20px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .contacts-button {
+    width: 300px;
+  }

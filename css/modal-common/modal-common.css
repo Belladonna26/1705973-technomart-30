@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+  background-color: var(--white);
+  color: var(--basic-black);
+}
+
+.write-us-modal-label {
+  margin-bottom: 11px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 11px;
+
+  width: 21px;
+  height: 21px;
+
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../img/modal-icon-close.svg");
+
+  cursor: pointer;
+}
+
+.modal-close:active,
+.modal-close:focus {
+  border: none;
+  outline: none;
+}

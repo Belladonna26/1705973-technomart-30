@@ -1,0 +1,176 @@
+.services {
+  background-color: var(--basic-background);
+}
+
+.services-wrapper {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+
+  margin-bottom: 67px;
+  padding: 65px 0 6px 0;
+
+  box-sizing: border-box;
+}
+
+.services-title {
+  margin: 0 0 25px 0;
+
+  font-weight: inherit;
+}
+
+.services-title-wrapper {
+ margin-bottom: 70px;
+}
+
+.services-title-wrapper .text {
+  width: 396px;
+}
+
+.services-tab-box {
+  grid-row: 2 / 3;
+}
+.services-tab-list-wrapper {
+  display: flex;
+}
+
+.services-tab-list {
+  position: relative;
+  width: 240px;
+}
+
+.services-tab-list::after {
+  content: "";
+  position: absolute;
+  top: -48px;
+  right: 0;
+
+  width: 10px;
+  height: 279px;
+
+  background-image: url("../img/decor/object.png");
+}
+
+.services-tab-visible {
+  display: block;
+}
+
+  .services-title,
+  .about-us-title,
+  .about-category-title {
+    color: var(--basic-black);
+  }
+
+  .services-tab-list {
+    list-style: none;
+    margin: 0 80px 0 0;
+    padding: 0;
+  }
+
+  .services-tab-button {
+    display: flex;
+    align-items: center;
+
+    width: 240px;
+    height: 61px;
+
+    padding-left: 22px;
+
+    border: none;
+    outline: none;
+
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+
+    background-color: var(--accent-color-border);
+    color: var(--white);
+
+    box-shadow: inset 0px 1px 0px #405069,
+                inset 0px 0px 0px 1px #293449;
+  }
+
+  .services-tab-button:hover {
+    background-color: var(--accent-color-delivery);
+    box-shadow: 0px 1px 0px #293449,
+                inset 0px 1px 0px #405069;
+
+    color: var(--white);
+  }
+
+
+  .services-tab-button:active {
+    background-color: var(--white);
+    color: var(--accent-color-border);
+
+    box-shadow: 0px 1px 0px #FFFFFF;
+  }
+
+  .services-tab-content {
+    width: 619px;
+  }
+
+  .services-tab-content-delivery .heading {
+   margin-bottom: 30px;
+
+   font-weight: inherit;
+  }
+
+  .services-tab-content-delivery .text {
+   width: 300px;
+  }
+
+  .services-tab-content-guarantee .heading {
+   margin-bottom: 25px;
+
+   font-weight: inherit;
+  }
+
+  .services-tab-content-guarantee .text {
+    width: 331px;
+   }
+
+   .services-tab-content-credit .heading {
+    margin-bottom: 37px;
+
+    font-weight: inherit;
+   }
+
+   .services-tab-content-credit .text {
+    width: 309px;
+
+    margin-bottom: 26px;
+   }
+
+  .services-tab-content-delivery {
+    min-height: 283px;
+
+    background-image: url("../img/decor/truck468x261.png");
+    background-repeat: no-repeat;
+    background-position: top 24px right;
+  }
+
+  .services-tab-content-guarantee {
+    display: none;
+
+    position: relative;
+    left: 320px;
+
+    min-height: 283px;
+
+    background-image: url("../img/decor/medal389x283.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .services-tab-content-credit {
+    display: none;
+
+    position: relative;
+    left: 320px;
+
+    min-height: 283px;
+
+    background-image: url("../img/decor/money465x285.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }

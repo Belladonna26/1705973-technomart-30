@@ -1,0 +1,150 @@
+.footer {
+  display: grid;
+  grid-template-rows: 193px 1fr;
+
+  background-color: var(--accent-color-border);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 220px;
+  height: 68px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--basic-black-25);
+}
+
+.footer-contacts {
+  display: inline-flex;
+  flex-direction: column;
+
+  max-width: 347px;
+  min-height: 49px;
+
+  margin: -4px 0 0 3px;
+
+  color: var(--main-header-background);
+}
+
+.footer-category-list,
+.footer-navigation-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap}
+
+.footer-inner-navigation-list {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.footer-navigation-list {
+  margin: 36px 0 0 44px;
+  padding: 0;
+
+  background-color: var(--accent-color-border);
+}
+
+.footer-category-list {
+  margin: 0 0 0 66px;
+  padding: 0;
+}
+
+.footer-category-link,
+.footer-navigation-link {
+  text-decoration: none;
+}
+
+.footer-navigation-link:hover,
+.footer-category-link:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-link {
+  color: var(--white);
+}
+
+.footer-navigation-link:active {
+  color: var(--basic-background-50);
+}
+
+.footer-category-link{
+  color: var(--footer-yellow);
+}
+
+.footer-category-link:active {
+  color: var(--special-yellowlight-50);
+}
+
+.footer-copyright {
+  max-width: 227px;
+}
+
+.footer-bottom {
+  box-sizing: border-box;
+  min-height: 107px;
+  padding: 15px 0;
+
+  background-color: var(--accent-color-delivery);
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom-info {
+  font-size: 16px;
+  line-height: 18px;
+
+  text-decoration: none;
+
+  color: var(--white);
+
+  margin: 0;
+}
+
+.footer-social-list {
+  margin-left: 161px;
+}
+
+.footer-feedback {
+  max-width: 137px;
+
+  margin: 0 51px 0 auto;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-developer {
+  max-width: 98px;
+
+  margin: 0 15px 0 0;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.creator {
+  color: var(--special-yellowlight);
+}
+
+.creator:hover {
+  text-decoration: underline;
+}
+
+.creator:active {
+  color: var(--basic-red);
+}

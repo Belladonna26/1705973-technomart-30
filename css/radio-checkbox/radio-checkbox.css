@@ -1,0 +1,64 @@
+.radio-input {
+  position: absolute;
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.radio-input:disabled + .radio-box + .check-box-name {
+  color: var(--basic-black-4);
+}
+
+.radio-box {
+  position: absolute;
+
+  margin-left: -35px;
+
+  top: -2px;
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-box/radio-off.svg");
+  background-color: var(--white);
+}
+
+.radio-label {
+  position: relative;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.radio-input:checked + .radio-box {
+  background-image: url("../img/radio-box/radio-on.svg");
+}
+
+.radio-input:hover + .radio-box {
+  background-image: url("../img/radio-box/radio-off-hover.svg");
+}
+
+.radio-input:checked:hover + .radio-box {
+  background-image: url("../img/radio-box/radio-on-hover.svg");
+}
+
+.radio-input:focus + .radio-box {
+  background-image: url("../img/radio-box/radio-off-hover.svg");
+}
+
+.radio-input:checked:focus + .radio-box {
+  background-image: url("../img/radio-box/radio-on-hover.svg");
+}
+
+.radio-input:disabled + .radio-box {
+  background-image: url("../img/radio-box/radio-off-disabled.svg");
+}
+
+.radio-input:checked:disabled + .radio-box {
+  background-image: url("../img/radio-box/radio-on-disabled.svg");
+}

@@ -1,0 +1,36 @@
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-underlined {
+  padding-bottom: 29px;
+  border-bottom: 1px solid var(--input-range-button-30);
+}
+
+.fieldset-underlined + .fieldset {
+  padding-top: 16px;
+}
+
+.fieldset-legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.fieldset-legend-price {
+ margin-bottom: 10px;
+}
+
+.fieldset-legend-producers {
+  margin-bottom: 15px;
+}
+
+.fieldset-legend-feeding {
+  margin-bottom: 23px;
+}

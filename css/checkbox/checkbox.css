@@ -1,0 +1,83 @@
+.checkbox-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.checkbox-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.checkbox-list-radio {
+  margin: 0 0 37px 0;
+}
+
+.checkbox-button {
+  padding-left: 35px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.option {
+  display: block;
+}
+
+.checkbox-input {
+  position: absolute;
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.checkbox-input:disabled + .check-box + .check-box-name {
+  color: var(--basic-black-4);
+}
+
+.check-box {
+  position: absolute;
+  margin-left: -35px;
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox/checkbox-off.svg");
+  background-color: var(--white);
+}
+
+.checkbox-input:checked + .check-box {
+  background-image: url("../img/checkbox/checkbox-on.svg");
+}
+
+.checkbox-input:hover + .check-box {
+  background-image: url("../img/checkbox/checkbox-off-hover.svg");
+}
+
+.checkbox-input:checked:hover + .check-box {
+  background-image: url("../img/checkbox/checkbox-on-hover.svg");
+}
+
+.checkbox-input:focus + .check-box {
+  background-image: url("../img/checkbox/checkbox-off-hover.svg");
+}
+
+.checkbox-input:checked:focus + .check-box {
+  background-image: url("../img/checkbox/checkbox-on-hover.svg");
+}
+
+.checkbox-input:disabled + .check-box {
+  background-image: url("../img/checkbox/checkbox-on-disabled.svg");
+}
+
+.checkbox-input:checked:disabled + .check-box {
+  background-image: url("../img/checkbox/checkbox-off-disabled.svg");
+}

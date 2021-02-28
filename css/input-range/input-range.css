@@ -1,0 +1,92 @@
+.input-range {
+  width: 220px;
+}
+
+.input-range-track {
+ position: relative;
+
+ height: 80px;
+
+ margin-bottom: 9px;
+ padding: 39px 20px 0 20px;
+
+ box-sizing:border-box;
+
+ background-color: var(--catalog-background);
+ border-radius: 5px;
+}
+
+.input-range-scale {
+  height: 2px;
+  background-color: var(--scale-background);
+}
+
+.input-range-bar {
+ width: 80%;
+ height: 2px;
+ background-color: var(--bar-background);
+}
+
+.input-range-button {
+  position: absolute;
+  top: 29px;
+
+  width: 20px;
+  height: 20px;
+
+  padding: 0;
+
+  border-radius: 50%;
+  outline: none;
+
+  border: 8px solid var(--white);
+  background-color: var(--input-range-button);
+  box-shadow: 0 2px 0 0 var(--input-range-button-30);
+
+  cursor: pointer;
+}
+
+.input-range-button-min {
+  left: 18px;
+}
+
+.input-range-button-max {
+  right: 40px;
+}
+
+.input-range-control {
+  display: inline-flex;
+  align-items: center;
+
+  width: 95px;
+  height: 38px;
+
+  padding: 10px 24px;
+
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  background-color: var(--catalog-background);
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.input-range input:first-of-type {
+  margin-right: 25px;
+}
+
+.input-range-track::after {
+  content: "";
+  position: absolute;
+  top: 106px;
+  left: 107px;
+
+  width: 7px;
+  height: 2px;
+  background-color: var(--input-dash);
+}

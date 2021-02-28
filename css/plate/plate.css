@@ -1,0 +1,22 @@
+.plate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 20px;
+  padding: 30px 15px 30px 28px;
+  box-sizing: border-box;
+  height: 89px;
+}
+
+ /* Plate Color Modifiers */
+
+ .plate-blue {
+  background-color: var(--punch-subtitle);
+
+  grid-column: 1 / -1;
+}
+
+.plate-beige {
+  background-color: var(--basic-subtitle);
+}

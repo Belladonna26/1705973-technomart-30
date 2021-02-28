@@ -1,3 +1,4 @@
+@import "./combined.css";
 /* ------------------------------------------------------ Variables Start ------------------------------------------------------ */
 
 :root {
@@ -441,7 +442,7 @@ input[type='number'] {
       background-color: var(--white);
     }
 
-    .info {
+    .button-plate-info {
       max-width: 186px;
 
       margin: 2px 19px 0 18px;
@@ -2286,7 +2287,6 @@ input[type='number'] {
 
     background-color: white;
     color: var(--basic-greylight);
-
   }
 
 /* Buy Buttons End*/

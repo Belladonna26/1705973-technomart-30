@@ -1,0 +1,10 @@
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+
+  border-top: 7px solid var(--basic-red);
+  box-sizing: border-box;
+
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}

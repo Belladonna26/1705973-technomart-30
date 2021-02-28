@@ -1,0 +1,58 @@
+.button-plate {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  box-sizing: border-box;
+  height: 45px;
+
+  padding: 0 24px;
+
+  font-size: 21px;
+  line-height: 21px;
+
+  text-decoration: none;
+
+  color: var(--basic-black);
+
+  background-color: var(--white);
+}
+
+.button-plate-wrapper .button-plate {
+  padding: 0;
+}
+
+.button-plate:hover {
+  color: var(--basic-red);
+}
+
+.button-plate:hover .icon {
+  color: var(--basic-grey);
+}
+
+.button-plate:hover .info {
+  color: var(--basic-black);
+}
+
+.button-plate:active {
+  color: var(--basic-greylight);
+}
+
+.button-plate:active .icon {
+  color: var(--basic-greylight);
+}
+
+.button-plate:active .info {
+  text-decoration: none;
+
+  color: var(--basic-greylight);
+}
+
+.button-plate-login {
+  padding: 0 27px 0 19px;
+}
+
+.button-plate .icon {
+  color: var(--basic-greylight);
+}

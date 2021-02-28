@@ -1,0 +1,20 @@
+.about-category {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 261px;
+
+  background-color: var(--basic-background);
+}
+
+.about-category .heading {
+  margin: 0;
+  padding-top: 64px;
+  padding-bottom: 25px;
+}
+
+.about-category .text {
+  width: 907px;
+
+  margin-bottom: 70px;
+}
