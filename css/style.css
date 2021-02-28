@@ -315,7 +315,7 @@ input[type='number'] {
       align-items: center;
 
       height: 42px;
-      padding: 0 19px;
+      padding: 0 18px;
 
       text-decoration: none;
 
@@ -389,7 +389,7 @@ input[type='number'] {
     flex-wrap: wrap;
 
     position: relative;
-    left: 50px;
+    left: 45px;
     bottom: 3px;
 
     width: 210px;
