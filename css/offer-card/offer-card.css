@@ -1,0 +1,42 @@
+.offer-card {
+    box-sizing: border-box;
+    width: 300px;
+    height: 123px;
+    padding: 20px 22px;
+
+    background-repeat: no-repeat;
+    background-position: top 30px right 35px;
+}
+
+.offer-card__title {
+    margin: 0 0 14px 0;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.offer-card_materials {
+    background-color: var(--warning);
+    background-image: url(/img/decor/icon-bucket44x65.svg);
+}
+
+.offer-card_tool {
+    background-color: var(--special-blue);
+    background-image: url(/img/decor/icon-drill75x61.svg);
+}
+
+.offer-card_technic {
+    background-color: var(--special-lilac);
+    background-image: url(/img/decor/icon-tracktor78x62.svg);
+}
+
+.offer-card_sale {
+    background-color: var(--special-greenlight);
+    background-image: url(/img/decor/icon-busket59x72.svg);
+}
+
+.offer-card_delivery {
+    background-color: var(--block-yellow);
+    background-image: url(/img/decor/icon-car78x63.svg);
+}

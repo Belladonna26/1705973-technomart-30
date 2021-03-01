@@ -3,9 +3,13 @@
 
   text-transform: uppercase;
 
+  color: var(--accent-color-border);
+
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+}
 
-  color: var(--accent-color-border);
+.heading_black {
+  color: var(--basic-black);
 }

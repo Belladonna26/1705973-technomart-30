@@ -4,27 +4,18 @@
   justify-content: flex-start;
 }
 
-.contacts-title {
+.contacts__title {
   margin-bottom: 24px;
-
-  font-weight: inherit;
-
-  color: var(--basic-black);
 }
 
-  .contacts .text {
-    width: 180px;
+.contacts .text {
+  margin-bottom: 32px;
+}
 
-    margin-bottom: 32px;
-  }
+.contacts__map-button {
+  margin-bottom: 20px;
+  padding: 0;
 
-  .contacts-map-button {
-    margin-bottom: 20px;
-    padding: 0;
+  border: none;
+}
 
-    border: none;
-  }
-
-  .contacts-button {
-    width: 300px;
-  }

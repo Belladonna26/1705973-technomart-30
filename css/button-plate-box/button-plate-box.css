@@ -1,0 +1,44 @@
+.button-plate-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 24px;
+
+    background-color: var(--white);
+}
+
+.button-plate-box__link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 20px;
+
+    text-decoration: none;
+    vertical-align: top;
+
+    color: var(--basic-black);
+
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.button-plate-box__link:hover .button-plate-box__link-icon,
+.button-plate-box__link:focus-visible .button-plate-box__link-icon {
+    color: var(--basic-grey);
+}
+
+.button-plate-box__link:active,
+.button-plate-box__link:active .button-plate-box__link-icon {
+    color: var(--basic-greylight);
+}
+
+.button-plate-box__link-icon {
+    color: var(--basic-greylight);
+}
+
+.button-plate-box__link-icon_login {
+    transform: translateY(-2px);
+}

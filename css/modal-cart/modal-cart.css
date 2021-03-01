@@ -42,7 +42,7 @@
   width: 66px;
   height: 66px;
 
-  background-image: url("../img/icon-mark66x66.svg");
+  background-image: url(/img/icon-mark66x66.svg);
 }
 
 .modal-cart-buttons-wrapper {

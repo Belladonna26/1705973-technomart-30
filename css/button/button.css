@@ -137,10 +137,18 @@ button.button:not(:disabled) {
   margin-left: auto;
 }
 
-.button-product-overlay-buy {
+.button_product-card-popup {
   width: 135px;
+}
+
+.button_about-us{
+  width: 220px;
 }
 
 .write-us-submit-button {
   width: 460px;
+}
+
+.button_contacts {
+  width: 300px;
 }

@@ -6,53 +6,40 @@
 
   box-sizing: border-box;
   height: 45px;
-
   padding: 0 24px;
 
-  font-size: 21px;
-  line-height: 21px;
 
   text-decoration: none;
 
   color: var(--basic-black);
-
   background-color: var(--white);
-}
 
-.button-plate-wrapper .button-plate {
-  padding: 0;
-}
-
-.button-plate:hover {
-  color: var(--basic-red);
-}
-
-.button-plate:hover .icon {
-  color: var(--basic-grey);
-}
-
-.button-plate:hover .info {
-  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .button-plate:active {
   color: var(--basic-greylight);
 }
 
-.button-plate:active .icon {
+.button-plate:hover,
+.button-plate:focus-visible {
+  color: var(--basic-red);
+}
+
+.button-plate:hover .button-plate__icon,
+.button-plate:focus-visible .button-plate__icon {
+  color: var(--basic-grey);
+}
+
+.button-plate:active .button-plate__icon {
   color: var(--basic-greylight);
 }
 
-.button-plate:active .info {
-  text-decoration: none;
-
-  color: var(--basic-greylight);
-}
-
-.button-plate-login {
+.button-plate_login {
   padding: 0 27px 0 19px;
 }
 
-.button-plate .icon {
+.button-plate__icon  {
   color: var(--basic-greylight);
 }

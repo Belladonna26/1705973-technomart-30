@@ -1,0 +1,109 @@
+.top-bar {
+  height: 42px;
+
+  background-color: var(--accent-color-delivery);
+}
+
+.top-bar__inner {
+  display: flex;
+  align-items: flex-start;
+}
+
+.top-bar__logo {
+  width: 220px;
+  height: 47px;
+
+  user-select: none;
+
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--basic-black-25);
+}
+
+.top-bar__logo:active {
+  background-color: var(--error);
+}
+
+.top-bar__logo-img {
+  position: relative;
+  left: 56px;
+  top: 12px;
+  bottom: 17px;
+
+  pointer-events: none;
+}
+
+.top-bar__link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 0 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: var(--accent-color-delivery);
+}
+
+.top-bar__link-item{
+  flex-shrink: 0;
+}
+
+.top-bar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 9px;
+
+  box-sizing: border-box;
+  min-width: 150px;
+  height: 42px;
+  padding: 0 18px;
+
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+.top-bar__link_cart {
+  background-color: var(--basic-red);
+}
+
+.top-bar__link:active {
+  color: var(--white-50);
+  background-color: var(--accent-bookmark);
+}
+
+.top-bar__link-icon{
+  pointer-events: none;
+}
+
+.top-bar__link:hover .top-bar__link-icon,
+.top-bar__link:focus-visible .top-bar__link-icon {
+  opacity: 1;
+}
+
+.top-bar__link:active .top-bar__link-icon {
+  opacity: 0.5;
+}
+
+.top-bar__link_checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--basic-green);
+}
+
+.top-bar__link_checkout:hover,
+.top-bar__link_checkout:focus-visible {
+  background-color: var(--success);
+}
+
+.top-bar__link_checkout:active {
+  background-color: var(--basic-green);
+}
+
+.top-bar__link-icon {
+  opacity: 0.3;
+}

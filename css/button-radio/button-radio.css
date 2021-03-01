@@ -1,0 +1,46 @@
+.button-radio {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10px;
+    height: 10px;
+    padding: 0;
+
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px var(--basic-black-25);
+}
+
+.button-radio::before {
+    --size: 6px;
+
+    position: absolute;
+
+    visibility: hidden;
+
+    width: var(--size);
+    height: var(--size);
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: red;
+}
+
+.buton-radio:hover::before {
+    opacity: 0.5;
+}
+
+/* TODO: Подумать над стилями при наведении и нажатии */
+
+.button-radio_checked::before{
+    visibility: visible;
+}
+
+
+

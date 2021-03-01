@@ -23,7 +23,7 @@
   border: none;
 
   background-color: transparent;
-  background-image: url("../img/modal-icon-close.svg");
+  background-image: url(/img/modal-icon-close.svg);
 
   cursor: pointer;
 }
@@ -32,4 +32,8 @@
 .modal-close:focus {
   border: none;
   outline: none;
+}
+
+.modal--show {
+  display: block;
 }
