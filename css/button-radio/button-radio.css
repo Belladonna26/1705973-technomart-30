@@ -41,13 +41,8 @@
     opacity: 0.5;
 }
 
-/* TODO: Подумать над стилями при наведении и нажатии */
-
-/* .button-radio_checked::before{
-    visibility: visible;
-} */
-
-.button-radio_checked:focus::before{
+.button-radio_checked:focus-visible::before,
+.button-radio_checked::before {
   visibility: visible;
 }
 

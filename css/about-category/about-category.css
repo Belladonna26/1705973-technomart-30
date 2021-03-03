@@ -4,14 +4,16 @@
   background-color: var(--basic-background);
 }
 
-.about-category .heading {
-  margin: 0;
-  padding-top: 64px;
-  padding-bottom: 25px;
+.about-category__title {
+  margin-bottom: 25px;
 }
 
 .about-category .text {
   width: 907px;
-
-  margin-bottom: 70px;
 }
+
+.about-category__inner {
+  padding-top: 64px;
+  padding-bottom: 70px;
+}
+

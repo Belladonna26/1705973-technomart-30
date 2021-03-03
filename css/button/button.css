@@ -2,14 +2,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  column-gap: 8px;
 
   box-sizing: border-box;
   width: 192px;
   height: 38px;
 
+  user-select: none;
   text-decoration: none;
   text-transform: uppercase;
 
+  outline: none;
   color: var(--white);
   border: none;
 
@@ -40,66 +43,62 @@ button.button:not(:disabled) {
   box-shadow: 0 0 0 2px var(--bar-background);
 }
 
-.button .button-icon {
-  margin-right: 8px;
+.button__icon {
+  pointer-events: none;
 }
 
 /* Button Color Modifiers */
 
-.button-white {
+.button_white {
   background-color: var(--white);
 }
 
-.button-white-action,
-.button-white-action:hover,
-.button-white-action:active {
-  color: var(--basic-black);
-  border: 1px solid var(--border-button);
-  background-color: var(--white);
-}
-
-.button-ghost {
+.button_ghost {
   background-color:var(--white-30);
 }
 
-.button-ghost:hover,
-.button-ghost:focus-visible {
+.button_ghost:hover,
+.button_ghost:focus-visible {
   background-color: var(--basic-greylight-30);
 }
 
-.button-ghost:active {
+.button_ghost:active {
   background-color: var(--special-grey-30);
 }
 
-.button-basic-green {
+.button_basic-green {
   background-color: var(--basic-green);
 }
 
-.button-basic-green:hover {
+.button_basic-green:hover {
   background-color: var(--success);
 }
 
-.button-basic-green:active {
+.button_basic-green:active {
   background-color: var(--accent-color-button);
 }
 
 /* Button View Modifiers */
 
-.button-convex {
+.button_convex {
   border-radius: 2px;
 
   box-shadow: inset 0px -3px 0px var(--basic-black-25);
 }
 
-.button-convex .button-icon {
+.button_convex:focus-visible {
+  outline: 2px solid var(--bar-background);
+}
+
+.button_convex .button__icon {
   opacity: 0.3;
 }
 
-.button-convex.button-basic-green{
+.button_convex.button_basic-green{
   box-shadow: inset 0px -3px 0px #367315;
 }
 
-.button-outlined {
+.button_outlined {
   border-radius: 2px;
   border: 3px solid var(--basic-green);
   color: var(--accent-color-border);
@@ -107,26 +106,47 @@ button.button:not(:disabled) {
   transition: border-color 100ms, color 100ms;
 }
 
-.button-outlined,
-.button-outlined:hover,
-.button-outlined:active {
+.button_outlined,
+.button_outlined:hover,
+.button_outlined:active {
   background-color: transparent;
 }
 
-.button-outlined:hover {
+.button_outlined:hover {
   border-color: var(--accent-color-border);
 }
 
-.button-outlined:active {
+.button_outlined:active {
   border-color: var(--basic-greylight);
   color: var(--basic-greylight);
 }
 
-.button-show {
+.button_pure {
+  color: var(--basic-black);
+  border: 1px solid var(--border-button);
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+}
+
+.button_pure,
+.button_pure:hover,
+.button_pure:active{
+  background-color: var(--white);
+}
+
+.button_pure:hover {
+  border-color: var(--basic-greylight);
+}
+
+.button_pure:focus-visible {
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
+.button_pure:active {
+  border-color: var(--basic-red);
 }
 
 .button-show:focus-visible {
@@ -134,10 +154,16 @@ button.button:not(:disabled) {
   box-shadow: 0 0 0 2px var(--bar-background);
 }
 
+.button_pure:focus-visible {
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 /* Button Context Classes */
 
-.button-filter {
+.button_filter {
   width: 220px;
+
+  border-radius: 0;
 }
 
 .button-offer-card {
@@ -163,3 +189,23 @@ button.button:not(:disabled) {
 .button_contacts {
   width: 300px;
 }
+
+.button_contacts:focus,
+.button_contacts:focus-visible {
+  outline: none;
+}
+
+.button_pagination-next {
+  padding-right: 29px;
+  padding-left: 29px;
+
+  border-radius: 2px;
+}
+
+.button_pagination {
+  width: 38px;
+
+  border-radius: 2px;
+}
+
+

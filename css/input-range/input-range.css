@@ -7,10 +7,9 @@
 
  height: 80px;
 
+ box-sizing: border-box;
  margin-bottom: 9px;
  padding: 39px 20px 0 20px;
-
- box-sizing:border-box;
 
  background-color: var(--catalog-background);
  border-radius: 5px;
@@ -18,12 +17,14 @@
 
 .input-range__scale {
   height: 2px;
+
   background-color: var(--scale-background);
 }
 
 .input-range__bar {
  width: 80%;
  height: 2px;
+
  background-color: var(--bar-background);
 }
 
@@ -33,17 +34,15 @@
 
   width: 20px;
   height: 20px;
-
   padding: 0;
+
+  cursor: pointer;
 
   border-radius: 50%;
   outline: none;
-
   border: 8px solid var(--white);
   background-color: var(--input-range-button);
   box-shadow: 0 2px 0 0 var(--input-range-button-30);
-
-  cursor: pointer;
 }
 
 .input-range__button:focus-visible {
@@ -62,16 +61,15 @@
   display: inline-flex;
   align-items: center;
 
+  box-sizing: border-box;
   width: 95px;
   height: 38px;
-
   padding: 10px 24px;
 
-  box-sizing: border-box;
+  text-align: center;
 
   border: none;
   outline: none;
-
   background-color: var(--catalog-background);
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -80,21 +78,34 @@
   line-height: 18px;
 }
 
+.input-range__control::-webkit-outer-spin-button,
+.input-range__control::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-range__control {
+  -moz-appearance: textfield;
+}
+
 .input-range__control:focus-visible {
   box-shadow: 0 0 0 2px var(--bar-background);
 }
 
-.input-range input:first-of-type {
-  margin-right: 25px;
+.input-range__controls-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-range__track::after {
-  content: "";
   position: absolute;
   top: 110px;
   left: 105px;
 
   width: 10px;
   height: 1px;
+
+  content: "";
+
   background-color: var(--input-dash);
 }

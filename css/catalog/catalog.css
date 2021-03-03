@@ -1,7 +1,27 @@
-.catalog__breadcrumbs {
+.catalog__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+  .catalog__breadcrumbs {
     margin-bottom: 18px;
 }
 
 .catalog__plate {
     margin-bottom: 20px;
+}
+
+.catalog__sort {
+  margin-bottom: 28px;
+  }
+
+.catalog__products-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 60px;
+}
+
+.catalog__products {
+  margin-bottom: 48px;
 }

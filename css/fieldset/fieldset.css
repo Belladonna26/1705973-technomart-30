@@ -1,42 +1,3 @@
-/* .fieldset {
-  display: flex;
-  flex-direction: column;
-}
-
-.fieldset_underlined {
-  padding-bottom: 29px;
-  border-bottom: 1px solid var(--input-range-button-30);
-}
-
-.fieldset_underlined + .fieldset {
-  padding-top: 16px;
-}
-
-.fieldset__legend {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-
-  text-transform: uppercase;
-
-  color: var(--basic-black);
-}
-
-.fieldset__legend-price {
- margin-bottom: 10px;
-}
-
-.fieldset__legend-producers {
- margin-bottom: 15px;
-}
-
-.fieldset__legend-feeding {
- margin-bottom: 23px;
-} */
-
-
-
 .fieldset {
   margin: 0;
   padding: 0;
@@ -62,11 +23,11 @@
 }
 
 .fieldset__title_producers {
- margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .fieldset__title_feeding {
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .fieldset_underlined {
@@ -75,11 +36,11 @@
 }
 
 .fieldset_margin {
-margin-top: 16px;
+  margin-top: 16px;
 }
 
 .fieldset_last-child {
- margin-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .fieldset__list {

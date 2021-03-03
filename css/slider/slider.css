@@ -11,6 +11,8 @@
   top: 54%;
 
   transform: translateY(-50%);
+
+  cursor: pointer;
 }
 
 .slider__next-button {
@@ -21,9 +23,13 @@
   left: 24px;
 }
 
+.slider__next-button:focus,
+.slider__previous-button:focus {
+  outline: none;
+}
+
 .slider__next-button:focus-visible,
 .slider__previous-button:focus-visible {
-  outline: none;
   box-shadow: 0 0 0 2px var(--bar-background);
 }
 

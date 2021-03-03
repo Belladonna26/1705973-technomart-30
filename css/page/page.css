@@ -23,7 +23,7 @@
     padding-top: 59px;
   }
 
-  .main-inner {
+  .page__main_catalog {
     padding-top: 16px;
   }
 
@@ -46,7 +46,3 @@
   flex-direction: column;
 }
 
-.inner-page { /* TODO */
-    display: flex;
-    justify-content: space-between;
-}

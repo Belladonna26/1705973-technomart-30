@@ -1,0 +1,75 @@
+.input-checkbox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-checkbox__label {
+  position: relative;
+
+  overflow: hidden;
+
+  max-width: 200px;
+
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  transform: translateY(2px);
+
+  color: var(--basic-black);
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.input-checkbox__control:disabled + .input-checkbox__label-wrapper {
+  opacity: 0.3;
+}
+
+.input-checkbox__control:disabled + .input-checkbox__label-wrapper .input-checkbox__button {
+  opacity: 1;
+}
+
+.input-checkbox__control:focus-visible + .input-checkbox__label-wrapper .input-checkbox__button {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
+.input-checkbox__control:focus-visible {
+  opacity: 1;
+}
+
+.input-checkbox__control:checked + .input-checkbox__label-wrapper .input-checkbox__button {
+  background-image: url(/img/checkbox/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.input-checkbox__label-wrapper {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 10px;
+
+  cursor: pointer;
+  transition: opacity 100ms;
+}
+
+.input-checkbox__label-wrapper:hover .input-checkbox__button {
+  opacity: 1;
+}
+
+.input-checkbox__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+  width: 26px;
+  height: 23px;
+
+  opacity: 0.8;
+  outline: none;
+  background-image: url(/img/checkbox/checkbox-off.svg);
+  background-repeat: no-repeat;
+}

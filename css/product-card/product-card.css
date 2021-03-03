@@ -21,19 +21,25 @@
   box-shadow: 0px 4px 4px var(--basic-black-25);
 }
 
-.product-card:hover .product-card__img {
+.product-card:hover .product-card__img,
+.product-card:focus-within .product-card__img {
   display: none;
 }
 
 .product-card__popup {
-  display: none;
-  flex-direction: column;
+  position: absolute;
 
+  flex-direction: column;
   row-gap: 10px;
+
+  opacity: 0;
 }
 
-.product-card:hover .product-card__popup {
+.product-card:hover .product-card__popup,
+.product-card:focus-within .product-card__popup {
   display: flex;
+
+  opacity: 1;
 }
 
 .product-card__title {
