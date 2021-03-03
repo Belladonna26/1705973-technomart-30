@@ -16,6 +16,11 @@
     box-shadow: 0px 4px 4px var(--basic-black-25);
 }
 
+.button-radio:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .button-radio::before {
     --size: 6px;
 
@@ -29,7 +34,7 @@
     content: "";
 
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--basic-red);
 }
 
 .buton-radio:hover::before {
@@ -38,9 +43,11 @@
 
 /* TODO: Подумать над стилями при наведении и нажатии */
 
-.button-radio_checked::before{
+/* .button-radio_checked::before{
     visibility: visible;
+} */
+
+.button-radio_checked:focus::before{
+  visibility: visible;
 }
-
-
 

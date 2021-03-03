@@ -63,6 +63,11 @@
   line-height: 30px;
 }
 
+.header__phone:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .header__phone-icon {
   margin-right: 16px;
 
@@ -70,7 +75,7 @@
 }
 
 .header__address {
-  max-width: 250px;
+  max-width: 251px;
   min-height: 24px;
 
   color: var(--accent-color-border);

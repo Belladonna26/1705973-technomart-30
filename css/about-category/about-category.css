@@ -1,7 +1,4 @@
 .about-category {
-  display: flex;
-  flex-direction: column;
-
   min-height: 261px;
 
   background-color: var(--basic-background);

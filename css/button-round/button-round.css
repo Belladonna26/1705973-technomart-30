@@ -19,6 +19,11 @@
   background-color: var(--basic-red);
 }
 
+.button-round:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .button-round:active {
   background-color: var(--basic-red);
 }

@@ -18,6 +18,11 @@
   line-height: 21px;
 }
 
+.button-plate:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .button-plate:active {
   color: var(--basic-greylight);
 }

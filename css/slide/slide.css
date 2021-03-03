@@ -44,13 +44,12 @@
 .slide__title {
   text-transform: uppercase;
 
-  margin-bottom: 5px;
-
   font-size: 36px;
   line-height: 36px;
 }
 
 .slide__description {
+  transform: translateY(7px);
   color: var(--white);
 
   margin: 0;

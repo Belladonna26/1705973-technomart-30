@@ -38,7 +38,12 @@
   align-content: stretch;
   column-gap: 180px;
 
-  margin-bottom: 67px;
+  margin-bottom: 70px;
+}
+
+.page__about-category {
+  display: flex;
+  flex-direction: column;
 }
 
 .inner-page { /* TODO */

@@ -57,6 +57,11 @@
     border: 1px solid var(--basic-greylight);
   }
 
+  .button-pagination:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--bar-background);
+  }
+
   .button-pagination:active {
     border: 1px solid var(--basic-red);
 

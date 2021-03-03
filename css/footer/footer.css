@@ -39,6 +39,11 @@
   box-shadow: inset 0px -5px 0px var(--basic-black-25);
 }
 
+.footer__logo:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .footer__logo-img{
   pointer-events: none;
 }
@@ -55,6 +60,11 @@
 .footer__link:hover,
 .footer__link:focus-visible {
   text-decoration: underline;
+}
+
+.footer__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
 }
 
 .footer__link_yellow {
@@ -102,6 +112,18 @@
   margin: -4px 0 0 3px;
 
   color: var(--main-header-background);
+}
+
+.footer__link-wrapper {
+  text-decoration: inherit;
+
+  font: inherit;
+  color: inherit;
+}
+
+.footer__link-wrapper:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
 }
 
 .footer__bottom-inner {

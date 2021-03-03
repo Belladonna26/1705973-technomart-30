@@ -18,7 +18,7 @@
     background-color: var(--catalog-background);
   }
 
-  .sort-title {
+  .sort__title {
     margin: 0;
 
     font-family: "PT Sans", "Arial", sans-serif;
@@ -32,15 +32,20 @@
     color: var(--basic-black);
   }
 
-  .sort-type-underlined {
+  .sort__type:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+  }
+
+  .sort__type_underlined {
     border-bottom: 1px dashed var(--basic-red);
   }
 
-  .sort-type-underlined:hover {
+  .sort__type_underlined:hover {
     border-bottom: 1px solid var(--basic-red);
   }
 
-  .sort-type-list {
+  .sort__type-list {
     list-style: none;
 
     display: inline-flex;
@@ -55,38 +60,38 @@
     margin: 0 0 0 140px;
   }
 
-  .sort-type-list li:nth-child(1) {
+  .sort__type-list li:nth-child(1) {
     margin-right: 70px;
   }
 
-  .sort-type-list li:nth-child(2) {
+  .sort__type-list li:nth-child(2) {
     margin-right: 65px;
   }
 
-  .sort-type-list li:nth-child(3) {
+  .sort__type-list li:nth-child(3) {
     margin-right: 46px;
   }
 
-  .sort-type-list li:nth-child(4) {
+  .sort__type-list li:nth-child(4) {
     margin-right: 21px;
   }
 
-  .sort-type {
+  .sort__type {
     color: var(--basic-black-30);
   }
 
-  .sort-type:hover {
+  .sort__type:hover {
     color: var(--basic-black);
   }
 
-  .sort-type:active {
+  .sort__type:active {
     color: var(--basic-red);
   }
 
-  .sorting:hover .icon-sorting {
+  .sort__icon:hover {
     fill: var(--basic-black);
   }
 
-  .sorting:active .icon-sorting {
+  .sort__icon:active {
     fill: var(--basic-red);
   }

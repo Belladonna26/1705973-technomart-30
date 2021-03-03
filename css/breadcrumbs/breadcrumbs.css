@@ -27,6 +27,11 @@
   line-height: 18px;
 }
 
+.breadcrumbs__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .breadcrumbs__list-item:not(:first-child) {
   position: relative;
 

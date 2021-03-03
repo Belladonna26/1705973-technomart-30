@@ -2,7 +2,7 @@
   width: 220px;
 }
 
-.input-range-track {
+.input-range__track {
  position: relative;
 
  height: 80px;
@@ -16,18 +16,18 @@
  border-radius: 5px;
 }
 
-.input-range-scale {
+.input-range__scale {
   height: 2px;
   background-color: var(--scale-background);
 }
 
-.input-range-bar {
+.input-range__bar {
  width: 80%;
  height: 2px;
  background-color: var(--bar-background);
 }
 
-.input-range-button {
+.input-range__button {
   position: absolute;
   top: 29px;
 
@@ -46,15 +46,19 @@
   cursor: pointer;
 }
 
-.input-range-button-min {
+.input-range__button:focus-visible {
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
+.input-range__button-min {
   left: 18px;
 }
 
-.input-range-button-max {
+.input-range__button-max {
   right: 40px;
 }
 
-.input-range-control {
+.input-range__control {
   display: inline-flex;
   align-items: center;
 
@@ -76,17 +80,21 @@
   line-height: 18px;
 }
 
+.input-range__control:focus-visible {
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .input-range input:first-of-type {
   margin-right: 25px;
 }
 
-.input-range-track::after {
+.input-range__track::after {
   content: "";
   position: absolute;
-  top: 106px;
-  left: 107px;
+  top: 110px;
+  left: 105px;
 
-  width: 7px;
-  height: 2px;
+  width: 10px;
+  height: 1px;
   background-color: var(--input-dash);
 }

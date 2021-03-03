@@ -50,6 +50,11 @@
   color: var(--basic-red);
 }
 
+.user-info-list__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .user-info-list__link:active {
   color: var(--basic-greylight);
 }

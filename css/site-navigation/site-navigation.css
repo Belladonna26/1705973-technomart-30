@@ -42,6 +42,11 @@
   background-color: var(--accent-color-delivery);
 }
 
+.site-navigation__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .site-navigation__link[href]:active {
   color: var(--white-50);
   background-color: var(--accent-site-navigation-link);

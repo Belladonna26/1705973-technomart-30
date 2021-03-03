@@ -81,6 +81,11 @@
     inset 0px 1px 0px #405069;
 }
 
+.services__tab-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 
 .services__tab-button:active {
   color: var(--accent-color-border);

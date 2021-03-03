@@ -30,6 +30,11 @@
     color: var(--basic-grey);
 }
 
+.button-plate-box__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .button-plate-box__link:active,
 .button-plate-box__link:active .button-plate-box__link-icon {
     color: var(--basic-greylight);

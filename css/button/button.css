@@ -35,6 +35,11 @@ button.button:not(:disabled) {
   background-color: var(--error);
 }
 
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
+}
+
 .button .button-icon {
   margin-right: 8px;
 }
@@ -57,7 +62,8 @@ button.button:not(:disabled) {
   background-color:var(--white-30);
 }
 
-.button-ghost:hover {
+.button-ghost:hover,
+.button-ghost:focus-visible {
   background-color: var(--basic-greylight-30);
 }
 
@@ -121,6 +127,11 @@ button.button:not(:disabled) {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+}
+
+.button-show:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bar-background);
 }
 
 /* Button Context Classes */
