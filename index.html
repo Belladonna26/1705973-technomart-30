@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<!DOCTYPE html>
 <html class="page" lang="ru">
 
 <head>
@@ -164,7 +162,7 @@
         </li>
       </ul>
       <div class="slider offers__slider">
-        <div class="slide slide_visible">
+        <div class="slide slide_visible slide_first">
           <img class="slide__image" src="img/man-puncher.jpg" alt="Фотография мужчины с перфоратором" width="620"
             height="266">
           <div class="slide__header">
@@ -175,7 +173,7 @@
           </div>
           <a class="button slide__button" href="catalog.html">Открыть каталог</a>
         </div>
-        <div class="slide">
+        <div class="slide slide_second">
           <img class="slide__image" src="img/man-puncher-2.jpg" alt="Фотография мужчины с дрелью" width="620"
             height="266">
           <div class="slide__header">
@@ -198,7 +196,7 @@
             </button>
           </li>
           <li class="slider__control-list-item">
-            <button class="button-radio button-radio_checked" type="button" aria-label="Слайд №2">
+            <button class="button-radio" type="button" aria-label="Слайд №2">
             </button>
           </li>
         </ul>
@@ -374,7 +372,7 @@
             </li>
 
             <li class="services-tab__list-item">
-              <button class="services__tab-button" type="button" id="credit" >Кредит</button>
+              <button class="services__tab-button" type="button" id="credit">Кредит</button>
             </li>
           </ul>
 
@@ -545,59 +543,70 @@
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="write-us-wrapper">
-        <p class="write-us-field">
-          <label class="write-us-modal-label" for="user-name">Ваше имя:</label>
-          <input class="write-us-data-user write-us-placeholder-properties write-us-border" type="text" name="name"
+    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="write-us__wrapper">
+        <p class="write-us__field">
+          <label class="write-us__modal-label" for="user-name">Ваше имя:</label>
+          <input class="write-us__data-user write-us__placeholder-properties write-us__border" type="text" name="name"
             id="user-name" placeholder="Имя Фамилия">
         </p>
-
-        <p class="write-us-field">
-          <label class="write-us-modal-label" for="user-mail">Ваш e-mail:</label>
-          <input class="write-us-data-user write-us-placeholder-properties write-us-border" type="email" name="mail"
+        <p class="write-us__field">
+          <label class="write-us__modal-label" for="user-mail">Ваш e-mail:</label>
+          <input class="write-us__data-user write-us__placeholder-properties write-us__border" type="email" name="mail"
             id="user-mail" placeholder="email@example.com">
         </p>
       </div>
-
-      <p class="write-us-field">
-        <label class="write-us-modal-label" for="question-field">Текст письма:</label>
-        <textarea class="write-us-question-area write-us-placeholder-properties write-us-border" name="question"
+      <p class="write-us__field">
+        <label class="write-us__modal-label" for="question-field">Текст письма:</label>
+        <textarea class="write-us__question-area write-us__placeholder-properties write-us__border" name="question"
           id="question-field" placeholder="В свободной форме"></textarea>
       </p>
-      <div class="modal-bottom-wrapper">
-        <button class="button write-us-submit-button" type="submit">Отправить</button>
+      <div class="modal__footer">
+        <button class="button button_write-us" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal__close button-wrapper" type="button" aria-label="Закрыть">
+      <img class="modal__close-img" src="/img/modal-icon-close.svg" width="21" height="21" alt="Закрыть">
+    </button>
   </section>
 
-
   <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716276664!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614165480652!5m2!1sru!2sru"
-      width="943" height="449" style="border:0;" allowfullscreen
-      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <div class="modal__content">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716276664!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614165480652!5m2!1sru!2sru"
+        width="943" height="449" style="border:0;" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button class="modal__close button-wrapper" type="button" aria-label="Закрыть">
+        <img class="modal__close-img" src="/img/modal-icon-close.svg" width="21" height="21" alt="">
+      </button>
+    </div>
   </section>
 
   <section class="modal modal-cart">
-    <div class="modal-cart-notice-wrapper">
-      <h2 class="visually-hidden">Добавление товара в корзину</h2>
-      <p class="modal-cart-notice">Товар добавлен в корзину!</p>
+    <div class="modal__content">
+      <div class="modal-cart__notice">
+        <img class="modal-cart__mark" src="/img/icon-mark66x66.svg" width="66" height="66" alt="">
+        <h2 class="visually-hidden">Добавление товара в корзину</h2>
+        <p class="modal-cart__notice-text">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal__footer">
+        <div class="modal-cart__buttons-wrapper">
+          <button class="button modal-cart__button" type="button" aria-label="Оформить заказ">Оформить заказ</button>
+          <a class="button modal-cart__button-shopping">Продолжить покупки</a>
+        </div>
+      </div>
     </div>
-    <div class="modal-bottom-wrapper modal-cart-buttons-wrapper">
-      <button class="button" type="button" aria-label="Оформить заказ">Оформить заказ</button>
-      <a class="button modal-cart-button">Продолжить покупки</a>
-    </div>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal__close button-wrapper" type="button" aria-label="Закрыть">
+      <img class="modal__close-img" src="/img/modal-icon-close.svg" width="21" height="21" alt="Закрыть">
+    </button>
   </section>
 
   <script src="js/map.js"></script>
   <script src="js/write-us.js"></script>
   <script src="js/buy.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

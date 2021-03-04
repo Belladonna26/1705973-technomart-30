@@ -13,6 +13,10 @@
   left: 24px;
 }
 
+.slide__button:focus-visible {
+  background-color: var(--accent-catalog);
+}
+
 .slide_visible {
   display: block;
 }

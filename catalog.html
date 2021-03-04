@@ -180,7 +180,7 @@
               </div>
             </fieldset>
 
-            <div class="fieldset fieldset_underlined fieldset_margin">
+            <fieldset class="fieldset fieldset_underlined fieldset_margin">
               <legend class="fieldset__title fieldset__title_producers">Производители:</legend>
               <ul class="fieldset__list">
                 <li class="fieldset__item">
@@ -234,8 +234,8 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="fieldset fieldset_margin fieldset_last-child">
+            </fieldset>
+            <fieldset class="fieldset fieldset_margin fieldset_last-child">
               <legend class="fieldset__title fieldset__title_feeding">Питание:</legend>
               <ul class="fieldset__list">
                 <li class="fieldset__item">
@@ -258,7 +258,7 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </fieldset>
             <button class="button button_pure button_filter">Показать</button>
           </form>
         </section>
@@ -268,7 +268,8 @@
             <h2 class="plate__title">Сортировка:</h2>
             <ul class="sort__type-list">
               <li class="sort__type-list-item">
-                <a class="sort__title sort__link sort__link_underlined sort__link_checked" href="?sort=price">По цене</a>
+                <a class="sort__title sort__link sort__link_underlined sort__link_checked" href="?sort=price">По
+                  цене</a>
               </li>
               <li class="sort__type-list-item">
                 <a class="sort__title sort__link sort__link_underlined" href="?sort=type">По типу</a>
@@ -485,8 +486,7 @@
                 <a class="button button_white button_pure button_pagination" href="?page=3">3</a>
               </li>
               <li class="pagination__list-item">
-                <a class="button button_white button_pure button_pagination-next"
-                  href="?page=2">Следующая</a>
+                <a class="button button_white button_pure button_pagination-next" href="?page=2">Следующая</a>
               </li>
             </ul>
           </nav>
@@ -591,30 +591,21 @@
   </footer>
 
   <section class="modal modal-cart">
-    <div class="modal-cart-notice-wrapper">
-      <h2 class="visually-hidden">Добавление товара в корзину</h2>
-      <p class="modal-cart-notice">Товар добавлен в корзину!</p>
-    </div>
-    <div class="modal-bottom-wrapper modal-cart-buttons-wrapper">
-      <button class="button" type="button" aria-label="Оформить заказ">Оформить заказ</button>
-      <a class="button modal-cart-button">Продолжить покупки</a>
-    </div>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
-  </section>
-
-  <section class="modal modal-cart">
     <div class="modal__content">
-      <h2 class="visually-hidden">Добавление товара в корзину</h2>
-      <p class="modal-cart__notice">Товар добавлен в корзину!</p>
-    </div>
-    <div class="modal__footer">
-      <div class="modal-cart__buttons-wrapper">
-        <button class="button" type="button" aria-label="Оформить заказ">Оформить заказ</button>
-        <a class="button modal_cart-button">Продолжить покупки</a>
+      <div class="modal-cart__notice">
+        <img class="modal-cart__mark" src="/img/icon-mark66x66.svg" width="66" height="66" alt="">
+        <h2 class="visually-hidden">Добавление товара в корзину</h2>
+        <p class="modal-cart__notice-text">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal__footer">
+        <div class="modal-cart__buttons-wrapper">
+          <button class="button modal-cart__button" type="button" aria-label="Оформить заказ">Оформить заказ</button>
+          <a class="button modal-cart__button-shopping">Продолжить покупки</a>
+        </div>
       </div>
     </div>
     <button class="modal__close button-wrapper" type="button" aria-label="Закрыть">
-      <!-- img -->
+      <img class="modal__close-img" src="/img/modal-icon-close.svg" width="21" height="21" alt="Закрыть">
     </button>
   </section>
 

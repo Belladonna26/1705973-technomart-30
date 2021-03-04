@@ -1,0 +1,39 @@
+.modal {
+  display: none;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+  border-top: 7px solid var(--basic-red);
+  background-color: var(--white);
+  color: var(--basic-black);
+}
+
+.modal__close-img {
+  position: absolute;
+  top: 12px;
+  right: 11px;
+
+  cursor: pointer;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 100%;
+  height: 112px;
+
+  background-color: var(--modal-write-us-wrapper);
+}

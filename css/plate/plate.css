@@ -42,3 +42,6 @@
   line-height: 18px;
 }
 
+.plate__button:focus-visible {
+  background-color: var(--accent-catalog);
+}

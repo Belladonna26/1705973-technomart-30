@@ -4,7 +4,7 @@
   justify-content: flex-start;
 
   box-sizing: border-box;
-  
+
   padding: 10px 14px 10px 19px;
 
   text-transform: uppercase;
@@ -48,7 +48,8 @@
   color: var(--basic-black-30);
 }
 
-.sort__link:hover {
+.sort__link:hover,
+.sort__link:focus-visible {
   color: var(--basic-black);
 }
 

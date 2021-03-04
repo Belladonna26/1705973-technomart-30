@@ -7,18 +7,15 @@
 .site-navigation__list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 6px;
 
   margin: 0;
-  padding: 0 27px 0 27px;
+  padding: 0 23px 0 25px;
 
   list-style: none;
 
   background-color: var(--accent-color-border);
   box-shadow: inset 0px -5px 0px var(--accent-color-delivery);
-}
-
-.site-navigation__list-item {
-  flex-grow: 1;
 }
 
 .site-navigation__link {
@@ -52,3 +49,4 @@
   background-color: var(--accent-site-navigation-link);
   box-shadow: inset 0px -5px 0px var(--accent-color-delivery);
 }
+

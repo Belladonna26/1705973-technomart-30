@@ -17,7 +17,7 @@
   border: none;
 
   background-color: var(--basic-red);
-  transition: background-color 100ms;
+  transition: var(--time-microinteraction);
 
   font-size: 14px;
   line-height: 18px;
@@ -70,7 +70,8 @@ button.button:not(:disabled) {
   background-color: var(--basic-green);
 }
 
-.button_basic-green:hover {
+.button_basic-green:hover,
+.button_basic-green:focus-visible {
   background-color: var(--success);
 }
 
@@ -103,7 +104,7 @@ button.button:not(:disabled) {
   border: 3px solid var(--basic-green);
   color: var(--accent-color-border);
 
-  transition: border-color 100ms, color 100ms;
+  transition: border-color var(--time-microinteraction), color var(--time-microinteraction);
 }
 
 .button_outlined,
@@ -112,7 +113,8 @@ button.button:not(:disabled) {
   background-color: transparent;
 }
 
-.button_outlined:hover {
+.button_outlined:hover,
+.button_outlined:focus-visible {
   border-color: var(--accent-color-border);
 }
 
@@ -182,7 +184,11 @@ button.button:not(:disabled) {
   width: 220px;
 }
 
-.write-us-submit-button {
+.button_about-us:focus-visible {
+  background-color: var(--accent-catalog);
+}
+
+.button_write-us{
   width: 460px;
 }
 
@@ -193,9 +199,11 @@ button.button:not(:disabled) {
 .button_contacts:focus,
 .button_contacts:focus-visible {
   outline: none;
+  background-color: var(--accent-catalog);
 }
 
 .button_pagination-next {
+  width: 140px;
   padding-right: 29px;
   padding-left: 29px;
 

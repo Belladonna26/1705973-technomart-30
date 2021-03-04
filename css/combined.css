@@ -4,10 +4,6 @@
 @import "./input-range/input-range.css";
 @import "./fieldset/fieldset.css";
 @import "./filter/filter.css";
-@import "./modal-cart/modal-cart.css";
-@import "./modal-common/modal-common.css";
-@import "./modal-map/modal-map.css";
-@import "./modal-write-us/modal-write-us.css";
 @import "./pagination/pagination.css";
 @import "./catalog/catalog.css";
 @import "./breadcrumbs/breadcrumbs.css";
@@ -40,3 +36,8 @@
 @import "./slider/slider.css";
 @import "./slide/slide.css";
 @import "./button-radio/button-radio.css";
+
+@import "./modal/modal.css";
+@import "./modal-cart/modal-cart.css";
+@import "./modal-map/modal-map.css";
+@import "./modal-write-us/modal-write-us.css";

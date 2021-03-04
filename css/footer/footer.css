@@ -26,9 +26,7 @@
 }
 
 .footer__logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 
   width: 220px;
   height: 68px;
@@ -44,7 +42,10 @@
   box-shadow: 0 0 0 2px var(--bar-background);
 }
 
-.footer__logo-img{
+.footer__logo-img {
+  position: absolute;
+  top: 19px;
+  left: 41px;
   pointer-events: none;
 }
 
@@ -139,13 +140,12 @@
 
 .footer__social-list {
   display: inline-flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1px;
 
   width: 134px;
   padding: 0;
-  margin-left: 161px;
+  margin-left: 164px;
 
   list-style: none;
 }
