@@ -11,8 +11,8 @@
 
   text-decoration: none;
 
-  color: var(--basic-black);
-  background-color: var(--white);
+  color: var(--color-black);
+  background-color: var(--color-white);
 
   font-size: 21px;
   line-height: 21px;
@@ -20,25 +20,25 @@
 
 .button-plate:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button-plate:active {
-  color: var(--basic-greylight);
+  color: var(--color-silver);
 }
 
 .button-plate:hover,
 .button-plate:focus-visible {
-  color: var(--basic-red);
+  color: var(--color-amaranth);
 }
 
 .button-plate:hover .button-plate__icon,
 .button-plate:focus-visible .button-plate__icon {
-  color: var(--basic-grey);
+  color: var(--color-fiord);
 }
 
 .button-plate:active .button-plate__icon {
-  color: var(--basic-greylight);
+  color: var(--color-silver);
 }
 
 .button-plate_login {
@@ -46,5 +46,5 @@
 }
 
 .button-plate__icon  {
-  color: var(--basic-greylight);
+  color: var(--color-silver);
 }

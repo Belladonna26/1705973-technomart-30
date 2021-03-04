@@ -37,14 +37,14 @@
   text-transform: uppercase;
   transform: rotate(45deg);
 
-  background-color: var(--basic-red);
+  background-color: var(--color-amaranth);
 
   font-size: 14px;
   line-height: 18px;
 }
 
 .cms-content {
-  color: var(--basic-black);
+  color: var(--color-black);
 }
 
 .cms-content *:first-child {
@@ -70,7 +70,7 @@
   margin: 0 0 8px 0;
   padding: 0;
 
-  color: var(--basic-black);
+  color: var(--color-black);
 }
 
 .cms-content li {
@@ -88,7 +88,7 @@
   width: 25px;
   height: 2px;
 
-  background-color: var(--basic-red);
+  background-color: var(--color-amaranth);
 }
 
 

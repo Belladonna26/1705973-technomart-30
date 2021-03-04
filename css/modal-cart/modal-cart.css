@@ -43,15 +43,15 @@
 .modal-cart__button-shopping {
   margin-left: 10px;
 
-  background-color: var(--white);
-  color: var(--basic-black);
+  background-color: var(--color-white);
+  color: var(--color-black);
 
   cursor: pointer;
 }
 
 .modal-cart__button-shopping:hover,
 .modal-cart__button-shopping:active {
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 

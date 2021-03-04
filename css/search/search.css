@@ -6,7 +6,7 @@
 
     vertical-align: top;
 
-    background-color: var(--accent-color-delivery);
+    background-color: var(--color-pickled-bluewood-darker);
 }
 
 .search__control {
@@ -14,7 +14,7 @@
 
     transition: background-image var(--time-microinteraction);
 
-    color:var(--white);
+    color:var(--color-white);
     outline: none;
     border: none;
     background-image: url(/img/decor/icon-search17x17.svg);
@@ -35,17 +35,17 @@
 }
 
 .search__control::-webkit-input-placeholder {
-    color: var(--white);
+    color: var(--color-white);
 }
 
 .search__control::-moz-placeholder {
-    color: var(--white);
+    color: var(--color-white);
     opacity: 1;
 }
 
 .search__control:focus {
-    color: var(--basic-black);
-    background-color: var(--white);
+    color: var(--color-black);
+    background-color: var(--color-white);
     background-image: url(/img/decor/icon-search-red.svg);
     background-repeat: no-repeat;
     background-position: left 17px top 12px;

@@ -12,13 +12,13 @@
     outline: none;
     border: none;
     border-radius: 50%;
-    background-color: var(--white);
-    box-shadow: 0px 4px 4px var(--basic-black-25);
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 4px var(--color-black-25);
 }
 
 .button-radio:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button-radio::before {
@@ -34,7 +34,7 @@
     content: "";
 
     border-radius: 50%;
-    background-color: var(--basic-red);
+    background-color: var(--color-amaranth);
 }
 
 .buton-radio:hover::before {

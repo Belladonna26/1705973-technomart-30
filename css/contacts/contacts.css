@@ -27,6 +27,6 @@
 }
 
 .contacts__map-button:focus-visible {
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 

@@ -8,8 +8,8 @@
 
     min-height: 100%;
 
-    color: var(--white);
-    background-color: var(--white);
+    color: var(--color-white);
+    background-color: var(--color-white);
     background-position: top center;
     background-repeat: no-repeat;
 

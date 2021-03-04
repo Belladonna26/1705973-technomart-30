@@ -45,17 +45,17 @@
 .sort__link {
   text-decoration: none;
 
-  color: var(--basic-black-30);
+  color: var(--color-black-30);
 }
 
 .sort__link:hover,
 .sort__link:focus-visible {
-  color: var(--basic-black);
+  color: var(--color-black);
 }
 
 .sort__link:active,
 .sort__link_checked {
-  color: var(--basic-red);
+  color: var(--color-amaranth);
 }
 
 .sort__link_checked.sort__link_underlined {
@@ -63,22 +63,22 @@
 }
 
 .sort__link-icon:hover {
-  fill: var(--basic-black);
+  fill: var(--color-black);
 }
 
 .sort__link-icon:active {
-  fill: var(--basic-red);
+  fill: var(--color-amaranth);
 }
 
 .sort__link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .sort__link_underlined {
-  border-bottom: 1px dotted var(--basic-red);
+  border-bottom: 1px dotted var(--color-amaranth);
 }
 
 .sort__link_underlined:hover {
-  border-bottom: 1px solid var(--basic-red);
+  border-bottom: 1px solid var(--color-amaranth);
 }

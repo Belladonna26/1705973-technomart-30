@@ -10,7 +10,7 @@
 
   text-transform: uppercase;
 
-  color: var(--basic-black);
+  color: var(--color-black);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -32,7 +32,7 @@
 
 .fieldset_underlined {
   padding-bottom: 27px;
-  border-bottom: 1px solid var(--input-range-button-30);
+  border-bottom: 1px solid var(--color-silver-chalice-30);
 }
 
 .fieldset_margin {

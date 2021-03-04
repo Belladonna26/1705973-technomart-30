@@ -14,7 +14,7 @@
 }
 
 .slide__button:focus-visible {
-  background-color: var(--accent-catalog);
+  background-color: var(--color-amaranth-darker);
 }
 
 .slide_visible {
@@ -29,7 +29,7 @@
   left: 0;
   z-index: -1;
 
-  background-color: var(--basic-grey);
+  background-color: var(--color-fiord);
 }
 
 .slide__header {
@@ -42,7 +42,7 @@
   height: 104px;
   padding: 16px 24px;
 
-  background-color: var(--basic-black-25);
+  background-color: var(--color-black-25);
 }
 
 .slide__title {
@@ -54,7 +54,7 @@
 
 .slide__description {
   transform: translateY(7px);
-  color: var(--white);
+  color: var(--color-white);
 
   margin: 0;
 

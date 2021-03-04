@@ -1,5 +1,5 @@
 .services {
-  background-color: var(--basic-background);
+  background-color: var(--color-aqua-haze);
 }
 
 .services__inner {
@@ -61,10 +61,10 @@
 
   user-select: none;
 
-  color: var(--white);
+  color: var(--color-white);
   border: none;
   outline: none;
-  background-color: var(--accent-color-border);
+  background-color: var(--color-pickled-bluewood);
   box-shadow: inset 0px 1px 0px #405069,
               inset 0px 0px 0px 1px #293449;
 
@@ -75,21 +75,21 @@
 
 .services__tab-button:hover,
 .services__tab-button:focus-visible {
-  color: var(--white);
-  background-color: var(--accent-color-delivery);
+  color: var(--color-white);
+  background-color: var(--color-pickled-bluewood-darker);
   box-shadow: 0px 1px 0px #293449,
     inset 0px 1px 0px #405069;
 }
 
 .services__tab-button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 
 .services__tab-button:active {
-  color: var(--accent-color-border);
-  background-color: var(--white);
+  color: var(--color-pickled-bluewood);
+  background-color: var(--color-white);
   box-shadow: 0px 1px 0px #FFFFFF;
 }
 

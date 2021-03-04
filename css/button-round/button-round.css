@@ -11,21 +11,21 @@
   height: var(--size);
 
   border-radius: 50%;
-  background-color: var(--social-icon);
+  background-color: var(--color-ebony-clay);
 }
 
 .button-round:hover,
 .button-round:focus-visible {
-  background-color: var(--basic-red);
+  background-color: var(--color-amaranth);
 }
 
 .button-round:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button-round:active {
-  background-color: var(--basic-red);
+  background-color: var(--color-amaranth);
 }
 
 .button-round__icon {

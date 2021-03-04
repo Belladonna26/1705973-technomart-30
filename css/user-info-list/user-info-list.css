@@ -33,13 +33,13 @@
   transform: translateY(-50%);
 
   border-radius: 50%;
-  background-color: var(--accent-color-border);
+  background-color: var(--color-pickled-bluewood);
 }
 
 .user-info-list__link {
   text-decoration: none;
 
-  color: var(--accent-color-border);
+  color: var(--color-pickled-bluewood);
 
   font-size: 16px;
   line-height: 18px;
@@ -47,14 +47,14 @@
 
 .user-info-list__link:hover,
 .user-info-list__link:focus-visible {
-  color: var(--basic-red);
+  color: var(--color-amaranth);
 }
 
 .user-info-list__link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .user-info-list__link:active {
-  color: var(--basic-greylight);
+  color: var(--color-silver);
 }

@@ -2,55 +2,50 @@
 /* ------------------------------------------------------ Variables Start ------------------------------------------------------ */
 
 :root {
-  --basic-red: #EE3643;
-  --basic-background: #F1F5F7;
-  --basic-background-50: rgba(241, 245, 247, 0.5);
-  --basic-green: #63A63E;
-  --basic-subtitle: #F9F5F0;
-  --exception-red: #FF5357;
-  --basic-grey: #3D546F;
-  --basic-greylight: #C5C5C5;
-  --basic-greylight-30: rgba(197, 197, 197, 0.3);
-  --basic-black: #000000;
-  --basic-black-4: rgba(0, 0, 0, 0.4);
-  --basic-black-15: rgba(0, 0, 0, 0.15);
-  --basic-black-25: rgba(0, 0, 0, 0.25);
-  --basic-black-30: rgba(0, 0, 0, 0.3);
-  --block-yellow: #FFC047;
-  --white: #FFFFFF;
-  --white-50: rgba(255, 255, 255, 0.5);
-  --white-30: rgba(255, 255, 255, 0.3);
-  --special-grey: #A9A9A9;
-  --special-grey-30: rgba(169, 169, 169, 0.3);
-  --special-yellow: #FFBF47;
-  --special-blue: #3BBCE3;
-  --special-lilac: #DC91D8;
-  --special-greenlight: #8ED78F;
-  --special-yellowlight: #FFD180;
-  --special-yellowlight-50: rgba(255, 209, 128, 0.5);
-  --success: #5FBB2D;
-  --footer-yellow: #FFD180;
-  --warning: #FFBF47;
-  --error: #BA2732;
-  --punch-subtitle: #F2F6F8;
-  --social-icon: #212A3A;
-  --accent-color-border: #32425C;
-  --accent-color-button: #518534;
-  --accent-color-delivery: #293449;
-  --accent-bookmark: #161D29;
-  --accent-site-navigation-link: #1D2739;
-  --accent-catalog: #CA2C37;
-  --main-header-background: #F3F7F9;
-  --catalog-background: #F7F3EC;
-  --producers-background: #EAEAEA;
-  --border-button: #E5E5E5;
-  --scale-background: #D7DCDE;
-  --bar-background: #00ca74;
-  --input-range-button: #ABABAB;
-  --input-range-button-30: rgba(171, 171, 171, 0.3);
-  --input-dash: #444444;
-  --modal-write-us-wrapper: #F4F4F4;
-  --checkbox-disabled: #B5B5B5;
+  --color-amaranth: #EE3643;
+  --color-amaranth-darker: #CA2C37;
+  --color-amaranth-dark: #BA2732;
+  --color-pickled-bluewood: #32425C;
+  --color-pickled-bluewood-darker: #293449;
+  --color-pickled-bluewood-dark: #1D2739;
+  --color-apple: #63A63E;
+  --color-apple-lighter: #5FBB2D;
+  --color-apple-dark: #518534;
+  --color-aqua-haze: #F1F5F7;
+  --color-aqua-haze-darker: #F2F6F8;
+  --color-merino: #F9F5F0;
+  --color-fiord: #3D546F;
+  --color-silver: #C5C5C5;
+  --color-silver-30: rgba(197, 197, 197, 0.3);
+  --color-black: #000000;
+  --color-black-4: rgba(0, 0, 0, 0.4);
+  --color-black-15: rgba(0, 0, 0, 0.15);
+  --color-black-25: rgba(0, 0, 0, 0.25);
+  --color-black-30: rgba(0, 0, 0, 0.3);
+  --color-white: #FFFFFF;
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-50: (255, 255, 255, 0.5);
+  --color-silver-chalice: #ABABAB;
+  --color-silver-chalice-darker: #A9A9A9;
+  --color-silver-chalice-30: rgba(171, 171, 171, 0.3);
+  --color-silver-chalice-30-darker: rgba(169, 169, 169, 0.3);
+  --color-yellow-orange: #FFC047;
+  --color-yellow-orange-darker: #FFBF47;
+  --color-grandis: #FFD180;
+  --color-picton-blue: #3BBCE3;
+  --color-light-orchid: #DC91D8;
+  --color-feijoa: #8ED78F;
+  --color-ebony-clay: #212A3A;
+  --color-mirage: #161D29;
+  --color-catskill-white: #F3F7F9;
+  --color-ecru-white: #F7F3EC;
+  --color-gallery: #EAEAEA;
+  --color-mercury: #E5E5E5;
+  --color-iron: #D7DCDE;
+  --color-caribbean-green: #00ca74;
+  --color-tundora: #444444;
+  --color-wild-sand: #F4F4F4;
+  --color-nobel: #B5B5B5;
 
   --time-microinteraction: 100ms;
   }
@@ -58,9 +53,16 @@
 /* ------------------------------------------------------ Variables End ------------------------------------------------------ */
 
 /* TODO:
-  2. Переименовать переменные цветов в формат --color-<color_name>, где <color_name> это имя цвета из NameThatColor;
-     Градации color-darken => color-dark => color => color-light => color-lighten
+
   4. Перепроверить ТЗ и критерии;
-  
+
 
 */
+
+
+
+
+
+
+
+

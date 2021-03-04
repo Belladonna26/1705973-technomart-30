@@ -1,7 +1,7 @@
 .text {
   margin: 0;
 
-  color: var(--basic-black);
+  color: var(--color-black);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;

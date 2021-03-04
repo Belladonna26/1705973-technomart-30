@@ -9,17 +9,17 @@
 }
 
 .plate_blue {
-  background-color: var(--punch-subtitle);
+  background-color: var(--color-aqua-haze-darker);
 }
 
 .plate_beige {
-  background-color: var(--basic-subtitle);
+  background-color: var(--color-merino);
 }
 
 .plate_catalog-background {
-  color: var(--basic-black);
+  color: var(--color-black);
 
-  background-color: var(--catalog-background);
+  background-color: var(--color-ecru-white);
 }
 
 .plate_small {
@@ -43,5 +43,5 @@
 }
 
 .plate__button:focus-visible {
-  background-color: var(--accent-catalog);
+  background-color: var(--color-amaranth-darker);
 }

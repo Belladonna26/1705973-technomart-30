@@ -19,7 +19,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  color: var(--basic-black);
+  color: var(--color-black);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -29,7 +29,7 @@
 
 .breadcrumbs__link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .breadcrumbs__list-item:not(:first-child) {

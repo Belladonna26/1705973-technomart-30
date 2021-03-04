@@ -8,7 +8,7 @@
     height: 45px;
     padding: 0 24px;
 
-    background-color: var(--white);
+    background-color: var(--color-white);
 }
 
 .button-plate-box__link {
@@ -19,7 +19,7 @@
     text-decoration: none;
     vertical-align: top;
 
-    color: var(--basic-black);
+    color: var(--color-black);
 
     font-size: 21px;
     line-height: 21px;
@@ -27,21 +27,21 @@
 
 .button-plate-box__link:hover .button-plate-box__link-icon,
 .button-plate-box__link:focus-visible .button-plate-box__link-icon {
-    color: var(--basic-grey);
+    color: var(--color-fiord);
 }
 
 .button-plate-box__link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button-plate-box__link:active,
 .button-plate-box__link:active .button-plate-box__link-icon {
-    color: var(--basic-greylight);
+    color: var(--color-silver);
 }
 
 .button-plate-box__link-icon {
-    color: var(--basic-greylight);
+    color: var(--color-silver);
 }
 
 .button-plate-box__link-icon_login {

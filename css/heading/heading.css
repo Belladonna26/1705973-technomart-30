@@ -3,7 +3,7 @@
 
   text-transform: uppercase;
 
-  color: var(--accent-color-border);
+  color: var(--color-pickled-bluewood);
 
   font-size: 30px;
   line-height: 30px;
@@ -11,5 +11,5 @@
 }
 
 .heading_black {
-  color: var(--basic-black);
+  color: var(--color-black);
 }

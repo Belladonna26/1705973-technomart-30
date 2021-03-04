@@ -23,14 +23,14 @@
 .write-us__placeholder-properties::-webkit-input-placeholder {
   padding: 6px 11px;
 
-  color: var(--special-grey);
+  color: var(--color-silver-chalice-darker);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
 }
 
 .write-us__placeholder-properties::-moz-placeholder {
-  color: var(--special-grey);
+  color: var(--color-silver-chalice-darker);
   opacity: 1;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -49,18 +49,18 @@
   height: 114px;
 
   resize: none;
-  
+
   margin-bottom: 37px;
   box-sizing: border-box;
 }
 
 .write-us__border {
-  border: 2px solid var(--basic-greylight);
+  border: 2px solid var(--color-silver);
 }
 
 .write-us__border:focus-visible {
   outline: none;
-  border: 2px solid var(--bar-background);
+  border: 2px solid var(--color-caribbean-green);
 }
 
 .write-us__modal-label {

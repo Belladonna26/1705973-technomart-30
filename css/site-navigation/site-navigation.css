@@ -14,8 +14,8 @@
 
   list-style: none;
 
-  background-color: var(--accent-color-border);
-  box-shadow: inset 0px -5px 0px var(--accent-color-delivery);
+  background-color: var(--color-pickled-bluewood);
+  box-shadow: inset 0px -5px 0px var(--color-pickled-bluewood-darker);
 }
 
 .site-navigation__link {
@@ -31,22 +31,22 @@
   text-decoration: none;
   vertical-align: top;
 
-  color: var(--white);
+  color: var(--color-white);
 }
 
 .site-navigation__link[href]:hover,
 .site-navigation__link:focus-visible {
-  background-color: var(--accent-color-delivery);
+  background-color: var(--color-pickled-bluewood-darker);
 }
 
 .site-navigation__link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .site-navigation__link[href]:active {
-  color: var(--white-50);
-  background-color: var(--accent-site-navigation-link);
-  box-shadow: inset 0px -5px 0px var(--accent-color-delivery);
+  color: var(--color-white-50);
+  background-color: var(--color-pickled-bluewood-dark);
+  box-shadow: inset 0px -5px 0px var(--color-pickled-bluewood-darker);
 }
 

@@ -13,10 +13,10 @@
   text-transform: uppercase;
 
   outline: none;
-  color: var(--white);
+  color: var(--color-white);
   border: none;
 
-  background-color: var(--basic-red);
+  background-color: var(--color-amaranth);
   transition: var(--time-microinteraction);
 
   font-size: 14px;
@@ -30,17 +30,17 @@ button.button:not(:disabled) {
 
 .button:hover {
   outline: none;
-  background-color: var(--accent-catalog);
+  background-color: var(--color-amaranth-darker);
 }
 
 .button:active {
   outline: none;
-  background-color: var(--error);
+  background-color: var(--color-amaranth-dark);
 }
 
 .button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button__icon {
@@ -50,33 +50,33 @@ button.button:not(:disabled) {
 /* Button Color Modifiers */
 
 .button_white {
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 .button_ghost {
-  background-color:var(--white-30);
+  background-color:var(--color-white-30);
 }
 
 .button_ghost:hover,
 .button_ghost:focus-visible {
-  background-color: var(--basic-greylight-30);
+  background-color: var(--color-silver-30);
 }
 
 .button_ghost:active {
-  background-color: var(--special-grey-30);
+  background-color: var(--color-silver-chalice-30-darker);
 }
 
 .button_basic-green {
-  background-color: var(--basic-green);
+  background-color: var(--color-apple);
 }
 
 .button_basic-green:hover,
 .button_basic-green:focus-visible {
-  background-color: var(--success);
+  background-color: var(--color-apple-lighter);
 }
 
 .button_basic-green:active {
-  background-color: var(--accent-color-button);
+  background-color: var(--color-apple-dark);
 }
 
 /* Button View Modifiers */
@@ -84,11 +84,11 @@ button.button:not(:disabled) {
 .button_convex {
   border-radius: 2px;
 
-  box-shadow: inset 0px -3px 0px var(--basic-black-25);
+  box-shadow: inset 0px -3px 0px var(--color-black-25);
 }
 
 .button_convex:focus-visible {
-  outline: 2px solid var(--bar-background);
+  outline: 2px solid var(--color-caribbean-green);
 }
 
 .button_convex .button__icon {
@@ -101,8 +101,8 @@ button.button:not(:disabled) {
 
 .button_outlined {
   border-radius: 2px;
-  border: 3px solid var(--basic-green);
-  color: var(--accent-color-border);
+  border: 3px solid var(--color-apple);
+  color: var(--color-pickled-bluewood);
 
   transition: border-color var(--time-microinteraction), color var(--time-microinteraction);
 }
@@ -115,17 +115,17 @@ button.button:not(:disabled) {
 
 .button_outlined:hover,
 .button_outlined:focus-visible {
-  border-color: var(--accent-color-border);
+  border-color: var(--color-pickled-bluewood);
 }
 
 .button_outlined:active {
-  border-color: var(--basic-greylight);
-  color: var(--basic-greylight);
+  border-color: var(--color-silver);
+  color: var(--color-silver);
 }
 
 .button_pure {
-  color: var(--basic-black);
-  border: 1px solid var(--border-button);
+  color: var(--color-black);
+  border: 1px solid var(--color-mercury);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -136,28 +136,28 @@ button.button:not(:disabled) {
 .button_pure,
 .button_pure:hover,
 .button_pure:active{
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 .button_pure:hover {
-  border-color: var(--basic-greylight);
+  border-color: var(--color-silver);
 }
 
 .button_pure:focus-visible {
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button_pure:active {
-  border-color: var(--basic-red);
+  border-color: var(--color-amaranth);
 }
 
 .button-show:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .button_pure:focus-visible {
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 /* Button Context Classes */
@@ -185,7 +185,7 @@ button.button:not(:disabled) {
 }
 
 .button_about-us:focus-visible {
-  background-color: var(--accent-catalog);
+  background-color: var(--color-amaranth-darker);
 }
 
 .button_write-us{
@@ -199,7 +199,7 @@ button.button:not(:disabled) {
 .button_contacts:focus,
 .button_contacts:focus-visible {
   outline: none;
-  background-color: var(--accent-catalog);
+  background-color: var(--color-amaranth-darker);
 }
 
 .button_pagination-next {

@@ -11,21 +11,21 @@
  margin-bottom: 9px;
  padding: 39px 20px 0 20px;
 
- background-color: var(--catalog-background);
+ background-color: var(--color-ecru-white);
  border-radius: 5px;
 }
 
 .input-range__scale {
   height: 2px;
 
-  background-color: var(--scale-background);
+  background-color: var(--color-iron);
 }
 
 .input-range__bar {
  width: 80%;
  height: 2px;
 
- background-color: var(--bar-background);
+ background-color: var(--color-caribbean-green);
 }
 
 .input-range__button {
@@ -40,13 +40,13 @@
 
   border-radius: 50%;
   outline: none;
-  border: 8px solid var(--white);
-  background-color: var(--input-range-button);
-  box-shadow: 0 2px 0 0 var(--input-range-button-30);
+  border: 8px solid var(--color-white);
+  background-color: var(--color-silver-chalice);
+  box-shadow: 0 2px 0 0 var(--color-silver-chalice-30);
 }
 
 .input-range__button:focus-visible {
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .input-range__button-min {
@@ -70,7 +70,7 @@
 
   border: none;
   outline: none;
-  background-color: var(--catalog-background);
+  background-color: var(--color-ecru-white);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -89,7 +89,7 @@
 }
 
 .input-range__control:focus-visible {
-  box-shadow: 0 0 0 2px var(--bar-background);
+  box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .input-range__controls-wrapper {
@@ -107,5 +107,5 @@
 
   content: "";
 
-  background-color: var(--input-dash);
+  background-color: var(--color-tundora);
 }
