@@ -3,17 +3,17 @@
   justify-content: space-between;
 }
 
-  .catalog__breadcrumbs {
-    margin-bottom: 18px;
+.catalog__breadcrumbs {
+  margin-bottom: 18px;
 }
 
 .catalog__plate {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .catalog__sort {
   margin-bottom: 28px;
-  }
+}
 
 .catalog__products-wrapper {
   display: flex;

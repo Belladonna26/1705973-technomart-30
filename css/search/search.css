@@ -1,52 +1,52 @@
 .search__control {
-    display: inline-flex;
+  display: inline-flex;
 
-    height: 42px;
-    width: 271px;
+  height: 42px;
+  width: 271px;
 
-    vertical-align: top;
+  vertical-align: top;
 
-    background-color: var(--color-pickled-bluewood-darker);
+  background-color: var(--color-pickled-bluewood-darker);
 }
 
 .search__control {
-    padding-left: 42px;
+  padding-left: 42px;
 
-    transition: background-image var(--time-microinteraction);
+  transition: background-image var(--time-microinteraction);
 
-    color:var(--color-white);
-    outline: none;
-    border: none;
-    background-image: url(/img/decor/icon-search17x17.svg);
-    background-repeat: no-repeat;
-    background-position: left 17px top 12px;
+  color:var(--color-white);
+  outline: none;
+  border: none;
+  background-image: url(/img/decor/icon-search17x17.svg);
+  background-repeat: no-repeat;
+  background-position: left 17px top 12px;
 }
 
 .search__control:hover {
-    background-image: url(/img/icon-search-hover.svg);
-    background-repeat: no-repeat;
-    background-position: left 17px top 12px;
+  background-image: url(/img/icon-search-hover.svg);
+  background-repeat: no-repeat;
+  background-position: left 17px top 12px;
 }
 
 .search__control::-webkit-search-cancel-button,
 .search__control::-webkit-search-results-button,
 .search__control::-webkit-search-results-decoration {
-    display: none;
+  display: none;
 }
 
 .search__control::-webkit-input-placeholder {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .search__control::-moz-placeholder {
-    color: var(--color-white);
-    opacity: 1;
+  color: var(--color-white);
+  opacity: 1;
 }
 
 .search__control:focus {
-    color: var(--color-black);
-    background-color: var(--color-white);
-    background-image: url(/img/decor/icon-search-red.svg);
-    background-repeat: no-repeat;
-    background-position: left 17px top 12px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  background-image: url(/img/decor/icon-search-red.svg);
+  background-repeat: no-repeat;
+  background-position: left 17px top 12px;
 }

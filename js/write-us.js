@@ -10,13 +10,6 @@ apply.addEventListener("click", function () {
   userName.focus();
 });
 
-form.addEventListener("submit", function(evt) {
-  if(!userName.value || !mail.value) {
-    evt.preventDefault();
-    console.log("Нужно ввести имя и e-mail");
-  }
-});
-
 writeUsClose.addEventListener("click", function () {
   writeUsOpen.classList.remove("modal-show");
 });

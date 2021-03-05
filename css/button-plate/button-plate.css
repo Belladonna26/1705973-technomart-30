@@ -8,7 +8,6 @@
   height: 45px;
   padding: 0 24px;
 
-
   text-decoration: none;
 
   color: var(--color-black);
@@ -23,13 +22,13 @@
   box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
-.button-plate:active {
-  color: var(--color-silver);
-}
-
 .button-plate:hover,
 .button-plate:focus-visible {
   color: var(--color-amaranth);
+}
+
+.button-plate:active {
+  color: var(--color-silver);
 }
 
 .button-plate:hover .button-plate__icon,

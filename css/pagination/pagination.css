@@ -3,21 +3,21 @@
   height: 38px;
 }
 
-  .pagination__list {
-    list-style: none;
+.pagination__list {
+  list-style: none;
 
-    display: inline-flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: 10px;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 10px;
 
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  .button-pagination-item {
-    width: 38px;
-    height: 38px;
-  }
+.button-pagination-item {
+  width: 38px;
+  height: 38px;
+}
 

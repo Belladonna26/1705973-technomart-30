@@ -1,46 +1,46 @@
 .offer-card {
-    box-sizing: border-box;
-    width: 300px;
-    height: 123px;
-    padding: 20px 22px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 123px;
+  padding: 20px 22px;
 
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .offer-card__title {
-    margin: 0 0 14px 0;
+  margin: 0 0 14px 0;
 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .offer-card_materials {
-    background-color: var(--color-yellow-orange-darker);
-    background-image: url(/img/decor/icon-bucket44x65.svg);
-    background-position: top 32px right 42px;
+  background-color: var(--color-yellow-orange-darker);
+  background-image: url(/img/decor/icon-bucket44x65.svg);
+  background-position: top 32px right 42px;
 }
 
 .offer-card_tool {
-    background-color: var(--color-picton-blue);
-    background-image: url(/img/decor/icon-drill75x61.svg);
-    background-position: top 35px right 31px;
+  background-color: var(--color-picton-blue);
+  background-image: url(/img/decor/icon-drill75x61.svg);
+  background-position: top 35px right 31px;
 }
 
 .offer-card_technic {
-    background-color: var(--color-light-orchid);
-    background-image: url(/img/decor/icon-tracktor78x62.svg);
-    background-position: top 30px right 30px;
+  background-color: var(--color-light-orchid);
+  background-image: url(/img/decor/icon-tracktor78x62.svg);
+  background-position: top 30px right 30px;
 }
 
 .offer-card_sale {
-    background-color: var(--color-feijoa);
-    background-image: url(/img/decor/icon-busket59x72.svg);
-    background-position: top 26px right 45px;
+  background-color: var(--color-feijoa);
+  background-image: url(/img/decor/icon-busket59x72.svg);
+  background-position: top 26px right 45px;
 }
 
 .offer-card_delivery {
-    background-color: var(--color-yellow-orange);
-    background-image: url(/img/decor/icon-car78x63.svg);
-    background-position: top 33px right 31px;
+  background-color: var(--color-yellow-orange);
+  background-image: url(/img/decor/icon-car78x63.svg);
+  background-position: top 33px right 31px;
 }

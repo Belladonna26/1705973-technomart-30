@@ -1,19 +1,19 @@
 .button-radio {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 10px;
-    height: 10px;
-    padding: 0;
+  width: 10px;
+  height: 10px;
+  padding: 0;
 
-    outline: none;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    box-shadow: 0px 4px 4px var(--color-black-25);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px var(--color-black-25);
 }
 
 .button-radio:focus-visible {
@@ -22,23 +22,23 @@
 }
 
 .button-radio::before {
-    --size: 6px;
+  --size: 6px;
 
-    position: absolute;
+  position: absolute;
 
-    visibility: hidden;
+  visibility: hidden;
 
-    width: var(--size);
-    height: var(--size);
+  width: var(--size);
+  height: var(--size);
 
-    content: "";
+  content: "";
 
-    border-radius: 50%;
-    background-color: var(--color-amaranth);
+  border-radius: 50%;
+  background-color: var(--color-amaranth);
 }
 
 .buton-radio:hover::before {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .button-radio_checked:focus-visible::before,
