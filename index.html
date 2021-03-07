@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
@@ -451,10 +451,10 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <button class="contacts__map-button" type="button">
+        <a class="contacts__map-button" href="map.html">
           <img class="contacts__map" src="img/map.png" width="300" height="158" alt="карта">
-        </button>
-        <button class="button button_contacts contacts__button" type="button">Заблудились? Напишите нам!</button>
+        </a>
+        <a class="button button_contacts contacts__button" href="contact.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
@@ -574,9 +574,10 @@
     <div class="modal__content">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe
+        class="modal-map__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716276664!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614165480652!5m2!1sru!2sru"
-        width="943" height="449" style="border:0;" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        width="943" height="449"
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" allowfullscreen></iframe>
       <button class="modal__close button-wrapper" type="button" aria-label="Закрыть">
         <img class="modal__close-img" src="/img/modal-icon-close.svg" width="21" height="21" alt="">
       </button>
