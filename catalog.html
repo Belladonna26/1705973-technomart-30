@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
@@ -175,10 +175,12 @@
                     aria-label="Максимальная цена"></button>
                 </div>
                 <div class="input-range__controls-wrapper">
-                  <input class="input-range__control" type="number" min="0" max="40000" value="0" id="min-control">
-                  <label for="min-control"></label>
-                  <input class="input-range__control" type="number" min="0" max="40000" value="30000" id="max-control">
-                  <label for="max-control"></label>
+                  <label>
+                    <input class="input-range__control" type="number" min="0" max="40000" value="0">
+                  </label>
+                  <label>
+                    <input class="input-range__control" type="number" min="0" max="40000" value="30000">
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -614,7 +616,8 @@
   <section class="modal modal-cart">
     <div class="modal__content">
       <div class="modal-cart__notice">
-        <img class="modal-cart__mark" src="./img/icon-mark66x66.svg" width="66" height="66" alt="Иконка добавления товара">
+        <img class="modal-cart__mark" src="./img/icon-mark66x66.svg" width="66" height="66"
+          alt="Иконка добавления товара">
         <h2 class="visually-hidden">Добавление товара в корзину</h2>
         <p class="modal-cart__notice-text">Товар добавлен в корзину!</p>
       </div>
