@@ -243,3 +243,27 @@ try {
 } catch (e) {
     console.warn(`Модуль Slider не удалось инициализировать: ${e}`);
 }
+
+
+try {
+    const SHAKE_ANIMATION_DURATION= 600;
+
+    const modalWriteUs = document.querySelector('.modal-write-us');
+    const modalWriteUsForm=modalWriteUs.querySelector('.modal-write-us__form');
+    const modalWriteUsButton = modalWriteUs.querySelector('.modal-write-us__button');
+
+    function handleModalWriteUsButtonClick(){
+        if (!modalWriteUsForm.checkValidity()){
+            modalWriteUs.classList.add('modal-write-us_shake');
+
+            setTimeout(() => {
+                modalWriteUs.classList.remove('modal-write-us_shake');
+            }, SHAKE_ANIMATION_DURATION);
+        }
+    }
+
+    modalWriteUsButton.addEventListener('click', handleModalWriteUsButtonClick);
+
+} catch(e){
+    console.warn(`Модуль ModalWriteUs не удалось инициализировать: ${e}`);
+}

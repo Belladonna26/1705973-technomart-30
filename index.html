@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
@@ -24,12 +24,13 @@
         </a>
 
         <form class="search top-bar__search" action="https://echo.htmlacademy.ru">
-          <input class="search__control" type="search" name="search" placeholder="Поиск:">
+          <input class="search__control" type="search" name="search" id="search" placeholder="Поиск:">
+          <label for="search"></label>
         </form>
 
         <ul class="top-bar__link-list">
           <li class="top-bar__link-item">
-            <a class="top-bar__link" href="blank.html">
+            <a class="top-bar__link" href="#">
               <img class="top-bar__link-icon" src="img/icon-bookmark.svg" width="14" height="16" aria-hidden="true"
                 alt="Иконка закладки">
               Закладки: 0
@@ -37,14 +38,14 @@
 
           </li>
           <li class="top-bar__link-item">
-            <a class="top-bar__link top-bar__link_cart" href="blank.html">
+            <a class="top-bar__link top-bar__link_cart" href="#">
               <img class="top-bar__link-icon" src="img/icon-cart.svg" width="15" height="15" aria-hidden="true"
                 alt="Иконка корзины">
               Корзина: 0
             </a>
           </li>
           <li class="top-bar__link-item">
-            <a class="top-bar__link top-bar__link_checkout" href="blank.html">Оформить заказ</a>
+            <a class="top-bar__link top-bar__link_checkout" href="#">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -69,7 +70,7 @@
         <h2 class="visually-hidden">Пользовательская навигация</h2>
         <ul class="header__user-navigation-list">
           <li class="header__user-navigation-list-item">
-            <a class="button-plate button-plate_login" href="blank.html">
+            <a class="button-plate button-plate_login" href="#">
               <svg class="button-plate__icon" width="20" height="17" viewBox="0 0 20 17" fill="currentColor"
                 aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" />
@@ -80,7 +81,7 @@
             </a>
           </li>
           <li class="header__user-navigation-list-item">
-            <a class="button-plate" href="blank.html">Регистрация</a>
+            <a class="button-plate" href="#">Регистрация</a>
           </li>
         </ul>
       </nav>
@@ -93,7 +94,7 @@
           <a class="site-navigation__link">Главная</a>
         </li>
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Компания</a>
+          <a class="site-navigation__link" href="#">Компания</a>
         </li>
 
         <li class="site-navigation__list-item">
@@ -101,19 +102,19 @@
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Новости</a>
+          <a class="site-navigation__link" href="#">Новости</a>
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Спецпредложения</a>
+          <a class="site-navigation__link" href="#">Спецпредложения</a>
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Доставка</a>
+          <a class="site-navigation__link" href="#">Доставка</a>
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Контакты</a>
+          <a class="site-navigation__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -125,38 +126,36 @@
         <li class="offers__list-item">
           <div class="offer-card offer-card_materials label-new">
             <h3 class="offer-card__title">Материалы</h3>
-            <a class="button button_ghost button-offer-card" href="blank.html"
-              aria-label="Товары из категории Материалы">На любой
+            <a class="button button_ghost button-offer-card" href="#" aria-label="Товары из категории Материалы">На
+              любой
               вкус</a>
           </div>
         </li>
         <li class="offers__list-item">
           <div class="offer-card offer-card_tool">
             <h3 class="offer-card__title">Инструмент</h3>
-            <a class="button button_ghost button-offer-card" href="blank.html"
-              aria-label="Товары из категории Инструмент">На все
+            <a class="button button_ghost button-offer-card" href="#" aria-label="Товары из категории Инструмент">На все
               случаи</a>
           </div>
         </li>
         <li class="offers__list-item">
           <div class="offer-card offer-card_technic">
             <h3 class="offer-card__title">Техника</h3>
-            <a class="button button_ghost button-offer-card" href="blank.html"
-              aria-label="Товары из категории Техника">Для
+            <a class="button button_ghost button-offer-card" href="#" aria-label="Товары из категории Техника">Для
               стройки</a>
           </div>
         </li>
         <li class="offers__list-item">
           <div class="offer-card offer-card_sale">
             <h3 class="offer-card__title">Скидки 50%</h3>
-            <a class="button button_ghost button-offer-card" href="blank.html" aria-label="Товары со скидкой">на 350
+            <a class="button button_ghost button-offer-card" href="#" aria-label="Товары со скидкой">на 350
               товаров</a>
           </div>
         </li>
         <li class="offers__list-item">
           <div class="offer-card offer-card_delivery">
             <h3 class="offer-card__title">Доставка</h3>
-            <a class="button button_ghost button-offer-card" href="blank.html"
+            <a class="button button_ghost button-offer-card" href="#"
               aria-label="Товары с бесплатной доставкой">Бесплатно</a>
           </div>
         </li>
@@ -207,7 +206,7 @@
     <div class="popular-products page__popular-products container">
       <div class="plate plate_beige popular-products__plate">
         <h2 class="heading plate__heading">Популярные товары:</h2>
-        <a class="button plate__button" href="blank.html">Все популярные товары</a>
+        <a class="button plate__button" href="#">Все популярные товары</a>
       </div>
       <ul class="popular-products__list">
         <li class="popular-products__list-item">
@@ -220,7 +219,7 @@
                 <button
                   class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                   type="button" data-modal-opener="modal-cart">
-                  <img class="button-icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                   Купить
                 </button>
                 <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -241,7 +240,7 @@
                 <button
                   class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                   type="button" data-modal-opener="modal-cart">
-                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                   Купить
                 </button>
                 <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -262,7 +261,7 @@
                 <button
                   class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                   type="button" data-modal-opener="modal-cart">
-                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                   Купить
                 </button>
                 <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -283,7 +282,7 @@
                 <button
                   class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                   type="button" data-modal-opener="modal-cart">
-                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                  <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                   Купить
                 </button>
                 <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -299,60 +298,60 @@
     <div class="popular-producers page__popular-producers container">
       <div class="plate plate_beige popular-producers__plate">
         <h2 class="heading plate__heading">Популярные производители:</h2>
-        <a class="button plate__button" href="blank.html">Все производители</a>
+        <a class="button plate__button" href="#">Все производители</a>
       </div>
       <ul class="popular-producers__list">
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от Bosch">
+          <a class="popular-producers__link" href="#" aria-label="Товары от Bosch">
             <img class="popular-producers__link-img" src="img/producers/logo-bosch.png" width="126" height="37"
               alt="Логотип Bosch">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от Makita">
+          <a class="popular-producers__link" href="#" aria-label="Товары от Makita">
             <img class="popular-producers__link-img" src="img/producers/logo-makita.png" width="123" height="40"
               alt="Логотип Makita">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от Dewalt">
+          <a class="popular-producers__link" href="#" aria-label="Товары от Dewalt">
             <img class="popular-producers__link-img" src="img/producers/logo-dewalt.png" width="146" height="44"
               alt="Логотип DeWalt">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от Интерскол">
+          <a class="popular-producers__link" href="#" aria-label="Товары от Интерскол">
             <img class="popular-producers__link-img" src="img/producers/logo-interskol.png" width="200" height="76"
               alt="Логотип Интерскол">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от Hitachi">
+          <a class="popular-producers__link" href="#" aria-label="Товары от Hitachi">
             <img class="popular-producers__link-img" src="img/producers/logo-hitachi.png" width="169" height="31"
               alt="Логотип Hitachi">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от LG">
+          <a class="popular-producers__link" href="#" aria-label="Товары от LG">
             <img class="popular-producers__link-img" src="img/producers/logo-lg.png" width="121" height="73"
               alt="Логотип LG">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от AEG Power Solutions">
+          <a class="popular-producers__link" href="#" aria-label="Товары от AEG Power Solutions">
             <img class="popular-producers__link-img" src="img/producers/logo-aeg.png" width="151" height="98"
               alt="Логотип AEG">
           </a>
         </li>
 
         <li class="popular-producers__list-item">
-          <a class="popular-producers__link" href="blank.html" aria-label="Товары от Metabo">
+          <a class="popular-producers__link" href="#" aria-label="Товары от Metabo">
             <img class="popular-producers__link-img" src="img/producers/logo-metabo.png" width="206" height="73"
               alt="Логотип Metabo">
           </a>
@@ -446,7 +445,7 @@
             <li>ЖелДорЭкспедиция</li>
           </ul>
         </div>
-        <a class="button button_about-us about-us__button" href="blank.html">Подробнее о компании</a>
+        <a class="button button_about-us about-us__button" href="#">Подробнее о компании</a>
       </section>
 
       <section class="contacts">
@@ -475,34 +474,34 @@
       </p>
       <ul class="footer__navigation-list footer__navigation-list_pages">
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Компания</a>
+          <a class="footer__link" href="#">Компания</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Новости</a>
+          <a class="footer__link" href="#">Новости</a>
         </li>
         <li class="footer__navigation-list-item">
           <a class="footer__link" href="catalog.html">Каталог</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Доставка</a>
+          <a class="footer__link" href="#">Доставка</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Контакты</a>
+          <a class="footer__link" href="#">Контакты</a>
         </li>
       </ul>
 
       <ul class="footer__navigation-list footer__navigation-list_categories">
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Материалы</a>
+          <a class="footer__link footer__link_yellow" href="#">Материалы</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Техника</a>
+          <a class="footer__link footer__link_yellow" href="#">Техника</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Инструмент</a>
+          <a class="footer__link footer__link_yellow" href="#">Инструмент</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Спецпредложения</a>
+          <a class="footer__link footer__link_yellow" href="#">Спецпредложения</a>
         </li>
       </ul>
     </div>
@@ -516,17 +515,17 @@
 
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
-            <a class="button-round" href="blank.html" aria-label="Вконтакте">
+            <a class="button-round" href="#" aria-label="Вконтакте">
               <img class="button-round__icon" src="img/vk.svg" width="26" height="15" alt="Иконка Вконтакте">
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a class="button-round" href="blank.html" aria-label="Фейсбук">
+            <a class="button-round" href="#" aria-label="Фейсбук">
               <img class="button-round__icon" src="img/facebook.svg" width="12" height="22" alt="Иконка Фейсбук">
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a class="button-round" href="blank.html" aria-label="Инстаграм">
+            <a class="button-round" href="#" aria-label="Инстаграм">
               <img class="button-round__icon" src="img/instagram.svg" width="21" height="21" alt="Иконка Инстаграм">
             </a>
           </li>
@@ -548,26 +547,26 @@
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="write-us__wrapper">
-        <p class="write-us__field">
-          <label class="write-us__modal-label" for="user-name">Ваше имя:</label>
-          <input class="write-us__data-user write-us__placeholder-properties write-us__border" type="text" name="name"
-            id="user-name" placeholder="Имя Фамилия">
+    <form class="modal-write-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-write-us__wrapper">
+        <p class="modal-write-us__field">
+          <label class="modal-write-us__modal-label" for="user-name">Ваше имя:</label>
+          <input class="modal-write-us__data-user modal-write-us__placeholder-properties modal-write-us__border"
+            type="text" name="name" id="user-name" placeholder="Имя Фамилия" required>
         </p>
-        <p class="write-us__field">
-          <label class="write-us__modal-label" for="user-mail">Ваш e-mail:</label>
-          <input class="write-us__data-user write-us__placeholder-properties write-us__border" type="email" name="mail"
-            id="user-mail" placeholder="email@example.com">
+        <p class="modal-write-us__field">
+          <label class="modal-write-us__modal-label" for="user-mail">Ваш e-mail:</label>
+          <input class="modal-write-us__data-user modal-write-us__placeholder-properties modal-write-us__border"
+            type="email" name="mail" id="user-mail" placeholder="email@example.com" required>
         </p>
       </div>
-      <p class="write-us__field">
-        <label class="write-us__modal-label" for="question-field">Текст письма:</label>
-        <textarea class="write-us__question-area write-us__placeholder-properties write-us__border" name="question"
-          id="question-field" placeholder="В свободной форме"></textarea>
+      <p class="modal-write-us__field">
+        <label class="modal-write-us__modal-label" for="question-field">Текст письма:</label>
+        <textarea class="modal-write-us__question-area modal-write-us__placeholder-properties modal-write-us__border"
+          name="question" id="question-field" placeholder="В свободной форме" required></textarea>
       </p>
       <div class="modal__footer">
-        <button class="button button_write-us" type="submit">Отправить</button>
+        <button class="button button_write-us modal-write-us__button" type="submit">Отправить</button>
       </div>
     </form>
     <button class="modal__close button-wrapper" type="button" aria-label="Закрыть" data-modal-closer>
@@ -583,7 +582,7 @@
         width="943" height="449" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         allowfullscreen></iframe>
       <button class="modal__close button-wrapper" type="button" aria-label="Закрыть" data-modal-closer>
-        <img class="modal__close-img" src="./img/modal-icon-close.svg" width="21" height="21" alt="">
+        <img class="modal__close-img" src="./img/modal-icon-close.svg" width="21" height="21" alt="Закрыть">
       </button>
     </div>
   </section>
@@ -591,13 +590,14 @@
   <section class="modal modal-cart">
     <div class="modal__content">
       <div class="modal-cart__notice">
-        <img class="modal-cart__mark" src="./img/icon-mark66x66.svg" width="66" height="66" alt="">
+        <img class="modal-cart__mark" src="./img/icon-mark66x66.svg" width="66" height="66"
+          alt="Иконка добавления товара">
         <h2 class="visually-hidden">Добавление товара в корзину</h2>
         <p class="modal-cart__notice-text">Товар добавлен в корзину!</p>
       </div>
       <div class="modal__footer">
         <div class="modal-cart__buttons-wrapper">
-          <a class="button modal-cart__button" href="blank.html" aria-label="Оформить заказ">Оформить заказ</a>
+          <a class="button modal-cart__button" href="#" aria-label="Оформить заказ">Оформить заказ</a>
           <button class="button modal-cart__button-shopping" type="button" data-modal-closer>Продолжить покупки</button>
         </div>
       </div>

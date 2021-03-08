@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
@@ -24,26 +24,27 @@
         </a>
 
         <form class="search top-bar__search" action="https://echo.htmlacademy.ru">
-          <input class="search__control" type="search" name="search" placeholder="Поиск: ">
+          <input class="search__control" type="search" name="search" id="search" placeholder="Поиск: ">
+          <label for="search"></label>
         </form>
 
         <ul class="top-bar__link-list">
           <li class="top-bar__link-item">
-            <a class="top-bar__link" href="blank.html">
+            <a class="top-bar__link" href="#">
               <img class="top-bar__link-icon" src="img/icon-bookmark.svg" width="14" height="16" aria-hidden="true"
                 alt="Иконка закладки">
               Закладки: 0
             </a>
           </li>
           <li class="top-bar__link-item">
-            <a class="top-bar__link top-bar__link_cart top-bar__link_amaranth" href="blank.html">
+            <a class="top-bar__link top-bar__link_cart top-bar__link_amaranth" href="#">
               <img class="top-bar__link-icon" src="img/icon-cart.svg" width="15" height="15" aria-hidden="true"
                 alt="Иконка корзины">
               Корзина: 10
             </a>
           </li>
           <li class="top-bar__link-item">
-            <a class="top-bar__link top-bar__link_checkout" href="blank.html">Оформить заказ</a>
+            <a class="top-bar__link top-bar__link_checkout" href="#">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -66,7 +67,7 @@
       <nav class="header__user-navigation">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
         <div class="button-plate-box header__button-plate-wrapper">
-          <a class="button-plate-box__link " href="blank.html" aria-label="Мой профиль">
+          <a class="button-plate-box__link " href="#" aria-label="Мой профиль">
             <svg class="button-plate-box__link-icon button-plate-box__link-icon_login" width="20" height="18"
               fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -75,7 +76,7 @@
             Равшан Джамшутович
           </a>
 
-          <a class="button-plate-box__link" href="blank.html" aria-label="Выход из личного кабинета">
+          <a class="button-plate-box__link" href="#" aria-label="Выход из личного кабинета">
             <svg class="button-plate-box__link-icon" width="20" height="17" fill="currentColor" aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" />
@@ -87,10 +88,10 @@
 
         <ul class="user-info-list">
           <li class="user-info-list__item">
-            <a class="user-info-list__link" href="blank.html">Мои заказы</a>
+            <a class="user-info-list__link" href="#">Мои заказы</a>
           </li>
           <li class="user-info-list__item">
-            <a class="user-info-list__link" href="blank.html">Личный кабинет</a>
+            <a class="user-info-list__link" href="#">Личный кабинет</a>
           </li>
         </ul>
       </nav>
@@ -103,7 +104,7 @@
           <a class="site-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Компания</a>
+          <a class="site-navigation__link" href="#">Компания</a>
         </li>
 
         <li class="site-navigation__list-item">
@@ -111,19 +112,19 @@
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Новости</a>
+          <a class="site-navigation__link" href="#">Новости</a>
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Спецпредложения</a>
+          <a class="site-navigation__link" href="#">Спецпредложения</a>
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Доставка</a>
+          <a class="site-navigation__link" href="#">Доставка</a>
         </li>
 
         <li class="site-navigation__list-item">
-          <a class="site-navigation__link" href="blank.html">Контакты</a>
+          <a class="site-navigation__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -144,7 +145,7 @@
             <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
           </li>
           <li class="breadcrumbs__list-item">
-            <a class="breadcrumbs__link" href="blank.html">Инструмент</a>
+            <a class="breadcrumbs__link" href="#">Инструмент</a>
           </li>
           <li class="breadcrumbs__list-item">
             <a class="breadcrumbs__link">Перфораторы</a>
@@ -174,8 +175,10 @@
                     aria-label="Максимальная цена"></button>
                 </div>
                 <div class="input-range__controls-wrapper">
-                  <input class="input-range__control" type="number" min="0" max="40000" value="0">
-                  <input class="input-range__control" type="number" min="0" max="40000" value="30000">
+                  <input class="input-range__control" type="number" min="0" max="40000" value="0" id="min-control">
+                  <label for="min-control"></label>
+                  <input class="input-range__control" type="number" min="0" max="40000" value="30000" id="max-control">
+                  <label for="max-control"></label>
                 </div>
               </div>
             </fieldset>
@@ -311,7 +314,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -332,7 +335,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -353,7 +356,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -374,7 +377,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -395,7 +398,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -416,7 +419,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -436,7 +439,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -457,7 +460,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -478,7 +481,7 @@
                       <button
                         class="button button_convex button_basic-green button_product-card-popup product-card__buy-button"
                         type="button" data-modal-opener="modal-cart">
-                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="">
+                        <img class="button__icon" src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">
                         Купить
                       </button>
                       <button class="button button_outlined button_white button_product-card-popup" type="button">В
@@ -537,34 +540,34 @@
       </p>
       <ul class="footer__navigation-list footer__navigation-list_pages">
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Компания</a>
+          <a class="footer__link" href="#">Компания</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Новости</a>
+          <a class="footer__link" href="#">Новости</a>
         </li>
         <li class="footer__navigation-list-item">
           <a class="footer__link">Каталог</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Доставка</a>
+          <a class="footer__link" href="#">Доставка</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link" href="blank.html">Контакты</a>
+          <a class="footer__link" href="#">Контакты</a>
         </li>
       </ul>
 
       <ul class="footer__navigation-list footer__navigation-list_categories">
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Материалы</a>
+          <a class="footer__link footer__link_yellow" href="#">Материалы</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Техника</a>
+          <a class="footer__link footer__link_yellow" href="#">Техника</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Инструмент</a>
+          <a class="footer__link footer__link_yellow" href="#">Инструмент</a>
         </li>
         <li class="footer__navigation-list-item">
-          <a class="footer__link footer__link_yellow" href="blank.html">Спецпредложения</a>
+          <a class="footer__link footer__link_yellow" href="#">Спецпредложения</a>
         </li>
       </ul>
     </div>
@@ -578,17 +581,17 @@
 
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
-            <a class="button-round" href="blank.html" aria-label="Вконтакте">
+            <a class="button-round" href="#" aria-label="Вконтакте">
               <img class="button-round__icon" src="img/vk.svg" width="26" height="15" alt="Иконка Вконтакте">
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a class="button-round" href="blank.html" aria-label="Фейсбук">
+            <a class="button-round" href="#" aria-label="Фейсбук">
               <img class="button-round__icon" src="img/facebook.svg" width="12" height="22" alt="Иконка Фейсбук">
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a class="button-round" href="blank.html" aria-label="Инстаграм">
+            <a class="button-round" href="#" aria-label="Инстаграм">
               <img class="button-round__icon" src="img/instagram.svg" width="21" height="21" alt="Иконка Инстаграм">
             </a>
           </li>
@@ -611,13 +614,13 @@
   <section class="modal modal-cart">
     <div class="modal__content">
       <div class="modal-cart__notice">
-        <img class="modal-cart__mark" src="./img/icon-mark66x66.svg" width="66" height="66" alt="">
+        <img class="modal-cart__mark" src="./img/icon-mark66x66.svg" width="66" height="66" alt="Иконка добавления товара">
         <h2 class="visually-hidden">Добавление товара в корзину</h2>
         <p class="modal-cart__notice-text">Товар добавлен в корзину!</p>
       </div>
       <div class="modal__footer">
         <div class="modal-cart__buttons-wrapper">
-          <a class="button modal-cart__button" href="blank.html" aria-label="Оформить заказ">Оформить заказ</a>
+          <a class="button modal-cart__button" href="#" aria-label="Оформить заказ">Оформить заказ</a>
           <button class="button modal-cart__button-shopping" type="button" data-modal-closer>Продолжить покупки</button>
         </div>
       </div>
