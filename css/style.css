@@ -1,6 +1,3 @@
-@import "./combined.css";
-/* ------------------------------------------------------ Variables Start ------------------------------------------------------ */
-
 :root {
   --color-amaranth: #EE3643;
   --color-amaranth-darker: #CA2C37;
@@ -48,9 +45,7 @@
   --color-nobel: #B5B5B5;
 
   --time-microinteraction: 100ms;
-  }
-
-/* ------------------------------------------------------ Variables End ------------------------------------------------------ */
+}
 
 .button {
   display: inline-flex;
@@ -320,6 +315,8 @@ button.button:not(:disabled) {
   border-radius: 50%;
   background-color: var(--color-white);
   box-shadow: 0px 4px 4px var(--color-black-25);
+
+  cursor: pointer;
 }
 
 .button-radio:focus-visible {
@@ -444,7 +441,7 @@ button.button:not(:disabled) {
 }
 
 .input-checkbox__control:checked + .input-checkbox__label-wrapper .input-checkbox__button {
-  background-image: url(/img/checkbox/checkbox-on.svg);
+  background-image: url("../img/checkbox/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -474,7 +471,7 @@ button.button:not(:disabled) {
 
   opacity: 0.8;
   outline: none;
-  background-image: url(/img/checkbox/checkbox-off.svg);
+  background-image: url("../img/checkbox/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
@@ -965,31 +962,31 @@ button.button:not(:disabled) {
 
 .offer-card_materials {
   background-color: var(--color-yellow-orange-darker);
-  background-image: url(/img/decor/icon-bucket44x65.svg);
+  background-image: url("../img/decor/icon-bucket44x65.svg");
   background-position: top 32px right 42px;
 }
 
 .offer-card_tool {
   background-color: var(--color-picton-blue);
-  background-image: url(/img/decor/icon-drill75x61.svg);
+  background-image: url("../img/decor/icon-drill75x61.svg");
   background-position: top 35px right 31px;
 }
 
 .offer-card_technic {
   background-color: var(--color-light-orchid);
-  background-image: url(/img/decor/icon-tracktor78x62.svg);
+  background-image: url("../img/decor/icon-tracktor78x62.svg");
   background-position: top 30px right 30px;
 }
 
 .offer-card_sale {
   background-color: var(--color-feijoa);
-  background-image: url(/img/decor/icon-busket59x72.svg);
+  background-image: url("../img/decor/icon-busket59x72.svg");
   background-position: top 26px right 45px;
 }
 
 .offer-card_delivery {
   background-color: var(--color-yellow-orange);
-  background-image: url(/img/decor/icon-car78x63.svg);
+  background-image: url("../img/decor/icon-car78x63.svg");
   background-position: top 33px right 31px;
 }
 
@@ -1095,7 +1092,7 @@ button.button:not(:disabled) {
   justify-content: center;
   position: relative;
   margin-top: auto;
-  transform: translateX(4px);
+  transform: translateX(1px);
 
   width: 141px;
   height: 38px;
@@ -1154,13 +1151,13 @@ button.button:not(:disabled) {
   color:var(--color-white);
   outline: none;
   border: none;
-  background-image: url(/img/decor/icon-search17x17.svg);
+  background-image: url("../img/decor/icon-search17x17.svg");
   background-repeat: no-repeat;
   background-position: left 17px top 12px;
 }
 
 .search__control:hover {
-  background-image: url(/img/icon-search-hover.svg);
+  background-image: url("../img/icon-search-hover.svg");
   background-repeat: no-repeat;
   background-position: left 17px top 12px;
 }
@@ -1183,7 +1180,7 @@ button.button:not(:disabled) {
 .search__control:focus {
   color: var(--color-black);
   background-color: var(--color-white);
-  background-image: url(/img/decor/icon-search-red.svg);
+  background-image: url("../img/decor/icon-search-red.svg");
   background-repeat: no-repeat;
   background-position: left 17px top 12px;
 }
@@ -1238,8 +1235,6 @@ button.button:not(:disabled) {
 .slide {
   position: relative;
 
-  display: none;
-
   width: 620px;
   height: 266px;
 }
@@ -1254,7 +1249,11 @@ button.button:not(:disabled) {
   background-color: var(--color-amaranth-darker);
 }
 
-.slide_visible {
+.slider__slide {
+  display: none;
+}
+
+.slider__slide_visible {
   display: block;
 }
 
@@ -1435,7 +1434,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 .sort__type-list {
   column-gap: 67px;
 
-  margin-right: 35px;
+  margin-right: 39px;
 }
 
 .sort__type-list-item {
@@ -1501,6 +1500,10 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 
 .page {
   height: 100%;
+}
+
+.page_modal-visible {
+  overflow: hidden;
 }
 
 .page__body {
@@ -1624,7 +1627,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
-.top-bar__link_cart {
+.top-bar__link_amaranth {
   background-color: var(--color-amaranth);
 }
 
@@ -1849,7 +1852,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .header__top-bar {
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 .header__info {
@@ -1977,6 +1980,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   flex-wrap: wrap;
   align-items: center;
   column-gap: 10px;
+  row-gap: 10px;
 
   margin: 0;
   padding: 0;
@@ -2021,7 +2025,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  column-gap: 17px;
+  column-gap: 19px;
 
   min-height: 18px;
   margin: 0;
@@ -2066,7 +2070,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   content: "";
   transform: translateY(-50%);
 
-  background-image: url(/img/decor/icon-right-small8x12.svg);
+  background-image: url("../img/decor/icon-right-small8x12.svg");
 }
 
 .breadcrumbs__link-icon_home {
@@ -2210,7 +2214,6 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   padding: 0;
 }
 
-
 .offers {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -2247,7 +2250,6 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   grid-column: 3 / 4;
 }
 
-
 .offers__slider{
   grid-row: 2 / 3;
   grid-column: 1 / 3;
@@ -2261,9 +2263,10 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   display: grid;
   grid-template-rows: 0.5fr 1fr;
 
+  margin-bottom: 73px;
+  padding-top: 65px;
+
   box-sizing: border-box;
-  margin-bottom: 67px;
-  padding: 65px 0 6px 0;
 }
 
 .services__title {
@@ -2277,6 +2280,9 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 
 .services__tabs {
   display: flex;
+}
+
+.services__grid {
   grid-row: 2 / 3;
 }
 
@@ -2299,11 +2305,7 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   width: 10px;
   height: 279px;
 
-  background-image: url(/img/decor/object.png);
-}
-
-.services__tab_visible {
-  display: block;
+  background-image: url("../img/decor/object.png");
 }
 
 .services__tab-button {
@@ -2341,15 +2343,21 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
   box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
-
-.services__tab-button:active {
+.services__tab-button:active,
+.services__tab-button_checked {
   color: var(--color-pickled-bluewood);
   background-color: var(--color-white);
   box-shadow: 0px 1px 0px #FFFFFF;
 }
 
 .services__tab-content {
+  display: none;
+
   width: 619px;
+}
+
+.services__tab-content_visible {
+  display: block;
 }
 
 .services__tab-content-inner{
@@ -2386,33 +2394,23 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 .services__tab-content_delivery {
   min-height: 283px;
 
-  background-image: url(/img/decor/truck468x261.png);
+  background-image: url("../img/decor/truck468x261.png");
   background-repeat: no-repeat;
   background-position: top 24px right;
 }
 
 .services__tab-content_guarantee {
-  position: relative;
-  left: 320px;
-
-  display: none;
-
   min-height: 283px;
 
-  background-image: url(/img/decor/medal389x283.png);
+  background-image: url("../img/decor/medal389x283.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
 
 .services__tab-content_credit {
-  position: relative;
-  left: 320px;
-
-  display: none;
-
   min-height: 283px;
 
-  background-image: url(/img/decor/money465x285.png);
+  background-image: url("../img/decor/money465x285.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -2432,10 +2430,14 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 }
 
 .contacts__map-button {
-  margin-bottom: 20px;
+  height: 158px;
+  
+  margin-bottom: 18px;
   padding: 0;
 
   border: none;
+
+  background-color: var(--color-nobel);
 
   cursor: pointer;
 }
@@ -2447,6 +2449,10 @@ box-shadow: 0 0 0 2px var(--color-caribbean-green);
 
 .contacts__map-button:focus-visible {
   box-shadow: 0 0 0 2px var(--color-caribbean-green);
+}
+
+.contacts__map {
+  pointer-events: none;
 }
 
 .about-us {
